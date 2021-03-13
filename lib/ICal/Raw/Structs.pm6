@@ -175,6 +175,23 @@ class icaltimetype {
 	has int          $.is_date     is rw;
 	has int          $.is_daylight is rw;
 	has icaltimezone $!zone;
+  
+  method zone is rw {
+    Proxy.new:
+      FETCH => -> $                  { $!zone },
+      STORE => -> $, icaltimezone \z { $!zone := z };
+  }
+  
+  multi method new (DateTime $dt) {
+    # cw: This duplicated definition is there to save time and a circular ref
+    sub icaltimezone_get_builtin_timezone_from_offset
+    my $tz = icaltimetype.new;
+    $tz."$_"() = $dt."$_"() for <year month day hour minute second>;
+    $tz;
+    # Setting timezone requires timezone ID, which we cannot get from a 
+    # DateTime.
+  }
+  
 }
 
 class icaltimezonephase is repr<CStruct> is export {
@@ -226,5 +243,22 @@ class sspm_part is repr<CStruct> is export {
 	has sspm_header $.header    is rw;
 	has int         $.level     is rw;
 	has size_t      $.data_size is rw;
-	has Pointer        $.data      is rw;
+	has Pointer     $.data      is rw;
 }
+
+# cw: Alas, needs force us to grab the real definition of icaltimezone 
+#     from the implementation
+class icaltimezone is repr<CStruct> is export {
+  has Str           $!tzid;
+  has Str           $!location;
+  has Str           $!tznames;
+  has num64         $.latitude;
+  has num64         $.longitude;
+  has icalcomponent $!component;
+  has icaltimezone  $!builtin_timezone;
+  has int32         $.end_year;
+  has icalarray     $!changes;
+}
+  
+  
+  
