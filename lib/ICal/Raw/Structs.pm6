@@ -49,17 +49,6 @@ class icaldatetimeperiodtype is repr<CStruct> is export {
 	has icalperiodtype $.period is rw;
 }
 
-class icaldirset_impl is repr<CStruct> is export {
-	has icalset            $.super              is rw;
-	has char               $.dir                is rw;
-	has icaldirset_options $.options            is rw;
-	has icalcluster        $.cluster            is rw;
-	has icalgauge          $.gauge              is rw;
-	has int                $.first_component    is rw;
-	has pvl_list           $.directory          is rw;
-	has pvl_elem           $.directory_iterator is rw;
-}
-
 class icaldirset_options {
 	has int $.flags is rw;
 }
@@ -71,16 +60,6 @@ class icaldurationtype is repr<CStruct> is export {
 	has int $.hours   is rw;
 	has int $.minutes is rw;
 	has int $.seconds is rw;
-}
-
-class icalfileset_impl is repr<CStruct> is export {
-	has icalset             $.super   is rw;
-	has char                $.path    is rw;
-	has icalfileset_options $.options is rw;
-	has icalcomponent       $.cluster is rw;
-	has icalgauge           $.gauge   is rw;
-	has int                 $.changed is rw;
-	has int                 $.fd      is rw;
 }
 
 class icalfileset_options {
@@ -105,6 +84,29 @@ class icalgauge_where is repr<CStruct> is export {
 	has icalgaugecompare   $.compare is rw;
 	has char               $.value   is rw;
 }
+
+# Deferred until icalgauge was defined.
+class icaldirset_impl is repr<CStruct> is export {
+	has icalset            $.super              is rw;
+	has char               $.dir                is rw;
+	has icaldirset_options $.options            is rw;
+	has icalcluster        $.cluster            is rw;
+	has icalgauge          $!gauge;
+	has int                $.first_component    is rw;
+	has pvl_list           $!directory;
+	has pvl_elem           $!directory_iterator;
+}
+
+class icalfileset_impl is repr<CStruct> is export {
+	has icalset             $!super;
+	has char                $.path    is rw;
+	has icalfileset_options $.options is rw;
+	has icalcomponent       $!cluster;
+	has icalgauge           $!gauge;
+	has int                 $.changed is rw;
+	has int                 $.fd      is rw;
+}
+
 
 class icalgeotype is repr<CStruct> is export {
 	has double $.lat is rw;
@@ -150,11 +152,11 @@ class icalset_impl {
 }
 
 class icalsetiter is repr<CStruct> is export {
-	has icalcompiter       $.iter           is rw;
-	has icalgauge          $.gauge          is rw;
-	has icalrecur_iterator $.ritr           is rw;
-	has icalcomponent      $.last_component is rw;
-	has char               $.tzid           is rw;
+	has icalcompiter       $!iter;
+	has icalgauge          $!gauge;
+	has icalrecur_iterator $!ritr;
+	has icalcomponent      $!last_component;
+	has char               $!tzid;
 }
 
 class icaltime_span is repr<CStruct> is export {
@@ -172,7 +174,7 @@ class icaltimetype {
 	has int          $.second      is rw;
 	has int          $.is_date     is rw;
 	has int          $.is_daylight is rw;
-	has icaltimezone $.zone        is rw;
+	has icaltimezone $!zone;
 }
 
 class icaltimezonephase is repr<CStruct> is export {
