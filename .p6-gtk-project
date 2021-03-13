@@ -1,0 +1,3 @@
+prefix=ICalendar
+modules=ICalendar::Raw::Types
+backups=backup,bitbucket,google-backup
