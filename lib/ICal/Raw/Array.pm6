@@ -22,6 +22,7 @@ sub icalarray_copy (icalarray $array)
 { * }
 
 sub icalarray_element_at (icalarray $array, size_t $position)
+  returns Pointer
   is native(icalendar)
   is export
 { * }
