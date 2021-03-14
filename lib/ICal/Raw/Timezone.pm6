@@ -78,19 +78,19 @@ sub free_zone_directory ()
   is export
 { * }
 
-sub icaltimezone_get_builtin_timezone (Str $location)
+sub icaltimezone_get_builtin_timezone (str $location)
   returns icaltimezone
   is native(icalendar)
   is export
 { * }
 
-sub icaltimezone_get_builtin_timezone_from_offset (uint32 $offset, Str $tzname)
+sub icaltimezone_get_builtin_timezone_from_offset (uint32 $offset, str $tzname)
   returns icaltimezone
   is native(icalendar)
   is export
 { * }
 
-sub icaltimezone_get_builtin_timezone_from_tzid (Str $tzid)
+sub icaltimezone_get_builtin_timezone_from_tzid (str $tzid)
   returns icaltimezone
   is native(icalendar)
   is export
@@ -115,7 +115,7 @@ sub icaltimezone_get_component (icaltimezone $zone)
 { * }
 
 sub icaltimezone_get_display_name (icaltimezone $zone)
-  returns Str
+  returns str
   is native(icalendar)
   is export
 { * }
@@ -127,13 +127,13 @@ sub icaltimezone_get_latitude (icaltimezone $zone)
 { * }
 
 sub icaltimezone_get_location (icaltimezone $zone)
-  returns Str
+  returns str
   is native(icalendar)
   is export
 { * }
 
 sub icaltimezone_get_location_from_vtimezone (icalcomponent $component)
-  returns Str
+  returns str
   is native(icalendar)
   is export
 { * }
@@ -145,19 +145,19 @@ sub icaltimezone_get_longitude (icaltimezone $zone)
 { * }
 
 sub icaltimezone_get_tzid (icaltimezone $zone)
-  returns Str
+  returns str
   is native(icalendar)
   is export
 { * }
 
 sub icaltimezone_get_tznames (icaltimezone $zone)
-  returns Str
+  returns str
   is native(icalendar)
   is export
 { * }
 
 sub icaltimezone_get_tznames_from_vtimezone (icalcomponent $component)
-  returns Str
+  returns str
   is native(icalendar)
   is export
 { * }
@@ -210,12 +210,12 @@ sub icaltimezone_set_component (icaltimezone $zone, icalcomponent $comp)
   is export
 { * }
 
-sub icaltimezone_set_tzid_prefix (Str $new_prefix)
+sub icaltimezone_set_tzid_prefix (str $new_prefix)
   is native(icalendar)
   is export
 { * }
 
-sub set_zone_directory (Str $path)
+sub set_zone_directory (str $path)
   is native(icalendar)
   is export
 { * }
@@ -231,9 +231,9 @@ sub icaltimezone_truncate_vtimezone (
   is export
 { * }
 
-# LIBRARY INTERNAL ONLY! 
+# LIBRARY INTERNAL ONLY!
 # sub icaltimezone_tzid_prefix ()
-#   returns Str
+#   returns str
 #   is native(icalendar)
 #   is export
 # { * }
