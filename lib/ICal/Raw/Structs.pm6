@@ -15,6 +15,7 @@ class icalperiodtype      is repr<CStruct> is export { ... }
 class icalset_impl        is repr<CStruct> is export { ... }
 class icaldirset_options  is repr<CStruct> is export { ... }
 class icalfileset_options is repr<CStruct> is export { ... }
+# class icaltimezone        is repr<CStruct> is export { ... }
 
 constant pvl_elem is export := pvl_elem_t;
 constant icalset  is export := icalset_impl;
@@ -175,23 +176,31 @@ class icaltimetype {
 	has int          $.is_date     is rw;
 	has int          $.is_daylight is rw;
 	has icaltimezone $!zone;
-  
+
   method zone is rw {
     Proxy.new:
       FETCH => -> $                  { $!zone },
       STORE => -> $, icaltimezone \z { $!zone := z };
   }
-  
-  multi method new (DateTime $dt) {
-    # cw: This duplicated definition is there to save time and a circular ref
-    sub icaltimezone_get_builtin_timezone_from_offset
+
+  multi method new (DateTime $dt is copy, :$dst = False) {
+		# cw: An unfortunate, but unavoidable duplication of code.
+		sub icaltimezone_get_utc_timezone ()
+			returns icaltimezone
+			is native(icalendar)
+		{ * }
+
     my $tz = icaltimetype.new;
-    $tz."$_"() = $dt."$_"() for <year month day hour minute second>;
+		$dt .= utc;
+		for <year month day hour minute second> {
+			my uint32 $tcomp = $dt."$_"().Int;
+    	$tz."$_"() = $tcomp;
+		}
+		$tz.is_daylight = $dst.so.Int;
+		$tz.zone = icaltimezone_get_utc_timezone();
     $tz;
-    # Setting timezone requires timezone ID, which we cannot get from a 
-    # DateTime.
   }
-  
+
 }
 
 class icaltimezonephase is repr<CStruct> is export {
@@ -246,19 +255,25 @@ class sspm_part is repr<CStruct> is export {
 	has Pointer     $.data      is rw;
 }
 
-# cw: Alas, needs force us to grab the real definition of icaltimezone 
+# cw: Alas, needs force us to grab the real definition of icaltimezone
 #     from the implementation
-class icaltimezone is repr<CStruct> is export {
-  has Str           $!tzid;
-  has Str           $!location;
-  has Str           $!tznames;
-  has num64         $.latitude;
-  has num64         $.longitude;
-  has icalcomponent $!component;
-  has icaltimezone  $!builtin_timezone;
-  has int32         $.end_year;
-  has icalarray     $!changes;
-}
-  
-  
-  
+# class icaltimezone {
+#   has Str           $!tzid;
+#   has Str           $!location;
+#   has Str           $!tznames;
+#   has num64         $.latitude;
+#   has num64         $.longitude;
+#   has icalcomponent $!component;
+#   has icaltimezone  $!builtin_timezone;
+#   has int32         $.end_year;
+#   has icalarray     $!changes;
+#
+# 	method tzid is rw {
+# 		Proxy.new:
+# 			FETCH => -> $           { $!tzid      },
+# 			STORE => -> $, Str() \t { $!tzid := t }
+# 	}
+#
+# }
+
+our subset ICalTimeRakuDate is export of Mu where icaltimetype | DateTime;
