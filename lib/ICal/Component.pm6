@@ -526,86 +526,86 @@ class ICal::Component {
 
 }
 
-class ICal::Component::Agenda is ICalendar::Component {
+class ICal::Component::Agenda is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::Alarm is ICalendar::Component {
+class ICal::Component::Alarm is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::Availability is ICalendar::Component {
+class ICal::Component::Availability is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::Calendar is ICalendar::Component {
+class ICal::Component::Calendar is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::Event is ICalendar::Component {
+class ICal::Component::Event is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::FreeBusy is ICalendar::Component {
+class ICal::Component::FreeBusy is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::Journal is ICalendar::Component {
+class ICal::Component::Journal is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::Patch is ICalendar::Component {
+class ICal::Component::Patch is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
 
-class ICal::Component::Query is ICalendar::Component {
+class ICal::Component::Query is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::Timezone is ICalendar::Component {
+class ICal::Component::Timezone is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::Todo is ICalendar::Component {
+class ICal::Component::Todo is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::X is ICalendar::Component {
+class ICal::Component::X is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::XDaylight is ICalendar::Component {
+class ICal::Component::XDaylight is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
 }
 
-class ICal::Component::XStandard is ICalendar::Component {
+class ICal::Component::XStandard is ICal::Component {
   submethod BUILD ( :$new-component ) {
     self.setICalComponent($new-component) if $new-component;
   }
