@@ -162,7 +162,11 @@ class ICal::Timezone {
   }
 
   method get_builtin_timezones (:$array = False, :$raw = False)
-    is also<get-builtin-timezones>
+    is also<
+      get-builtin-timezones
+      builtin_timezones
+      builtin-timezones
+    >
   {
     returnArray(
       icaltimezone_get_builtin_timezones(),
@@ -175,7 +179,11 @@ class ICal::Timezone {
   }
 
   method get_builtin_tzdata (:$array = False, :$raw = False)
-    is also<get-builtin-tzdata>
+    is also<
+      get-builtin-tzdata
+      bultin_tzdata
+      builtin-tzdata
+    >
   {
     returnArray(
       icaltimezone_get_builtin_tzdata(),
@@ -187,7 +195,12 @@ class ICal::Timezone {
     )
   }
 
-  method get_component (:$raw = False) is also<get-component> {
+  method get_component (:$raw = False)
+    is also<
+      get-component
+      component
+    >
+  {
     my $c = icaltimezone_get_component($!it);
 
     $c ??
@@ -313,7 +326,13 @@ class ICal::Timezone {
     ($o, $id);
   }
 
-  method get_utc_timezone (ICal::Timezone:U: ) is also<get-utc-timezone> {
+  method get_utc_timezone (ICal::Timezone:U: )
+    is also<
+      get-utc-timezone
+      utc_timezone
+      utc-timezone
+    >
+  {
     my $timezone = icaltimezone_get_utc_timezone();
 
     ICal::Timezone.new($timezone);
