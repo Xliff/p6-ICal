@@ -42,6 +42,31 @@ class ICal::Component {
     $component ?? self.bless( :$component ) !! Nil;
   }
 
+  method new_from_parts(*@parts) {
+    my $c = self.new;
+    @parts = @parts.map({
+      LABEL: {
+        unless $_ ~~ icalcomponent {
+          when ICal::Component        { .icalcomponent; last LABEL }
+          when .^can('icalcomponent') { .icalcomponent; last LABEL }
+        }
+        unless $_ ~~ icalproperty {
+          when ICal::Property         { .icalproperty }
+          when .^can('icalproperty')  { .icalproperty }
+        }
+      }
+      die "All parameters passed to .new_crom_components must contain{
+           '' } IComponent or IProperty-compatible elements!"
+      unless $_ ~~ (icalcomponent, icalproperty).any;
+    });
+    for @parts {
+        when icalproperty  { self.add_property($_)  }
+        when icalcomponent { self.add_component($_) }
+    }
+    
+    $c;
+  }
+
   method new_clone (icalcomponent() $c) {
     my $component = icalcomponent_new_clone($!icc, $c);
 
