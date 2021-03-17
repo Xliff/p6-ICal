@@ -270,6 +270,9 @@ class ICal::Timezone {
       is also<get-utc-offset>
   { * }
 
+  # cw: Offering DateTime makes no sense here. Return value would always be 0
+  #     with the current implementation. Shall still offer it for consistency's
+  #     sake, however.
   multi method get_utc_offset (icaltimetype $tt) {
     samewith($tt, $);
   }
@@ -285,15 +288,26 @@ class ICal::Timezone {
       is also<get-utc-offset-of-utc-time>
   { * }
 
-  multi method get_utc_offset_of_utc_time (icaltimetype $tt) {
-    samewith($tt, $);
+  multi method get_utc_offset_of_utc_time (
+    $tt where { .^can('DateTime') || .^can('icaltimetype') },
+    :$dst = False
+  ) {
+    samewith($tt.?DateTime // $tt.icaltimetype, $, :$dst);
   }
   multi method get_utc_offset_of_utc_time (
-    icaltimetype $tt,
-                 $is_daylight is rw
+    ICalTimeRakuDate $tt,
+                     :$dst = False
+  ) {
+    samewith($tt, $, :$dst);
+  }
+  multi method get_utc_offset_of_utc_time (
+    ICalTimeRakuDate $tt          is copy,
+                     $is_daylight is rw,
+                     :$dst        =  False
   ) {
     my $id = 0;
 
+    $tt = icaltimetype.new($tt, :$dst) if $tt ~~ DateTime;
     my $o = icaltimezone_get_utc_offset_of_utc_time($!it, $tt, $id);
     $is_daylight = $id;
     ($o, $id);
