@@ -115,9 +115,40 @@ class icalgeotype is repr<CStruct> is export {
 }
 
 class icalperiodtype {
-	has icaltimetype     $.start    is rw;
-	has icaltimetype     $.end      is rw;
+	has icaltimetype     $!start;
+	has icaltimetype     $!end;
 	has icaldurationtype $.duration is rw;
+
+	method start is rw {
+		Proxy.new:
+			FETCH => -> $ { $!start },
+			STORE => -> $, sub($s) {
+				$!start = do given $s {
+					when icaldurationtype { $!start := $s }
+
+					when DateTime {
+						my $s1 = icaltimetype.new($s);
+						$!start := $s1;
+					}
+				}
+			}
+	}
+
+	method end is rw {
+		Proxy.new:
+			FETCH => -> $ { $!end },
+			STORE => -> $, $e {
+				$!end = do given $e {
+					when icaldurationtype { $!end := $e }
+
+					when DateTime {
+						my $e1 = icaltimetype.new($e);
+						$!end := $e1;
+					}
+				}
+			}
+	}
+
 }
 
 class icalreqstattype is repr<CStruct> is export {
