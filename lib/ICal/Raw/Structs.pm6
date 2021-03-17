@@ -122,7 +122,7 @@ class icalperiodtype {
 	method start is rw {
 		Proxy.new:
 			FETCH => -> $ { $!start },
-			STORE => -> $, sub($s) {
+			STORE => sub ($, $s) {
 				$!start = do given $s {
 					when icaldurationtype { $!start := $s }
 
@@ -137,7 +137,7 @@ class icalperiodtype {
 	method end is rw {
 		Proxy.new:
 			FETCH => -> $ { $!end },
-			STORE => -> $, $e {
+			STORE => sub ($, $e) {
 				$!end = do given $e {
 					when icaldurationtype { $!end := $e }
 
