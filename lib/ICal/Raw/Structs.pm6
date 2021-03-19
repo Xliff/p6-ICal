@@ -307,4 +307,37 @@ class sspm_part is repr<CStruct> is export {
 #
 # }
 
+our class icalrecurrencetype is repr<CStruct> is export {
+	has icalrecurrencetype_frequency  $.freq                                is rw;
+	HAS icaltimetype                  $!until;
+	has uint32                        $.count                               is rw;
+	has uint16                        $.interval                            is rw;
+	has icalrecurrencetype_weekday    $.week_start                          is rw;
+
+	has uint16                        @.by_second[ICAL_BY_SECOND_SIZE]      is CArray;
+	has uint16                        @.by_minute[ICAL_BY_MINUTE_SIZE]      is CArray;
+	has uint16                        @.by_hour[ICAL_BY_HOUR_SIZE]          is CArray;
+	has uint16                        @.by_day[ICAL_BY_DAY_SIZE]            is CArray;
+	has uint16                        @.by_month_day[ICAL_BY_MONTHDAY_SIZE] is CArray;
+	has uint16                        @.by_year_day[ICAL_BY_YEARDAY_SIZE]   is CArray;
+	has uint16                        @.by_week_no[ICAL_BY_WEEKNO_SIZE]     is CArray;
+	has uint16                        @.by_month[ICAL_BY_MONTH_SIZE]        is CArray;
+	has uint16                        @.by_set_pos[ICAL_BY_SETPOS_SIZE]     is CArray;
+
+	has Str                           $!rscale;
+	has icalrecurrencetype_skip       $.skip                                is rw;
+
+	method until is rw {
+		Proxy.new:
+			FETCH => -> $                     { $!until },
+			STORE => -> $, icaltimetype() $tt { $!until := $tt };
+	}
+
+	method rscale is rw  {
+		Proxy.new:
+			FETCH => -> $           { $!rscale },
+			STORE => -> $, Str() $s { $!rscale := $s };
+	}
+}
+
 our subset ICalTimeRakuDate is export of Mu where icaltimetype | DateTime;
