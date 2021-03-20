@@ -14,8 +14,8 @@ sub MAIN {
 
   my $calendar = ICal::Component.new-from-parts(
     ICAL_VCALENDAR_COMPONENT,
-    ICal::Property::Version.new(v2),
-    ICal::Property::Prodid('-//RDU Software//NONSGML HandCal//EN'),
+    ICal::Property::Version.new('v2.0'),
+    ICal::Property::ProdID('-//RDU Software//NONSGML HandCal//EN'),
     ICal::Component.new-from-parts(
       ICAL_VEVENT_COMPONENT,
       ICal::Property::DateTimeStamp($atime),
