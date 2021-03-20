@@ -214,7 +214,7 @@ class icaltimetype {
       STORE => -> $, icaltimezone \z { $!zone := z };
   }
 
-  multi method new (DateTime $dt is copy, :$dst = False) {
+  multi method new (DateTime $dt is copy, :$timezone, :$dst = False) {
 		# cw: An unfortunate, but unavoidable duplication of code.
 		sub icaltimezone_get_utc_timezone ()
 			returns icaltimezone
@@ -222,13 +222,25 @@ class icaltimetype {
 		{ * }
 
     my $tz = icaltimetype.new;
-		$dt .= utc;
+
+		$timezone = do given $timezone {
+			when ::('ICal::Timezone') { .icaltimezone }
+			when icaltimezone         { $_ }
+			when Str                  { ::('ICal::Timezone').new($_) }
+
+			default {
+				die "Cannot initialize an icaltimetype using a {
+					   .^name } as the timezone";
+			}
+		}
+
+		$dt .= utc unless $timezone;
 		for <year month day hour minute second> {
 			my uint32 $tcomp = $dt."$_"().Int;
     	$tz."$_"() = $tcomp;
 		}
 		$tz.is_daylight = $dst.so.Int;
-		$tz.zone = icaltimezone_get_utc_timezone();
+		$tz.zone = $timezone // icaltimezone_get_utc_timezone();
     $tz;
   }
 
