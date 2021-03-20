@@ -33,6 +33,12 @@ my %aliases = (
   DTStart => 'DateTimeStart',
 );
 
+my %tz-handling = (
+  DTEnd   => True,
+  DTStamp => True,
+  DTStart => True
+);
+
 sub MAIN (:$force) {
   qx{install -d lib/ICal/Property};
 
@@ -94,9 +100,20 @@ sub MAIN (:$force) {
                   $alias } is export of ICal::Property::{ $name };";
     }
 
+    my $var-copy = '';
+    my ($tz-handling, $tz-add) = '' xx 2;
+    if %tz-handling{ $name } {
+      $tz-handling =
+        '$var = icaltimetype.new($var, :$timezone) if $timezone;' ~ "\n    ";
+      $tz-add = ', :$timezone';
+      $var-copy = ' is copy';
+    }
+
     my $new-method = qq:to/METHOD/;
-        method new ({ $ptype } \$var, *\@params) \{
-          { $ndef }my \$property = icalproperty_new_{ $lname }(\${ $var-or-nv });
+        method new ($ptype \$var{ $var-copy }, *\@params{ $tz-add }) \{
+          { $ndef }{
+            $tz-handling }my \$property = icalproperty_new_{ $lname }(\${
+            $var-or-nv });
 
           my \$o = \$property ?? self.bless( :\$property) !! Nil;
           \$o.add_parameters(\@params) if +\@params;
@@ -127,7 +144,6 @@ sub MAIN (:$force) {
       class { $compunit-fqn } is ICal::Property \{
 
 { $new-method }
-
         method get \{
           icalproperty_get_{ $lname }(self.icalproperty);
         \}
