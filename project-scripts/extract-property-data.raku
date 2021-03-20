@@ -23,10 +23,15 @@ sub resolveType ($_) {
   when 'UTC-OFFSET'                              { 'Int'                    }
   when 'X'                                       { 'Str'                    }
 
-  default                { "icalproperty_{ .lc.subst('_', '', :g)
-                                              .subst('-', '', :g) }" }
+  default                    { "icalproperty_{ .lc.subst(/<[_-]>/, '', :g) }" }
+
 }
 
+my %aliases = (
+  DTEnd   => 'DateTimeEnd',
+  DTStamp => 'DateTimeStamp',
+  DTStart => 'DateTimeStart',
+);
 
 sub MAIN (:$force) {
   qx{install -d lib/ICal/Property};
@@ -53,11 +58,12 @@ sub MAIN (:$force) {
 
   my @all-derived;
   for @data {
+    next unless .[0] && .[1] && .[2];
+
     my ($name, $lname, $type) =
       ( %properties{ .[1] }, (%properties{ .[1] } // '').lc, .[2] );
 
-    next unless .[0] && .[1] && .[2];
-    next unless %properties{ .[1] };
+    next unless $name;
 
     my $rtype = do given $type {
       when    'Float'  { 'Num' }
@@ -82,17 +88,45 @@ sub MAIN (:$force) {
     $ndef = "my { $ntype } \$nv = \$var;\n    " if $ntype;
     my $var-or-nv = $ndef ?? 'nv' !! 'var';
 
+    my $aliased = '';
+    if %aliases{ $name } -> $alias {
+      $aliased = "our subset ICal::Property::{
+                  $alias } is export of ICal::Property::{ $name };";
+    }
+
+    my $new-method = qq:to/METHOD/;
+        method new ({ $ptype } \$var, *\@params) \{
+          { $ndef }my \$property = icalproperty_new_{ $lname }(\${ $var-or-nv });
+
+          my \$o = \$property ?? self.bless( :\$property) !! Nil;
+          \$o.add_parameters(\@params) if +\@params;
+          \$o;
+        \}
+      METHOD
+
+    # cw: How should multi-valued params be handled when var-args cannot
+    #     be used and proper type-based vector constructors do not exist.
+    #     ??
+    #
+    # if (.[4] // '').contains('is_multivalued') {
+    #   $new-method = qq:to/METHOD/;
+    #       method new (*@var) \{
+    #         die "Invalid values in \@var!" unless \@var.all ~~ { $rtype };
+    #         { $ndef }my \$property = icalproperty_new_{ $lname }(\@var.head);
+    #
+    #         \$property ?? self.bless( :\$property) !! Nil;
+    #       \}
+    #     METHOD
+    # }
+
     # output new/get/set and raw defs
+    my $compunit-fqn = "ICal::Property::{ $name }";
     my $compunit = qq:to/CLASSDEF/;
       ### lib/ICal/Property/{ $name }.pm6
 
-      class ICal::Property::{ $name } is ICal::Property \{
+      class { $compunit-fqn } is ICal::Property \{
 
-        method new ({ $ptype } \$var) \{
-          { $ndef }my \$property = icalproperty_new_{ $lname }(\${ $var-or-nv });
-
-          \$property ?? self.bless( :\$property) !! Nil;
-        \}
+{ $new-method }
 
         method get \{
           icalproperty_get_{ $lname }(self.icalproperty);
@@ -100,9 +134,12 @@ sub MAIN (:$force) {
 
         method set ({ $ptype } \$v) \{
           icalproperty_set_{ $lname }(self.icalproperty, \$v);
-        }
+        \}
 
       \}
+
+      { $aliased }
+
       sub icalproperty_new_{ $lname } ({ $ntype || $type })
         returns icalproperty
         is export
@@ -121,10 +158,9 @@ sub MAIN (:$force) {
       \{ * \}
       CLASSDEF
 
-     my $fn  = "lib/ICal/Property/{ $name }.pm6";
-     my $fio = $fn.IO;
-     @all-derived.push: $fn;
-     unless $fio.r || $force.not {
+     @all-derived.push: $compunit-fqn;
+     my $fio = "lib/ICal/Property/{ $name }.pm6".IO;
+     unless $fio.r && $force.not {
        say "Writing code to { $fio.absolute }...";
        $fio.spurt(qq:to/UNIT/) ;
           use v6;
@@ -139,7 +175,7 @@ sub MAIN (:$force) {
   }
 
   my $fio-a = "lib/ICal/DerivedProperty.pm6".IO;
-  unless $fio-a.r || $force.not {
+  unless $fio-a.r && $force.not {
     say "Writing code to { $fio-a.absolute }...";
     $fio-a.spurt(qq:to/ALL/)
       use v6;
