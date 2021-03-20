@@ -172,6 +172,13 @@ sub MAIN (:$force) {
           { $compunit }
           UNIT
      }
+
+     # cw: -YYY- Consider a ::MultiValued class variant which exists solely for
+     #     creating multiple sigle-valued Property objects that can
+     #     safely be slipped into the Component constructor. This class will
+     #     only contain a method .new which returns an array of said obj
+     #     class. One for each value specified.
+
   }
 
   my $fio-a = "lib/ICal/DerivedProperty.pm6".IO;
