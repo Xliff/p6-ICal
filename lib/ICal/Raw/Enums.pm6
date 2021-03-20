@@ -532,7 +532,7 @@ our enum icalproperty_kindEnum is export (
   ICAL_XLICMIMEFILENAME_PROPERTY    =>  98,
   ICAL_XLICMIMEOPTINFO_PROPERTY     =>  99,
   ICAL_VERSION_PROPERTY             =>  89,
-  ICAL_NO_PROPERTY                  => 100
+  ICAL_NO_PROPERTY                  => 100,
   ICAL_BUSYTYPE_PROPERTY            => 101,
   ICAL_ACCEPTRESPONSE_PROPERTY      => 102,
   ICAL_POLLITEMID_PROPERTY          => 103,
