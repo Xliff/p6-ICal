@@ -24,3 +24,4 @@ core
 *.alias-bak
 *.old
 BuildList
+*.~lock.*
