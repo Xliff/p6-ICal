@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/DTStamp.pm6
 
 class ICal::Property::DTStamp is ICal::Property {
 
-  method new (icaltimetype() $var) {
+  method new (icaltimetype() $var, *@params) {
     my $property = icalproperty_new_dtstamp($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_dtstamp(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::DTStamp is ICal::Property {
   }
 
 }
+
+our subset ICal::Property::DateTimeStamp is export of ICal::Property::DTStamp;
+
 sub icalproperty_new_dtstamp (icaltimetype)
   returns icalproperty
   is export

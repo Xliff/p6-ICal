@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/RequestStatus.pm6
 
 class ICal::Property::RequestStatus is ICal::Property {
 
-  method new (icalreqstattype() $var) {
+  method new (icalreqstattype() $var, *@params) {
     my $property = icalproperty_new_requeststatus($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_requeststatus(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::RequestStatus is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_requeststatus (icalreqstattype)
   returns icalproperty
   is export

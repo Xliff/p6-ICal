@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/DefaultTZID.pm6
 
 class ICal::Property::DefaultTZID is ICal::Property {
 
-  method new (Str() $var) {
+  method new (Str() $var, *@params) {
     my $property = icalproperty_new_defaulttzid($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_defaulttzid(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::DefaultTZID is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_defaulttzid (Str)
   returns icalproperty
   is export

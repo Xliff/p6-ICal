@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/Trigger.pm6
 
 class ICal::Property::Trigger is ICal::Property {
 
-  method new (icaltriggertype() $var) {
+  method new (icaltriggertype() $var, *@params) {
     my $property = icalproperty_new_trigger($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_trigger(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::Trigger is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_trigger (icaltriggertype)
   returns icalproperty
   is export

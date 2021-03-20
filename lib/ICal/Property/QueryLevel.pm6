@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/QueryLevel.pm6
 
 class ICal::Property::QueryLevel is ICal::Property {
 
-  method new (icalproperty_querylevel $var) {
+  method new (icalproperty_querylevel $var, *@params) {
     my $property = icalproperty_new_querylevel($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_querylevel(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::QueryLevel is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_querylevel (icalproperty_querylevel)
   returns icalproperty
   is export

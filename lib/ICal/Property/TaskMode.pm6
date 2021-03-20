@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/TaskMode.pm6
 
 class ICal::Property::TaskMode is ICal::Property {
 
-  method new (icalproperty_taskmode $var) {
+  method new (icalproperty_taskmode $var, *@params) {
     my $property = icalproperty_new_taskmode($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_taskmode(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::TaskMode is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_taskmode (icalproperty_taskmode)
   returns icalproperty
   is export

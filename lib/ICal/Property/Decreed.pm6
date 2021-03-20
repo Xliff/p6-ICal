@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/Decreed.pm6
 
 class ICal::Property::Decreed is ICal::Property {
 
-  method new (Str() $var) {
+  method new (Str() $var, *@params) {
     my $property = icalproperty_new_decreed($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_decreed(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::Decreed is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_decreed (Str)
   returns icalproperty
   is export

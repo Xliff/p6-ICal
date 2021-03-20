@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/ExRule.pm6
 
 class ICal::Property::ExRule is ICal::Property {
 
-  method new (icalrecurrencetype() $var) {
+  method new (icalrecurrencetype() $var, *@params) {
     my $property = icalproperty_new_exrule($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_exrule(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::ExRule is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_exrule (icalrecurrencetype)
   returns icalproperty
   is export

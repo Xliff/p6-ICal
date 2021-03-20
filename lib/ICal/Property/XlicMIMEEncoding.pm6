@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/XlicMIMEEncoding.pm6
 
 class ICal::Property::XlicMIMEEncoding is ICal::Property {
 
-  method new (Str() $var) {
+  method new (Str() $var, *@params) {
     my $property = icalproperty_new_xlicmimeencoding($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_xlicmimeencoding(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::XlicMIMEEncoding is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_xlicmimeencoding (Str)
   returns icalproperty
   is export

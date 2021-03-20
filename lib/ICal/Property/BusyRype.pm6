@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/BusyRype.pm6
 
 class ICal::Property::BusyRype is ICal::Property {
 
-  method new (icalproperty_busytype() $var) {
+  method new (icalproperty_busytype() $var, *@params) {
     my $property = icalproperty_new_busyrype($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_busyrype(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::BusyRype is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_busyrype (icalproperty_busytype)
   returns icalproperty
   is export

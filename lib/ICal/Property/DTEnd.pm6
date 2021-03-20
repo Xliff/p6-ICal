@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/DTEnd.pm6
 
 class ICal::Property::DTEnd is ICal::Property {
 
-  method new (icaltimetype() $var) {
+  method new (icaltimetype() $var, *@params) {
     my $property = icalproperty_new_dtend($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_dtend(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::DTEnd is ICal::Property {
   }
 
 }
+
+our subset ICal::Property::DateTimeEnd is export of ICal::Property::DTEnd;
+
 sub icalproperty_new_dtend (icaltimetype)
   returns icalproperty
   is export

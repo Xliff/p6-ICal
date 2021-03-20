@@ -4,17 +4,19 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/PollWinner.pm6
 
 class ICal::Property::PollWinner is ICal::Property {
 
-  method new (Int() $var) {
+  method new (Int() $var, *@params) {
     my uint32 $nv = $var;
     my $property = icalproperty_new_pollwinner($nv);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_pollwinner(self.icalproperty);
@@ -25,6 +27,9 @@ class ICal::Property::PollWinner is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_pollwinner (uint32)
   returns icalproperty
   is export

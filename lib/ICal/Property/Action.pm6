@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/Action.pm6
 
 class ICal::Property::Action is ICal::Property {
 
-  method new (icalproperty_action $var) {
+  method new (icalproperty_action $var, *@params) {
     my $property = icalproperty_new_action($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_action(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::Action is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_action (icalproperty_action)
   returns icalproperty
   is export

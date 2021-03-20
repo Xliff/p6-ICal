@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/Geo.pm6
 
 class ICal::Property::Geo is ICal::Property {
 
-  method new (icalgeotype() $var) {
+  method new (icalgeotype() $var, *@params) {
     my $property = icalproperty_new_geo($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_geo(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::Geo is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_geo (icalgeotype)
   returns icalproperty
   is export

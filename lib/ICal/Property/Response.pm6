@@ -4,17 +4,19 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/Response.pm6
 
 class ICal::Property::Response is ICal::Property {
 
-  method new (Int() $var) {
+  method new (Int() $var, *@params) {
     my uint32 $nv = $var;
     my $property = icalproperty_new_response($nv);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_response(self.icalproperty);
@@ -25,6 +27,9 @@ class ICal::Property::Response is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_response (uint32)
   returns icalproperty
   is export

@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/PollCompletion.pm6
 
 class ICal::Property::PollCompletion is ICal::Property {
 
-  method new (icalproperty_pollcompletion $var) {
+  method new (icalproperty_pollcompletion $var, *@params) {
     my $property = icalproperty_new_pollcompletion($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_pollcompletion(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::PollCompletion is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_pollcompletion (icalproperty_pollcompletion)
   returns icalproperty
   is export

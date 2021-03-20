@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/XlicClass.pm6
 
 class ICal::Property::XlicClass is ICal::Property {
 
-  method new (icalproperty_xlicclass $var) {
+  method new (icalproperty_xlicclass $var, *@params) {
     my $property = icalproperty_new_xlicclass($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_xlicclass(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::XlicClass is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_xlicclass (icalproperty_xlicclass)
   returns icalproperty
   is export

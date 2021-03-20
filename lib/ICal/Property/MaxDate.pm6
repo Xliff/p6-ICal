@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/MaxDate.pm6
 
 class ICal::Property::MaxDate is ICal::Property {
 
-  method new (icaltimetype() $var) {
+  method new (icaltimetype() $var, *@params) {
     my $property = icalproperty_new_maxdate($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_maxdate(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::MaxDate is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_maxdate (icaltimetype)
   returns icalproperty
   is export

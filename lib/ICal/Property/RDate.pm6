@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/RDate.pm6
 
 class ICal::Property::RDate is ICal::Property {
 
-  method new (icaldatetimeperiodtype() $var) {
+  method new (icaldatetimeperiodtype() $var, *@params) {
     my $property = icalproperty_new_rdate($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_rdate(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::RDate is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_rdate (icaldatetimeperiodtype)
   returns icalproperty
   is export

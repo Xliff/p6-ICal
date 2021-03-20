@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/EstimatedDuration.pm6
 
 class ICal::Property::EstimatedDuration is ICal::Property {
 
-  method new (icaldurationtype() $var) {
+  method new (icaldurationtype() $var, *@params) {
     my $property = icalproperty_new_estimatedduration($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_estimatedduration(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::EstimatedDuration is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_estimatedduration (icaldurationtype)
   returns icalproperty
   is export

@@ -4,16 +4,18 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-
 ### lib/ICal/Property/Dat.pm6
 
 class ICal::Property::Dat is ICal::Property {
 
-  method new (icaltimetype() $var) {
+  method new (icaltimetype() $var, *@params) {
     my $property = icalproperty_new_dat($var);
 
-    $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property) !! Nil;
+    $o.add_parameters(@params) if +@params;
+    $o;
   }
+
 
   method get {
     icalproperty_get_dat(self.icalproperty);
@@ -24,6 +26,9 @@ class ICal::Property::Dat is ICal::Property {
   }
 
 }
+
+
+
 sub icalproperty_new_dat (icaltimetype)
   returns icalproperty
   is export
