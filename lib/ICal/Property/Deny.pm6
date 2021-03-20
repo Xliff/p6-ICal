@@ -16,7 +16,6 @@ class ICal::Property::Deny is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_deny(self.icalproperty);
   }

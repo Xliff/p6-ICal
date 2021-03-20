@@ -16,7 +16,6 @@ class ICal::Property::RecurrenceID is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_recurrenceid(self.icalproperty);
   }

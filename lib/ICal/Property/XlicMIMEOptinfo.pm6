@@ -16,7 +16,6 @@ class ICal::Property::XlicMIMEOptinfo is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_xlicmimeoptinfo(self.icalproperty);
   }

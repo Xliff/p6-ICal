@@ -16,7 +16,6 @@ class ICal::Property::Scope is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_scope(self.icalproperty);
   }

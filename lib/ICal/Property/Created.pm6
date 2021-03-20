@@ -16,7 +16,6 @@ class ICal::Property::Created is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_created(self.icalproperty);
   }

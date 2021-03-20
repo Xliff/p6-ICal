@@ -16,7 +16,6 @@ class ICal::Property::FreeBusy is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_freebusy(self.icalproperty);
   }

@@ -16,7 +16,6 @@ class ICal::Property::TZurl is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_tzurl(self.icalproperty);
   }

@@ -16,7 +16,6 @@ class ICal::Property::CSID is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_csid(self.icalproperty);
   }

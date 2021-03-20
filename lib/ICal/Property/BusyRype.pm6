@@ -16,7 +16,6 @@ class ICal::Property::BusyRype is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_busyrype(self.icalproperty);
   }

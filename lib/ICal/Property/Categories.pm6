@@ -16,7 +16,6 @@ class ICal::Property::Categories is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_categories(self.icalproperty);
   }

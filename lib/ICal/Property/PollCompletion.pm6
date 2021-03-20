@@ -16,7 +16,6 @@ class ICal::Property::PollCompletion is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_pollcompletion(self.icalproperty);
   }

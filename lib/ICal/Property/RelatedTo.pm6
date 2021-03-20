@@ -16,7 +16,6 @@ class ICal::Property::RelatedTo is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_relatedto(self.icalproperty);
   }

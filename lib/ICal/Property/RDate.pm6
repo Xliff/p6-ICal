@@ -16,7 +16,6 @@ class ICal::Property::RDate is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_rdate(self.icalproperty);
   }

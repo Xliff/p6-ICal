@@ -17,7 +17,6 @@ class ICal::Property::Repeat is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_repeat(self.icalproperty);
   }

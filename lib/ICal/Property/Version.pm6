@@ -16,7 +16,6 @@ class ICal::Property::Version is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_version(self.icalproperty);
   }

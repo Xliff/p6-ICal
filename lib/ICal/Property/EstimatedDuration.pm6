@@ -16,7 +16,6 @@ class ICal::Property::EstimatedDuration is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_estimatedduration(self.icalproperty);
   }

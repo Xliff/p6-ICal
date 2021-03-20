@@ -16,7 +16,6 @@ class ICal::Property::Attendee is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_attendee(self.icalproperty);
   }

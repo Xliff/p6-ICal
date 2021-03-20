@@ -16,7 +16,6 @@ class ICal::Property::PatchVersion is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_patchversion(self.icalproperty);
   }

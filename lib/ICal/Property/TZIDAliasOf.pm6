@@ -16,7 +16,6 @@ class ICal::Property::TZIDAliasOf is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_tzidaliasof(self.icalproperty);
   }

@@ -16,7 +16,6 @@ class ICal::Property::XlicClass is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_xlicclass(self.icalproperty);
   }

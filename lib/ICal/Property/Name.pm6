@@ -16,7 +16,6 @@ class ICal::Property::Name is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_name(self.icalproperty);
   }

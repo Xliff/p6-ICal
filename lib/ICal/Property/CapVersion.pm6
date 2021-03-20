@@ -16,7 +16,6 @@ class ICal::Property::CapVersion is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_capversion(self.icalproperty);
   }

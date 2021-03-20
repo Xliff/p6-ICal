@@ -16,7 +16,6 @@ class ICal::Property::MinDate is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_mindate(self.icalproperty);
   }

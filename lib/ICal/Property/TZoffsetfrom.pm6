@@ -17,7 +17,6 @@ class ICal::Property::TZoffsetfrom is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_tzoffsetfrom(self.icalproperty);
   }

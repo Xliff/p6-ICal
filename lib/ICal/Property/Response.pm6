@@ -17,7 +17,6 @@ class ICal::Property::Response is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_response(self.icalproperty);
   }

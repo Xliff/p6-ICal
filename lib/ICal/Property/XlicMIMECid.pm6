@@ -16,7 +16,6 @@ class ICal::Property::XlicMIMECid is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_xlicmimecid(self.icalproperty);
   }

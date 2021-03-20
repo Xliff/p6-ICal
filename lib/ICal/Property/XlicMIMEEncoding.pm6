@@ -16,7 +16,6 @@ class ICal::Property::XlicMIMEEncoding is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_xlicmimeencoding(self.icalproperty);
   }

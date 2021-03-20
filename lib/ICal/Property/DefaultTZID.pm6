@@ -16,7 +16,6 @@ class ICal::Property::DefaultTZID is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_defaulttzid(self.icalproperty);
   }

@@ -16,7 +16,6 @@ class ICal::Property::StoresExpanded is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_storesexpanded(self.icalproperty);
   }

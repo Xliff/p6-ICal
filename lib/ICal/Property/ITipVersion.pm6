@@ -16,7 +16,6 @@ class ICal::Property::ITipVersion is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_itipversion(self.icalproperty);
   }

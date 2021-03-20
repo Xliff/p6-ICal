@@ -17,7 +17,6 @@ class ICal::Property::PatchOrder is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_patchorder(self.icalproperty);
   }

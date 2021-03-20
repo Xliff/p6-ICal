@@ -16,7 +16,6 @@ class ICal::Property::XlicMIMEContenttype is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_xlicmimecontenttype(self.icalproperty);
   }

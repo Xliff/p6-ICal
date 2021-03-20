@@ -16,7 +16,6 @@ class ICal::Property::RefreshInterval is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_refreshinterval(self.icalproperty);
   }

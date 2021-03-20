@@ -16,7 +16,6 @@ class ICal::Property::PatchTarget is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_patchtarget(self.icalproperty);
   }

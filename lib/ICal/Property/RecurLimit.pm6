@@ -16,7 +16,6 @@ class ICal::Property::RecurLimit is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_recurlimit(self.icalproperty);
   }

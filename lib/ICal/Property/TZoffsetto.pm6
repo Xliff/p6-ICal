@@ -17,7 +17,6 @@ class ICal::Property::TZoffsetto is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_tzoffsetto(self.icalproperty);
   }

@@ -16,7 +16,6 @@ class ICal::Property::Decreed is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_decreed(self.icalproperty);
   }

@@ -16,7 +16,6 @@ class ICal::Property::CalScale is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_calscale(self.icalproperty);
   }

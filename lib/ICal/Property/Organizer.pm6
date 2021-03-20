@@ -16,7 +16,6 @@ class ICal::Property::Organizer is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_organizer(self.icalproperty);
   }

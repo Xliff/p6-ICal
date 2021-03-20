@@ -17,7 +17,6 @@ class ICal::Property::Expand is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_expand(self.icalproperty);
   }

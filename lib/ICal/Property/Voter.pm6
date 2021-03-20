@@ -16,7 +16,6 @@ class ICal::Property::Voter is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_voter(self.icalproperty);
   }

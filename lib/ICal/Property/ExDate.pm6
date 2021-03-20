@@ -16,7 +16,6 @@ class ICal::Property::ExDate is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_exdate(self.icalproperty);
   }

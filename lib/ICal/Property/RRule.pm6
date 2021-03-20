@@ -16,7 +16,6 @@ class ICal::Property::RRule is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_rrule(self.icalproperty);
   }

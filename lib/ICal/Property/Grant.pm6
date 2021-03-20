@@ -16,7 +16,6 @@ class ICal::Property::Grant is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_grant(self.icalproperty);
   }

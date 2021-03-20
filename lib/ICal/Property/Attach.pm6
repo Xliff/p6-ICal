@@ -16,7 +16,6 @@ class ICal::Property::Attach is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_attach(self.icalproperty);
   }

@@ -16,7 +16,6 @@ class ICal::Property::Permission is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_permission(self.icalproperty);
   }

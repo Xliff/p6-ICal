@@ -16,7 +16,6 @@ class ICal::Property::Location is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_location(self.icalproperty);
   }

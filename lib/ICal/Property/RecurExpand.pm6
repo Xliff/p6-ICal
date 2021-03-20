@@ -16,7 +16,6 @@ class ICal::Property::RecurExpand is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_recurexpand(self.icalproperty);
   }

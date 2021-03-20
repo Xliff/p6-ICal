@@ -16,7 +16,6 @@ class ICal::Property::Contact is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_contact(self.icalproperty);
   }

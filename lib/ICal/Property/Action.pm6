@@ -16,7 +16,6 @@ class ICal::Property::Action is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_action(self.icalproperty);
   }

@@ -16,7 +16,6 @@ class ICal::Property::XlicError is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_xlicerror(self.icalproperty);
   }

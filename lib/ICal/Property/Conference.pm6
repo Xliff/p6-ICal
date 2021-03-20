@@ -16,7 +16,6 @@ class ICal::Property::Conference is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_conference(self.icalproperty);
   }

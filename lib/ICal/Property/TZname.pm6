@@ -16,7 +16,6 @@ class ICal::Property::TZname is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_tzname(self.icalproperty);
   }

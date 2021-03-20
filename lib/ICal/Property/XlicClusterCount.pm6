@@ -16,7 +16,6 @@ class ICal::Property::XlicClusterCount is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_xlicclustercount(self.icalproperty);
   }

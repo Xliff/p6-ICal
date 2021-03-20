@@ -16,7 +16,6 @@ class ICal::Property::Url is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_url(self.icalproperty);
   }

@@ -16,7 +16,6 @@ class ICal::Property::PatchParameter is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_patchparameter(self.icalproperty);
   }

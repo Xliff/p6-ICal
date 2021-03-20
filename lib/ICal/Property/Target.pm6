@@ -16,7 +16,6 @@ class ICal::Property::Target is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_target(self.icalproperty);
   }

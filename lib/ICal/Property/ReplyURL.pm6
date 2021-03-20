@@ -16,7 +16,6 @@ class ICal::Property::ReplyURL is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_replyurl(self.icalproperty);
   }

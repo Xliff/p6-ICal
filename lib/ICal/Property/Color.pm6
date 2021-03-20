@@ -16,7 +16,6 @@ class ICal::Property::Color is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_color(self.icalproperty);
   }

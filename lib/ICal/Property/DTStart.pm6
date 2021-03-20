@@ -8,14 +8,14 @@ use ICal::Property;
 
 class ICal::Property::DTStart is ICal::Property {
 
-  method new (icaltimetype() $var, *@params) {
+  method new (icaltimetype() $var is copy, *@params, :$timezone) {
+    $var = icaltimetype.new($var, :$timezone) if $timezone;
     my $property = icalproperty_new_dtstart($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
-
 
   method get {
     icalproperty_get_dtstart(self.icalproperty);

@@ -16,7 +16,6 @@ class ICal::Property::Source is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_source(self.icalproperty);
   }

@@ -17,7 +17,6 @@ class ICal::Property::PercentComplete is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_percentcomplete(self.icalproperty);
   }

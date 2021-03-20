@@ -16,7 +16,6 @@ class ICal::Property::CarID is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_carid(self.icalproperty);
   }

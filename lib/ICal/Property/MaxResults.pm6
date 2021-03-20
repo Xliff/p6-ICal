@@ -17,7 +17,6 @@ class ICal::Property::MaxResults is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_maxresults(self.icalproperty);
   }

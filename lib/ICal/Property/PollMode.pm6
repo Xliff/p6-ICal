@@ -16,7 +16,6 @@ class ICal::Property::PollMode is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_pollmode(self.icalproperty);
   }

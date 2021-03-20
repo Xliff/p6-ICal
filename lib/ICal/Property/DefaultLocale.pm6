@@ -16,7 +16,6 @@ class ICal::Property::DefaultLocale is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_defaultlocale(self.icalproperty);
   }

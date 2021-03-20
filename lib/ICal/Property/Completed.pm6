@@ -16,7 +16,6 @@ class ICal::Property::Completed is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_completed(self.icalproperty);
   }

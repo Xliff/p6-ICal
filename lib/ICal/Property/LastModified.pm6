@@ -16,7 +16,6 @@ class ICal::Property::LastModified is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_lastmodified(self.icalproperty);
   }

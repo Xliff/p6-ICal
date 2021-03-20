@@ -16,7 +16,6 @@ class ICal::Property::Due is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_due(self.icalproperty);
   }

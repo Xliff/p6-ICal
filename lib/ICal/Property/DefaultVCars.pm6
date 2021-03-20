@@ -16,7 +16,6 @@ class ICal::Property::DefaultVCars is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_defaultvcars(self.icalproperty);
   }

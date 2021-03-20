@@ -16,7 +16,6 @@ class ICal::Property::Summary is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_summary(self.icalproperty);
   }

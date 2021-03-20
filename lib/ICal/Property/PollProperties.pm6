@@ -16,7 +16,6 @@ class ICal::Property::PollProperties is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_pollproperties(self.icalproperty);
   }

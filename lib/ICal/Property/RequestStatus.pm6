@@ -16,7 +16,6 @@ class ICal::Property::RequestStatus is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_requeststatus(self.icalproperty);
   }

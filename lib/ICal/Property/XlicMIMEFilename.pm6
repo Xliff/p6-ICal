@@ -16,7 +16,6 @@ class ICal::Property::XlicMIMEFilename is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_xlicmimefilename(self.icalproperty);
   }

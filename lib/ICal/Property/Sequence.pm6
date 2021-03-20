@@ -17,7 +17,6 @@ class ICal::Property::Sequence is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_sequence(self.icalproperty);
   }

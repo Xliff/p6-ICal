@@ -16,7 +16,6 @@ class ICal::Property::Resources is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_resources(self.icalproperty);
   }

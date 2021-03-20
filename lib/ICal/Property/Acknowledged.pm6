@@ -16,7 +16,6 @@ class ICal::Property::Acknowledged is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_acknowledged(self.icalproperty);
   }

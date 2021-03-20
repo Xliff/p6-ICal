@@ -16,7 +16,6 @@ class ICal::Property::Comment is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_comment(self.icalproperty);
   }

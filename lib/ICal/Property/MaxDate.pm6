@@ -16,7 +16,6 @@ class ICal::Property::MaxDate is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_maxdate(self.icalproperty);
   }

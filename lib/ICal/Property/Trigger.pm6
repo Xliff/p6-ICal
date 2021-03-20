@@ -16,7 +16,6 @@ class ICal::Property::Trigger is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_trigger(self.icalproperty);
   }

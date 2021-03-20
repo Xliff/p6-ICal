@@ -16,7 +16,6 @@ class ICal::Property::RecurAccepted is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_recuraccepted(self.icalproperty);
   }

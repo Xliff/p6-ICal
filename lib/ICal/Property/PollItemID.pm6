@@ -17,7 +17,6 @@ class ICal::Property::PollItemID is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_pollitemid(self.icalproperty);
   }

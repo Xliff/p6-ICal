@@ -16,7 +16,6 @@ class ICal::Property::XlicMIMECharset is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_xlicmimecharset(self.icalproperty);
   }

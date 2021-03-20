@@ -17,7 +17,6 @@ class ICal::Property::Priority is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_priority(self.icalproperty);
   }

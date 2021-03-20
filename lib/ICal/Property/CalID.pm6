@@ -16,7 +16,6 @@ class ICal::Property::CalID is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_calid(self.icalproperty);
   }

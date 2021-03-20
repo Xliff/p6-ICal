@@ -16,7 +16,6 @@ class ICal::Property::Duration is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_duration(self.icalproperty);
   }

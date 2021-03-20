@@ -16,7 +16,6 @@ class ICal::Property::Transp is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_transp(self.icalproperty);
   }

@@ -17,7 +17,6 @@ class ICal::Property::MaxComponentSize is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_maxcomponentsize(self.icalproperty);
   }

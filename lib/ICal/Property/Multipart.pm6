@@ -16,7 +16,6 @@ class ICal::Property::Multipart is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_multipart(self.icalproperty);
   }

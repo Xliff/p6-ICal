@@ -17,7 +17,6 @@ class ICal::Property::MaxResultsSize is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_maxresultssize(self.icalproperty);
   }

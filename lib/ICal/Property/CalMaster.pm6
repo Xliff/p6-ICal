@@ -16,7 +16,6 @@ class ICal::Property::CalMaster is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_calmaster(self.icalproperty);
   }

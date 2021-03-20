@@ -16,7 +16,6 @@ class ICal::Property::Cmd is ICal::Property {
     $o;
   }
 
-
   method get {
     icalproperty_get_cmd(self.icalproperty);
   }
