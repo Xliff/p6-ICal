@@ -621,6 +621,7 @@ class ICal::Component {
 
   method string_to_kind (ICal::Component:U: Str() $str)
     is also<string-to-kind>
+  {
     icalcomponent_kindEnum( icalcomponent_string_to_kind($str) );
   }
 
