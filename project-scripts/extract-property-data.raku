@@ -83,47 +83,47 @@ sub MAIN (:$force) {
     my $var-or-nv = $ndef ?? 'nv' !! 'var';
 
     # output new/get/set and raw defs
-    @all-derived.push:
-      qq:to/CLASSDEF/;
+    my $compunit = qq:to/CLASSDEF/;
+      ### lib/ICal/Property/{ $name }.pm6
 
-        ### lib/ICal/Property/{ $name }.pm6
+      class ICal::Property::{ $name } is ICal::Property \{
 
-        class ICal::Property::{ $name } is ICal::Property \{
+        method new ({ $ptype } \$var) \{
+          { $ndef }my \$property = icalproperty_new_{ $lname }(\${ $var-or-nv });
 
-          method new ({ $ptype } \$var) \{
-            { $ndef }my \$property = icalproperty_new_{ $lname }(\${ $var-or-nv });
-
-            \$property ?? self.bless( :\$property) !! Nil;
-          \}
-
-          method get \{
-            icalproperty_get_{ $lname }(self.icalproperty);
-          \}
-
-          method set ({ $ptype } \$v) \{
-            icalproperty_set_{ $lname }(self.icalproperty, \$v);
-          }
-
+          \$property ?? self.bless( :\$property) !! Nil;
         \}
-        sub icalproperty_new_{ $lname } ({ $ntype || $type })
-          returns icalproperty
-          is export
-          is native(icalendar)
-        \{ * \}
 
-        sub icalproperty_get_{ $lname } (icalproperty)
-          returns { $ntype || $type }
-          is export
-          is native(icalendar)
-        \{ * \}
+        method get \{
+          icalproperty_get_{ $lname }(self.icalproperty);
+        \}
 
-        sub icalproperty_set_{ $lname } (icalproperty, { $ntype || $type})
-          is export
-          is native(icalendar)
-        \{ * \}
-        CLASSDEF
+        method set ({ $ptype } \$v) \{
+          icalproperty_set_{ $lname }(self.icalproperty, \$v);
+        }
 
-     my $fio = "lib/ICal/Property/{ $name }.pm6".IO;
+      \}
+      sub icalproperty_new_{ $lname } ({ $ntype || $type })
+        returns icalproperty
+        is export
+        is native(icalendar)
+      \{ * \}
+
+      sub icalproperty_get_{ $lname } (icalproperty)
+        returns { $ntype || $type }
+        is export
+        is native(icalendar)
+      \{ * \}
+
+      sub icalproperty_set_{ $lname } (icalproperty, { $ntype || $type})
+        is export
+        is native(icalendar)
+      \{ * \}
+      CLASSDEF
+
+     my $fn  = "lib/ICal/Property/{ $name }.pm6";
+     my $fio = $fn.IO;
+     @all-derived.push: $fn;
      unless $fio.r || $force.not {
        say "Writing code to { $fio.absolute }...";
        $fio.spurt(qq:to/UNIT/) ;
@@ -133,7 +133,7 @@ sub MAIN (:$force) {
 
           use ICal::Property;
 
-          { @all-derived.tail }
+          { $compunit }
           UNIT
      }
   }
@@ -144,11 +144,7 @@ sub MAIN (:$force) {
     $fio-a.spurt(qq:to/ALL/)
       use v6;
 
-      use ICal::Raw::Types;
-
-      use ICal::Property;
-
-      { @all-derived.join("\n"); }
+      { @all-derived.map({ "need { $_ };" }).join("\n") }
       ALL
   }
 }
