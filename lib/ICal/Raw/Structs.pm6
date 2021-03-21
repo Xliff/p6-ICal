@@ -114,43 +114,6 @@ class icalgeotype is repr<CStruct> is export {
 	has double $.lon is rw;
 }
 
-class icalperiodtype {
-	has icaltimetype     $!start;
-	has icaltimetype     $!end;
-	has icaldurationtype $.duration is rw;
-
-	method start is rw {
-		Proxy.new:
-			FETCH => -> $ { $!start },
-			STORE => sub ($, $s) {
-				$!start = do given $s {
-					when icaldurationtype { $!start := $s }
-
-					when DateTime {
-						my $s1 = icaltimetype.new($s);
-						$!start := $s1;
-					}
-				}
-			}
-	}
-
-	method end is rw {
-		Proxy.new:
-			FETCH => -> $ { $!end },
-			STORE => sub ($, $e) {
-				$!end = do given $e {
-					when icaldurationtype { $!end := $e }
-
-					when DateTime {
-						my $e1 = icaltimetype.new($e);
-						$!end := $e1;
-					}
-				}
-			}
-	}
-
-}
-
 class icalreqstattype is repr<CStruct> is export {
 	has icalrequeststatus $.code  is rw;
 	has char              $.desc  is rw;
@@ -223,14 +186,21 @@ class icaltimetype {
 
     my $tz = icaltimetype.new;
 
-		$timezone = do given $timezone {
-			when ::('ICal::Timezone') { .icaltimezone }
-			when icaltimezone         { $_ }
-			when Str                  { ::('ICal::Timezone').new($_) }
+		# cw: This isn't working. Consider augmenting class with multi
+		#     specifically for timezone (ala :$timezone is required)
+		#     that is done in ICal::Timezone
+		if $timezone {
+			say ::('ICal::Timezone').^name;
 
-			default {
-				die "Cannot initialize an icaltimetype using a {
-					   .^name } as the timezone";
+			$timezone = do given $timezone {
+				when ::('ICal::Timezone') { .icaltimezone }
+				when icaltimezone         { $_ }
+				when Str                  { ::('ICal::Timezone').new($_) }
+
+				default {
+					die "Cannot initialize an icaltimetype using a {
+						   .^name } as the timezone";
+				}
 			}
 		}
 
@@ -243,6 +213,37 @@ class icaltimetype {
 		$tz.zone = $timezone // icaltimezone_get_utc_timezone();
     $tz;
   }
+
+}
+
+class icalperiodtype {
+	HAS icaltimetype     $!start;
+	HAS icaltimetype     $!end;
+	HAS icaldurationtype $.duration is rw;
+
+	method start is rw {
+		Proxy.new:
+			FETCH => -> $ { $!start },
+			STORE => sub ($, $s) {
+				for <year month day hour minute second> {
+					my uint32 $tcomp = $s."$_"().Int;
+		    	$!start."$_"() = $tcomp;
+				}
+				$!start.zone = $s.zone if $s.zone;
+			}
+	}
+
+	method end is rw {
+		Proxy.new:
+			FETCH => -> $ { $!end },
+			STORE => sub ($, $e) {
+				for <year month day hour minute second> {
+					my uint32 $tcomp = $e."$_"().Int;
+					$!end."$_"() = $tcomp;
+				}
+				$!end.zone = $e.zone if $e.zone;
+			}
+	}
 
 }
 
