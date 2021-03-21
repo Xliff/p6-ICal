@@ -5,11 +5,18 @@ use ICal::Raw::Types;
 use ICal::Component;
 use ICal::Property;
 use ICal::Timezone;
+use ICal::DerivedProperty;
 
 sub MAIN {
-  my $utc = (ICal::TimeZone.utc-timezone, icalperiodtype.new);
-  my ($atime, $rtime) = icaltimetype xx 2;
-  $rtime.start = DateTime.now.utc;
+  my ($atime, $rtime) = (
+    #icaltimetype.new(DateTime.now, timezone => 'America/New_York'),
+    icaltimetype.new(DateTime.now),
+    icalperiodtype.new
+  );
+  $atime.gist.say;
+  #$rtime.start = icaltimetype.new($atime, timezone => 'America/New_York');
+  $rtime.start = $atime;
+  $rtime.end = $rtime.start;
   $rtime.end.hour++;
 
   my $calendar = ICal::Component.new-from-parts(
@@ -18,7 +25,7 @@ sub MAIN {
     ICal::Property::ProdID('-//RDU Software//NONSGML HandCal//EN'),
     ICal::Component.new-from-parts(
       ICAL_VEVENT_COMPONENT,
-      ICal::Property::DateTimeStamp($atime),
+      ICal::Property::DTStamp($atime),
       ICal::Property::UID.new('guid-1.host.com'),
       ICal::Property::Organizer.new(
         'mailto:mrbig@host.com',
@@ -35,8 +42,11 @@ sub MAIN {
       ICal::Property::Class.new(ICAL_CLASS_PUBLIC),
       ICal::Property::Created.new($atime),
       ICal::Property::Summary.new('XYZ Project Review'),
-      ICal::Property::DateTimeStart.new($atime, timezone => 'US-Eastern'),
-      ICal::Property::DateTimeEnd.new($atime, timezone => 'US-Eastern'),
+      # Timezone was 'US-Eastern'
+      # ICal::Property::DateTimeStart.new($atime, timezone => 'America/New_York'),
+      # ICal::Property::DateTimeEnd.new($atime, timezone => 'America/New_York'),
+      ICal::Property::DTStart.new($atime),
+      ICal::Property::DTEnd.new($atime),
       ICal::Property::Location.new('1CP Conference Room 4350'),
     )
   );
