@@ -4,9 +4,9 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-### lib/ICal/Property/XlicMIMECid.pm6
+### lib/ICal/Property/XlicMIMECID.pm6
 
-class ICal::Property::XlicMIMECid is ICal::Property {
+class ICal::Property::XlicMIMECID is ICal::Property {
 
   method new (Str() $var, *@params) {
     my $property = icalproperty_new_xlicmimecid($var);
