@@ -4,9 +4,9 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-### lib/ICal/Property/Uid.pm6
+### lib/ICal/Property/UID.pm6
 
-class ICal::Property::Uid is ICal::Property {
+class ICal::Property::UID is ICal::Property {
 
   method new (Str() $var, *@params) {
     my $property = icalproperty_new_uid($var);
