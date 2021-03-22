@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::ProdID is ICal::Property {
 
   method new (Str() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::ProdID...";
     my $property = icalproperty_new_prodid($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

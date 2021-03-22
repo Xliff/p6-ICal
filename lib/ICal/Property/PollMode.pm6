@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::PollMode is ICal::Property {
 
   method new (icalproperty_pollmode $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::PollMode...";
     my $property = icalproperty_new_pollmode($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

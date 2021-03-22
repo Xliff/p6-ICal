@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::RequestStatus is ICal::Property {
 
   method new (icalreqstattype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::RequestStatus...";
     my $property = icalproperty_new_requeststatus($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

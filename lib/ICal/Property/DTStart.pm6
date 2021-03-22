@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::DTStart is ICal::Property {
 
   method new (icaltimetype() $var is copy, *@params, :$timezone) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::DTStart...";
     $var = icaltimetype.new($var, :$timezone) if $timezone;
     my $property = icalproperty_new_dtstart($var);
 

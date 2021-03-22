@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::DTStamp is ICal::Property {
 
   method new (icaltimetype() $var is copy, *@params, :$timezone) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::DTStamp...";
     $var = icaltimetype.new($var, :$timezone) if $timezone;
     my $property = icalproperty_new_dtstamp($var);
 

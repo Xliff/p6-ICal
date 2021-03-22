@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::PollItemID is ICal::Property {
 
   method new (Int() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::PollItemID...";
     my uint32 $nv = $var;
     my $property = icalproperty_new_pollitemid($nv);
 

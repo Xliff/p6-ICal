@@ -9,6 +9,9 @@ use ICal::Property;
 class ICal::Property::Attendee is ICal::Property {
 
   method new (Str() $var, *@params) {
+    say "V: { $var // 'NOVAR' }";
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Attendee...";
     my $property = icalproperty_new_attendee($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;
@@ -44,4 +47,3 @@ sub icalproperty_set_attendee (icalproperty, Str)
   is export
   is native(icalendar)
 { * }
-

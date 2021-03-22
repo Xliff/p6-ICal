@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::Geo is ICal::Property {
 
   method new (icalgeotype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Geo...";
     my $property = icalproperty_new_geo($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

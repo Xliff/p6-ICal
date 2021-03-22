@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::CarLevel is ICal::Property {
 
   method new (icalproperty_carlevel $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::CarLevel...";
     my $property = icalproperty_new_carlevel($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

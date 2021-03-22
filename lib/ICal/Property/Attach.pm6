@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::Attach is ICal::Property {
 
   method new (icalattach() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Attach...";
     my $property = icalproperty_new_attach($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

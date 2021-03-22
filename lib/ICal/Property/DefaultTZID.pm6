@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::DefaultTZID is ICal::Property {
 
   method new (Str() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::DefaultTZID...";
     my $property = icalproperty_new_defaulttzid($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

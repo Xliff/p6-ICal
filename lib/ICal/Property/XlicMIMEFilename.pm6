@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::XlicMIMEFilename is ICal::Property {
 
   method new (Str() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::XlicMIMEFilename...";
     my $property = icalproperty_new_xlicmimefilename($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

@@ -29,7 +29,8 @@ sub MAIN (:$force) {
 
     my ($name, $lname, $type) =
       ( %parameters{ .[1] }, (%parameters{ .[1] } // '').lc, .[2] );
-    $type = 'Str' if $type eq 'const char*';
+    $type = 'Str'    if $type eq 'const char*';
+    $type = 'uint32' if $type eq 'int';
 
     my $ptype = $type;
     $ptype = 'Int' unless $ptype eq 'Str';

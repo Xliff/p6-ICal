@@ -73,6 +73,16 @@ sub separate (Str() $s, Int() $p) is export {
 
 sub ArrayToCArray(\T, @a) is export {
   my $ca =  CArray[T].new;
+  @a = @a.map({
+    my $e = $_;
+    unless $_ ~~ T {
+      die "Cannot add an element of { .^name } to CArray since it is not {
+           T.^name }-compatible!"
+      unless .can(T.^name);
+      $e = ."{ T.^name }"()
+    }
+    $e;
+  });
   $ca[$_] = @a[$_] for ^@a.elems;
   $ca;
 }

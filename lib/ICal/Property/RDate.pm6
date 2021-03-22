@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::RDate is ICal::Property {
 
   method new (icaldatetimeperiodtype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::RDate...";
     my $property = icalproperty_new_rdate($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

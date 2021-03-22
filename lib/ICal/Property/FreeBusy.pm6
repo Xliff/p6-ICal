@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::FreeBusy is ICal::Property {
 
   method new (icalperiodtype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::FreeBusy...";
     my $property = icalproperty_new_freebusy($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::LastModified is ICal::Property {
 
   method new (icaltimetype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::LastModified...";
     my $property = icalproperty_new_lastmodified($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

@@ -9,8 +9,8 @@ use ICal::Parameter;
 class ICal::Parameter::Response is ICal::Parameter {
 
   method new (Int() $var) {
-    my int $nv        = $var;
-    my     $parameter = icalparameter_new_response($nv);
+    my uint32 $nv        = $var;
+    my        $parameter = icalparameter_new_response($nv);
 
     $parameter ?? self.bless( :$parameter ) !! Nil;
   }
@@ -25,19 +25,19 @@ class ICal::Parameter::Response is ICal::Parameter {
 
 }
 
-sub icalparameter_new_response (int)
+sub icalparameter_new_response (uint32)
   returns icalparameter
   is export
   is native(icalendar)
 { * }
 
 sub icalparameter_get_response (icalparameter)
-  returns int
+  returns uint32
   is export
   is native(icalendar)
 { * }
 
-sub icalparameter_set_response (icalparameter, int)
+sub icalparameter_set_response (icalparameter, uint32)
   is export
   is native(icalendar)
 { * }

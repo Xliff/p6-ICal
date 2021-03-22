@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::Trigger is ICal::Property {
 
   method new (icaltriggertype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Trigger...";
     my $property = icalproperty_new_trigger($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

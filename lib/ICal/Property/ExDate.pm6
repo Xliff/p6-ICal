@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::ExDate is ICal::Property {
 
   method new (icaltimetype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::ExDate...";
     my $property = icalproperty_new_exdate($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

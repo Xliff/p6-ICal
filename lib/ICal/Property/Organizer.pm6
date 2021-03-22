@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::Organizer is ICal::Property {
 
   method new (Str() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Organizer...";
     my $property = icalproperty_new_organizer($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::DefaultVCars is ICal::Property {
 
   method new (Str() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::DefaultVCars...";
     my $property = icalproperty_new_defaultvcars($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

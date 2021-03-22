@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::RefreshInterval is ICal::Property {
 
   method new (icaldurationtype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::RefreshInterval...";
     my $property = icalproperty_new_refreshinterval($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

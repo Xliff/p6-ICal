@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::Cmd is ICal::Property {
 
   method new (icalproperty_cmd $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Cmd...";
     my $property = icalproperty_new_cmd($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

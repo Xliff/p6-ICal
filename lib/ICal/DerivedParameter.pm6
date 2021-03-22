@@ -23,7 +23,7 @@ need ICal::Parameter::Range;
 need ICal::Parameter::Related;
 need ICal::Parameter::RelType;
 need ICal::Parameter::Role;
-need ICal::Parameter::Rsvp;
+need ICal::Parameter::RSVP;
 need ICal::Parameter::SentBy;
 need ICal::Parameter::TZID;
 need ICal::Parameter::Value;

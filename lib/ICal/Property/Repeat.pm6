@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::Repeat is ICal::Property {
 
   method new (Int() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Repeat...";
     my uint32 $nv = $var;
     my $property = icalproperty_new_repeat($nv);
 

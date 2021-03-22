@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::Priority is ICal::Property {
 
   method new (Int() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Priority...";
     my uint32 $nv = $var;
     my $property = icalproperty_new_priority($nv);
 

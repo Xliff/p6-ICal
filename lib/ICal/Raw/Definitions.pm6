@@ -1,4 +1,4 @@
-use v6.c;
+use v6;
 
 use NativeCall;
 
@@ -6,7 +6,8 @@ use ICal::Roles::Pointers;
 
 unit package ICal::Raw::Definitions;
 
-constant icalendar is export = 'ical',v3;
+constant icalendar  is export = 'ical',v3;
+#constant icalhelper is export = %?RESOURCES<lib/icalhelper.so>;
 
 constant realUInt is export = $*KERNEL.bits == 32 ?? uint32 !! uint64;
 constant realInt  is export = $*KERNEL.bits == 32 ?? int32  !! int64;
@@ -41,4 +42,4 @@ class icaltimezone       is repr<CPointer> does ICal::Roles::Pointers is export 
 class icalcomponent      is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalproperty       is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalparameter      is repr<CPointer> does ICal::Roles::Pointers is export { }
-class icalvalue          is repr<CPointer> does ICal::Roles::Pointers is export { }
+class icalvalue          is repr<CPointer> does ICal::Roles::Pointers is export { }\

@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::XlicMIMECharset is ICal::Property {
 
   method new (Str() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::XlicMIMECharset...";
     my $property = icalproperty_new_xlicmimecharset($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

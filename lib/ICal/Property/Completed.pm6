@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::Completed is ICal::Property {
 
   method new (icaltimetype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Completed...";
     my $property = icalproperty_new_completed($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

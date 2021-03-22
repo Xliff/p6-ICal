@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::PollCompletion is ICal::Property {
 
   method new (icalproperty_pollcompletion $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::PollCompletion...";
     my $property = icalproperty_new_pollcompletion($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::PercentComplete is ICal::Property {
 
   method new (Int() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::PercentComplete...";
     my uint32 $nv = $var;
     my $property = icalproperty_new_percentcomplete($nv);
 

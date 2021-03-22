@@ -47,31 +47,36 @@ class ICal::Component {
   method new_from_parts($type, *@parts) is also<new-from-parts> {
     my $c = self.new($type);
 
-    sub addapart ($_) {
-      unless $_ ~~ icalcomponent {
-        when ICal::Component        { .icalcomponent; }
-        when .^can('icalcomponent') { .icalcomponent; }
+    sub resolvePart ($_) {
+      my $returnedPart = $_;
+      BLOCK: loop {
+        $returnedPart = do {
+          when ICal::Component        { .icalcomponent; last BLOCK }
+          when .^can('icalcomponent') { .icalcomponent; last BLOCK }
+          default                     { $_ }
+        } unless $_ ~~ icalcomponent;
+
+        $returnedPart = do {
+          when ICal::Property         { .icalproperty; last BLOCK }
+          when .^can('icalproperty')  { .icalproperty; last BLOCK }
+          default                     { $_ }
+        } unless $_ ~~ icalproperty;
+
+        die "Invalid item of type { .^name } found.\n{
+             ''}All parameters passed to .new_from_components must contain{
+             ''} IComponent or IProperty-compatible elements!"
+        unless $returnedPart ~~ (icalcomponent, icalproperty).any;
       }
-      unless $_ ~~ icalproperty {
-        when ICal::Property         { .icalproperty; }
-        when .^can('icalproperty')  { .icalproperty; }
-      }
+      $returnedPart;
     }
 
-    @parts = @parts.map({
-      LABEL: {
-        {
-          when     Array { for .List { addapart($_) } }
-          default        {             addapart($_)   }
-        }
-      }
-      die "All parameters passed to .new_crom_components must contain{
-        '' } IComponent or IProperty-compatible elements!"
-      unless $_ ~~ (icalcomponent, icalproperty).any;
-    });
+    @parts = gather for @parts {
+      when     Array { for .List { take resolvePart($_) } }
+      default        {             take resolvePart($_)   }
+    }
     for @parts {
-        when icalproperty  { self.add_property($_)  }
-        when icalcomponent { self.add_component($_) }
+      when icalproperty  { self.add_property($_)  }
+      when icalcomponent { self.add_component($_) }
     }
 
     $c;
@@ -229,6 +234,10 @@ class ICal::Component {
     icalcomponent_new_xvote();
   }
 
+  method ICal::Raw::Definitions::icalcomponent
+    is also<icalcomponent>
+  { $!icc }
+
   method add_component (icalcomponent() $child) is also<add-component> {
     icalcomponent_add_component($!icc, $child);
   }
@@ -237,7 +246,12 @@ class ICal::Component {
     icalcomponent_add_property($!icc, $property);
 
   }
-  method as_ical_string is also<as-ical-string> {
+  method as_ical_string
+    is also<
+      as-ical-string
+      Str
+    >
+  {
     icalcomponent_as_ical_string($!icc);
   }
 

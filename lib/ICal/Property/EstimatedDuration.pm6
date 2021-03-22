@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::EstimatedDuration is ICal::Property {
 
   method new (icaldurationtype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::EstimatedDuration...";
     my $property = icalproperty_new_estimatedduration($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;

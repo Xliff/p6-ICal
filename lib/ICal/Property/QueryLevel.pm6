@@ -9,6 +9,8 @@ use ICal::Property;
 class ICal::Property::QueryLevel is ICal::Property {
 
   method new (icalproperty_querylevel $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::QueryLevel...";
     my $property = icalproperty_new_querylevel($var);
 
     my $o = $property ?? self.bless( :$property) !! Nil;
