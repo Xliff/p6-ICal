@@ -29,7 +29,8 @@ sub MAIN (:$force) {
 
     my ($name, $lname, $type) =
       ( %parameters{ .[1] }, (%parameters{ .[1] } // '').lc, .[2] );
-    $type = 'Str' if $type eq 'const char*';
+    $type = 'Str'    if $type eq 'const char*';
+    $type = 'uint32' if $type eq 'int';
 
     my $ptype = $type;
     $ptype = 'Int' unless $ptype eq 'Str';
@@ -67,18 +68,18 @@ sub MAIN (:$force) {
       sub icalparameter_new_{ $lname } ({ $type })
         returns icalparameter
         is export
-        is native(icalendar)
+        is native(ical)
       \{ * \}
 
       sub icalparameter_get_{ $lname } (icalparameter)
         returns { $type }
         is export
-        is native(icalendar)
+        is native(ical)
       \{ * \}
 
       sub icalparameter_set_{ $lname } (icalparameter, { $type })
         is export
-        is native(icalendar)
+        is native(ical)
       \{ * \}
       CLASSDEF
 
