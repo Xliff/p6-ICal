@@ -27,17 +27,17 @@ class ICal::Parameter::Email is ICal::Parameter {
 sub icalparameter_new_email (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_email (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_email (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

@@ -27,17 +27,17 @@ class ICal::Parameter::ScheduleStatus is ICal::Parameter {
 sub icalparameter_new_schedulestatus (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_schedulestatus (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_schedulestatus (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

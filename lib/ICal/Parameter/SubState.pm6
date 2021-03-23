@@ -28,17 +28,17 @@ class ICal::Parameter::SubState is ICal::Parameter {
 sub icalparameter_new_substate (icalparameter_substate)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_substate (icalparameter)
   returns icalparameter_substate
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_substate (icalparameter, icalparameter_substate)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

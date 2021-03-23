@@ -27,17 +27,17 @@ class ICal::Parameter::Options is ICal::Parameter {
 sub icalparameter_new_options (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_options (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_options (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

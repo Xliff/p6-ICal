@@ -27,17 +27,17 @@ class ICal::Parameter::Dir is ICal::Parameter {
 sub icalparameter_new_dir (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_dir (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_dir (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

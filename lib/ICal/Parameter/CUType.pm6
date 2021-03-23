@@ -28,17 +28,17 @@ class ICal::Parameter::CUType is ICal::Parameter {
 sub icalparameter_new_cutype (icalparameter_cutype)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_cutype (icalparameter)
   returns icalparameter_cutype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_cutype (icalparameter, icalparameter_cutype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

@@ -28,17 +28,17 @@ class ICal::Parameter::FBType is ICal::Parameter {
 sub icalparameter_new_fbtype (icalparameter_fbtype)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_fbtype (icalparameter)
   returns icalparameter_fbtype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_fbtype (icalparameter, icalparameter_fbtype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

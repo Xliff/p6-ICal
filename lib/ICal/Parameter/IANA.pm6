@@ -27,17 +27,17 @@ class ICal::Parameter::IANA is ICal::Parameter {
 sub icalparameter_new_iana (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_iana (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_iana (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

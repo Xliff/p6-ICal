@@ -28,17 +28,17 @@ class ICal::Parameter::Range is ICal::Parameter {
 sub icalparameter_new_range (icalparameter_range)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_range (icalparameter)
   returns icalparameter_range
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_range (icalparameter, icalparameter_range)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

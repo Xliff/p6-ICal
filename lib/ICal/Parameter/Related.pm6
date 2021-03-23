@@ -28,17 +28,17 @@ class ICal::Parameter::Related is ICal::Parameter {
 sub icalparameter_new_related (icalparameter_related)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_related (icalparameter)
   returns icalparameter_related
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_related (icalparameter, icalparameter_related)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

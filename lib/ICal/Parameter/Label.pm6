@@ -27,17 +27,17 @@ class ICal::Parameter::Label is ICal::Parameter {
 sub icalparameter_new_label (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_label (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_label (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

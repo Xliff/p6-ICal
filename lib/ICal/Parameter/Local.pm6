@@ -28,17 +28,17 @@ class ICal::Parameter::Local is ICal::Parameter {
 sub icalparameter_new_local (icalparameter_local)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_local (icalparameter)
   returns icalparameter_local
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_local (icalparameter, icalparameter_local)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

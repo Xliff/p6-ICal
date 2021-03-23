@@ -27,17 +27,17 @@ class ICal::Parameter::Latency is ICal::Parameter {
 sub icalparameter_new_latency (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_latency (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_latency (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

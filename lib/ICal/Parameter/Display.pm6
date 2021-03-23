@@ -28,17 +28,17 @@ class ICal::Parameter::Display is ICal::Parameter {
 sub icalparameter_new_display (icalparameter_display)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_display (icalparameter)
   returns icalparameter_display
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_display (icalparameter, icalparameter_display)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

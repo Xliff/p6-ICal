@@ -27,17 +27,17 @@ class ICal::Parameter::ManagedID is ICal::Parameter {
 sub icalparameter_new_managedid (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_managedid (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_managedid (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

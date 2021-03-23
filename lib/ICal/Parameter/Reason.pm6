@@ -8,9 +8,8 @@ use ICal::Parameter;
 
 class ICal::Parameter::Reason is ICal::Parameter {
 
-  method new (Int() $var) {
-    my icalparameter_required $nv        = $var;
-    my                        $parameter = icalparameter_new_reason($nv);
+  method new (Str() $var) {
+    my $parameter = icalparameter_new_reason($var);
 
     $parameter ?? self.bless( :$parameter ) !! Nil;
   }
@@ -19,26 +18,26 @@ class ICal::Parameter::Reason is ICal::Parameter {
     icalparameter_get_reason(self.icalparameter);
   }
 
-  method set (Int() $v) {
+  method set (Str() $v) {
     icalparameter_set_reason(self.icalparameter, $v);
   }
 
 }
 
-sub icalparameter_new_reason (icalparameter_required)
+sub icalparameter_new_reason (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_reason (icalparameter)
-  returns icalparameter_required
+  returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
-sub icalparameter_set_reason (icalparameter, icalparameter_required)
+sub icalparameter_set_reason (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

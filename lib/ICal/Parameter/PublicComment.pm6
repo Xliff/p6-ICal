@@ -27,17 +27,17 @@ class ICal::Parameter::PublicComment is ICal::Parameter {
 sub icalparameter_new_publiccomment (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_publiccomment (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_publiccomment (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

@@ -27,17 +27,17 @@ class ICal::Parameter::SentBy is ICal::Parameter {
 sub icalparameter_new_sentby (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_sentby (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_sentby (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

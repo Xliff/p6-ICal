@@ -28,17 +28,17 @@ class ICal::Parameter::StayInformed is ICal::Parameter {
 sub icalparameter_new_stayinformed (icalparameter_stayinformed)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_stayinformed (icalparameter)
   returns icalparameter_stayinformed
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_stayinformed (icalparameter, icalparameter_stayinformed)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

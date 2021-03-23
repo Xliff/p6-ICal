@@ -28,17 +28,17 @@ class ICal::Parameter::PatchAction is ICal::Parameter {
 sub icalparameter_new_patchaction (icalparameter_patchaction)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_patchaction (icalparameter)
   returns icalparameter_patchaction
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_patchaction (icalparameter, icalparameter_patchaction)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

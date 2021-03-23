@@ -28,17 +28,17 @@ class ICal::Parameter::PartStat is ICal::Parameter {
 sub icalparameter_new_partstat (icalparameter_partstat)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_partstat (icalparameter)
   returns icalparameter_partstat
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_partstat (icalparameter, icalparameter_partstat)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

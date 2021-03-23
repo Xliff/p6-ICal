@@ -4,9 +4,9 @@ use ICal::Raw::Types;
 
 use ICal::Parameter;
 
-### lib/ICal/Parameter/Rsvp.pm6
+### lib/ICal/Parameter/RSVP.pm6
 
-class ICal::Parameter::Rsvp is ICal::Parameter {
+class ICal::Parameter::RSVP is ICal::Parameter {
 
   method new (Int() $var) {
     my icalparameter_rsvp $nv        = $var;
@@ -28,17 +28,17 @@ class ICal::Parameter::Rsvp is ICal::Parameter {
 sub icalparameter_new_rsvp (icalparameter_rsvp)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_rsvp (icalparameter)
   returns icalparameter_rsvp
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_rsvp (icalparameter, icalparameter_rsvp)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

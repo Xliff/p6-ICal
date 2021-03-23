@@ -1,6 +1,5 @@
 use v6;
 
-need ICal::Parameter::;
 need ICal::Parameter::ActionParam;
 need ICal::Parameter::CN;
 need ICal::Parameter::CUType;
@@ -23,14 +22,13 @@ need ICal::Parameter::Range;
 need ICal::Parameter::Related;
 need ICal::Parameter::RelType;
 need ICal::Parameter::Role;
-need ICal::Parameter::Rsvp;
+need ICal::Parameter::RSVP;
 need ICal::Parameter::SentBy;
 need ICal::Parameter::TZID;
 need ICal::Parameter::Value;
 need ICal::Parameter::X;
 need ICal::Parameter::XLicCompareType;
 need ICal::Parameter::XLicErrorType;
-need ICal::Parameter::;
 need ICal::Parameter::IANA;
 need ICal::Parameter::ScheduleAgent;
 need ICal::Parameter::ScheduleForceSend;

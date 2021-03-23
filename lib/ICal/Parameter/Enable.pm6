@@ -28,17 +28,17 @@ class ICal::Parameter::Enable is ICal::Parameter {
 sub icalparameter_new_enable (icalparameter_enable)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_enable (icalparameter)
   returns icalparameter_enable
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_enable (icalparameter, icalparameter_enable)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

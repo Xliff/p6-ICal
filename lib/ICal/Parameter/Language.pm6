@@ -27,17 +27,17 @@ class ICal::Parameter::Language is ICal::Parameter {
 sub icalparameter_new_language (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_language (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_language (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

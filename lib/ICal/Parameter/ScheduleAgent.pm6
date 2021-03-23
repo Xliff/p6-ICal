@@ -28,17 +28,17 @@ class ICal::Parameter::ScheduleAgent is ICal::Parameter {
 sub icalparameter_new_scheduleagent (icalparameter_scheduleagent)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_scheduleagent (icalparameter)
   returns icalparameter_scheduleagent
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_scheduleagent (icalparameter, icalparameter_scheduleagent)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

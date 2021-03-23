@@ -27,17 +27,17 @@ class ICal::Parameter::TZID is ICal::Parameter {
 sub icalparameter_new_tzid (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_tzid (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_tzid (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

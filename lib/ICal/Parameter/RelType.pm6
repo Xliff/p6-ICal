@@ -28,17 +28,17 @@ class ICal::Parameter::RelType is ICal::Parameter {
 sub icalparameter_new_reltype (icalparameter_reltype)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_reltype (icalparameter)
   returns icalparameter_reltype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_reltype (icalparameter, icalparameter_reltype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

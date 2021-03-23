@@ -27,17 +27,17 @@ class ICal::Parameter::Localize is ICal::Parameter {
 sub icalparameter_new_localize (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_localize (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_localize (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

@@ -28,17 +28,17 @@ class ICal::Parameter::ScheduleForceSend is ICal::Parameter {
 sub icalparameter_new_scheduleforcesend (icalparameter_scheduleforcesend)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_scheduleforcesend (icalparameter)
   returns icalparameter_scheduleforcesend
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_scheduleforcesend (icalparameter, icalparameter_scheduleforcesend)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

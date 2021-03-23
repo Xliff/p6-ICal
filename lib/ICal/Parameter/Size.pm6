@@ -27,17 +27,17 @@ class ICal::Parameter::Size is ICal::Parameter {
 sub icalparameter_new_size (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_size (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_size (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

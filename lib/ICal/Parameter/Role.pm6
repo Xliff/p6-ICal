@@ -28,17 +28,17 @@ class ICal::Parameter::Role is ICal::Parameter {
 sub icalparameter_new_role (icalparameter_role)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_role (icalparameter)
   returns icalparameter_role
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_role (icalparameter, icalparameter_role)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

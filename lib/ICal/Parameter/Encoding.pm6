@@ -28,17 +28,17 @@ class ICal::Parameter::Encoding is ICal::Parameter {
 sub icalparameter_new_encoding (icalparameter_encoding)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_encoding (icalparameter)
   returns icalparameter_encoding
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_encoding (icalparameter, icalparameter_encoding)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

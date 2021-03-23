@@ -28,17 +28,17 @@ class ICal::Parameter::ActionParam is ICal::Parameter {
 sub icalparameter_new_actionparam (icalparameter_action)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_actionparam (icalparameter)
   returns icalparameter_action
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_actionparam (icalparameter, icalparameter_action)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

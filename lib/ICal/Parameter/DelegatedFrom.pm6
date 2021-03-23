@@ -27,17 +27,17 @@ class ICal::Parameter::DelegatedFrom is ICal::Parameter {
 sub icalparameter_new_delegatedfrom (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_delegatedfrom (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_delegatedfrom (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

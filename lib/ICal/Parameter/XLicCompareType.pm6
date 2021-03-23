@@ -28,17 +28,17 @@ class ICal::Parameter::XLicCompareType is ICal::Parameter {
 sub icalparameter_new_xliccomparetype (icalparameter_xliccomparetype)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_xliccomparetype (icalparameter)
   returns icalparameter_xliccomparetype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_xliccomparetype (icalparameter, icalparameter_xliccomparetype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

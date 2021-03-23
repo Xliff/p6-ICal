@@ -28,17 +28,17 @@ class ICal::Parameter::Feature is ICal::Parameter {
 sub icalparameter_new_feature (icalparameter_feature)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_feature (icalparameter)
   returns icalparameter_feature
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_feature (icalparameter, icalparameter_feature)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

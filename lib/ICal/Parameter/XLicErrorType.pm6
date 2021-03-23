@@ -28,17 +28,17 @@ class ICal::Parameter::XLicErrorType is ICal::Parameter {
 sub icalparameter_new_xlicerrortype (icalparameter_xlicerrortype)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_xlicerrortype (icalparameter)
   returns icalparameter_xlicerrortype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_xlicerrortype (icalparameter, icalparameter_xlicerrortype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

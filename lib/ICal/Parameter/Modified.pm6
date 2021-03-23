@@ -27,17 +27,17 @@ class ICal::Parameter::Modified is ICal::Parameter {
 sub icalparameter_new_modified (Str)
   returns icalparameter
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_get_modified (icalparameter)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalparameter_set_modified (icalparameter, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
