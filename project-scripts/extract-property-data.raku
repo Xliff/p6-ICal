@@ -109,13 +109,19 @@ sub MAIN (:$force) {
       $var-copy = ' is copy';
     }
 
+    my $compunit-fqn = "ICal::Property::{ $name }";
+    my $new-prefix = $type eq 'icaltimetype' ?? 'icalpropertyhelper'
+                                             !! 'icalproperty';
+    my $new-lib = $type eq 'icaltimetype' ?? 'icalhelper' !! 'ical';
     my $new-method = qq:to/METHOD/;
         method new ($ptype \$var{ $var-copy }, *\@params{ $tz-add }) \{
+          # To be removed or placed behind a sentinel...
+          say "Creating a { $compunit-fqn }...";
           { $ndef }{
-            $tz-handling }my \$property = icalproperty_new_{ $lname }(\${
+            $tz-handling }my \$property = { $new-prefix }_new_{ $lname }(\${
             $var-or-nv });
 
-          my \$o = \$property ?? self.bless( :\$property) !! Nil;
+          my \$o = \$property ?? self.bless( :\$property ) !! Nil;
           \$o.add_parameters(\@params) if +\@params;
           \$o;
         \}
@@ -137,7 +143,6 @@ sub MAIN (:$force) {
     # }
 
     # output new/get/set and raw defs
-    my $compunit-fqn = "ICal::Property::{ $name }";
     my $compunit = qq:to/CLASSDEF/;
       ### lib/ICal/Property/{ $name }.pm6
 
@@ -156,21 +161,21 @@ sub MAIN (:$force) {
 
       { $aliased }
 
-      sub icalproperty_new_{ $lname } ({ $ntype || $type })
+      sub { $new-prefix }_new_{ $lname } ({ $ntype || $type })
         returns icalproperty
         is export
-        is native(icalendar)
+        is native({ $new-lib })
       \{ * \}
 
       sub icalproperty_get_{ $lname } (icalproperty)
         returns { $ntype || $type }
         is export
-        is native(icalendar)
+        is native(ical)
       \{ * \}
 
       sub icalproperty_set_{ $lname } (icalproperty, { $ntype || $type})
         is export
-        is native(icalendar)
+        is native(ical)
       \{ * \}
       CLASSDEF
 
