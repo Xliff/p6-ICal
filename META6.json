@@ -1,0 +1,23 @@
+{
+    "depends": [ ],
+    "description": "Perl6 API Bindings for Amazon AWS EC2",
+    "version": "r0.0.1",
+    "meta-version": "0",
+    "license": "",
+    "source-url": "https://github.com/Xliff/p6-ICal.git",
+    "provides": {
+    },
+
+    "name": "p6-ICal",
+    "perl": "6",
+    "test-depends": [
+      "Test::META"
+    ],
+    "resources": [
+      "lib/icalhelper.so"
+    ],
+    "build-depends": [
+    ],
+    "support": { "source": null },
+    "authors": [ "clifton.wood@gmail.com" ]
+}
