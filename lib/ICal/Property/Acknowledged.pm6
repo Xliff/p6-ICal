@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::Acknowledged is ICal::Property {
 
   method new (icaltimetype() $var, *@params) {
-    my $property = icalproperty_new_acknowledged($var);
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Acknowledged...";
+    my $property = icalpropertyhelper_new_acknowledged($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -28,20 +30,20 @@ class ICal::Property::Acknowledged is ICal::Property {
 
 
 
-sub icalproperty_new_acknowledged (icaltimetype)
+sub icalpropertyhelper_new_acknowledged (icaltimetype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(icalhelper)
 { * }
 
 sub icalproperty_get_acknowledged (icalproperty)
   returns icaltimetype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_acknowledged (icalproperty, icaltimetype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

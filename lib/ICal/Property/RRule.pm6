@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::RRule is ICal::Property {
 
   method new (icalrecurrencetype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::RRule...";
     my $property = icalproperty_new_rrule($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::RRule is ICal::Property {
 sub icalproperty_new_rrule (icalrecurrencetype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_rrule (icalproperty)
   returns icalrecurrencetype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_rrule (icalproperty, icalrecurrencetype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

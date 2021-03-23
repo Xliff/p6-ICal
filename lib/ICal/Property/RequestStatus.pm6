@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::RequestStatus is ICal::Property {
 
   method new (icalreqstattype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::RequestStatus...";
     my $property = icalproperty_new_requeststatus($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::RequestStatus is ICal::Property {
 sub icalproperty_new_requeststatus (icalreqstattype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_requeststatus (icalproperty)
   returns icalreqstattype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_requeststatus (icalproperty, icalreqstattype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

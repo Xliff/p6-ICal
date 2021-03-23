@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::Due is ICal::Property {
 
   method new (icaltimetype() $var, *@params) {
-    my $property = icalproperty_new_due($var);
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Due...";
+    my $property = icalpropertyhelper_new_due($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -28,20 +30,20 @@ class ICal::Property::Due is ICal::Property {
 
 
 
-sub icalproperty_new_due (icaltimetype)
+sub icalpropertyhelper_new_due (icaltimetype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(icalhelper)
 { * }
 
 sub icalproperty_get_due (icalproperty)
   returns icaltimetype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_due (icalproperty, icaltimetype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

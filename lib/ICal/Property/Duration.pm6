@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::Duration is ICal::Property {
 
   method new (icaldurationtype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Duration...";
     my $property = icalproperty_new_duration($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::Duration is ICal::Property {
 sub icalproperty_new_duration (icaldurationtype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_duration (icalproperty)
   returns icaldurationtype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_duration (icalproperty, icaldurationtype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

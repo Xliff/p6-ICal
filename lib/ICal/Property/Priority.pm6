@@ -9,10 +9,12 @@ use ICal::Property;
 class ICal::Property::Priority is ICal::Property {
 
   method new (Int() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Priority...";
     my uint32 $nv = $var;
     my $property = icalproperty_new_priority($nv);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -32,17 +34,17 @@ class ICal::Property::Priority is ICal::Property {
 sub icalproperty_new_priority (uint32)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_priority (icalproperty)
   returns uint32
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_priority (icalproperty, uint32)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

@@ -9,10 +9,12 @@ use ICal::Property;
 class ICal::Property::DTEnd is ICal::Property {
 
   method new (icaltimetype() $var is copy, *@params, :$timezone) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::DTEnd...";
     $var = icaltimetype.new($var, :$timezone) if $timezone;
-    my $property = icalproperty_new_dtend($var);
+    my $property = icalpropertyhelper_new_dtend($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -29,20 +31,20 @@ class ICal::Property::DTEnd is ICal::Property {
 
 our subset ICal::Property::DateTimeEnd is export of ICal::Property::DTEnd;
 
-sub icalproperty_new_dtend (icaltimetype)
+sub icalpropertyhelper_new_dtend (icaltimetype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(icalhelper)
 { * }
 
 sub icalproperty_get_dtend (icalproperty)
   returns icaltimetype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_dtend (icalproperty, icaltimetype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::Trigger is ICal::Property {
 
   method new (icaltriggertype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Trigger...";
     my $property = icalproperty_new_trigger($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::Trigger is ICal::Property {
 sub icalproperty_new_trigger (icaltriggertype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_trigger (icalproperty)
   returns icaltriggertype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_trigger (icalproperty, icaltriggertype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

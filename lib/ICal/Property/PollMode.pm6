@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::PollMode is ICal::Property {
 
   method new (icalproperty_pollmode $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::PollMode...";
     my $property = icalproperty_new_pollmode($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::PollMode is ICal::Property {
 sub icalproperty_new_pollmode (icalproperty_pollmode)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_pollmode (icalproperty)
   returns icalproperty_pollmode
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_pollmode (icalproperty, icalproperty_pollmode)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

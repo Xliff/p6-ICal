@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::TaskMode is ICal::Property {
 
   method new (icalproperty_taskmode $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::TaskMode...";
     my $property = icalproperty_new_taskmode($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::TaskMode is ICal::Property {
 sub icalproperty_new_taskmode (icalproperty_taskmode)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_taskmode (icalproperty)
   returns icalproperty_taskmode
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_taskmode (icalproperty, icalproperty_taskmode)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

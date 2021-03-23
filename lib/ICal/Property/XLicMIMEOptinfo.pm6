@@ -4,14 +4,16 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-### lib/ICal/Property/XlicMIMEOptinfo.pm6
+### lib/ICal/Property/XLicMIMEOptinfo.pm6
 
-class ICal::Property::XlicMIMEOptinfo is ICal::Property {
+class ICal::Property::XLicMIMEOptinfo is ICal::Property {
 
   method new (Str() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::XLicMIMEOptinfo...";
     my $property = icalproperty_new_xlicmimeoptinfo($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::XlicMIMEOptinfo is ICal::Property {
 sub icalproperty_new_xlicmimeoptinfo (Str)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_xlicmimeoptinfo (icalproperty)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_xlicmimeoptinfo (icalproperty, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

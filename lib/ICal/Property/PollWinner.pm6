@@ -9,10 +9,12 @@ use ICal::Property;
 class ICal::Property::PollWinner is ICal::Property {
 
   method new (Int() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::PollWinner...";
     my uint32 $nv = $var;
     my $property = icalproperty_new_pollwinner($nv);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -32,17 +34,17 @@ class ICal::Property::PollWinner is ICal::Property {
 sub icalproperty_new_pollwinner (uint32)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_pollwinner (icalproperty)
   returns uint32
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_pollwinner (icalproperty, uint32)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

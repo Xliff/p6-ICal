@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::Transp is ICal::Property {
 
   method new (icalproperty_transp $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Transp...";
     my $property = icalproperty_new_transp($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::Transp is ICal::Property {
 sub icalproperty_new_transp (icalproperty_transp)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_transp (icalproperty)
   returns icalproperty_transp
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_transp (icalproperty, icalproperty_transp)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::DateMin is ICal::Property {
 
   method new (icaltimetype() $var, *@params) {
-    my $property = icalproperty_new_datemin($var);
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::DateMin...";
+    my $property = icalpropertyhelper_new_datemin($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -28,20 +30,20 @@ class ICal::Property::DateMin is ICal::Property {
 
 
 
-sub icalproperty_new_datemin (icaltimetype)
+sub icalpropertyhelper_new_datemin (icaltimetype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(icalhelper)
 { * }
 
 sub icalproperty_get_datemin (icalproperty)
   returns icaltimetype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_datemin (icalproperty, icaltimetype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

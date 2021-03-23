@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::MaxDate is ICal::Property {
 
   method new (icaltimetype() $var, *@params) {
-    my $property = icalproperty_new_maxdate($var);
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::MaxDate...";
+    my $property = icalpropertyhelper_new_maxdate($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -28,20 +30,20 @@ class ICal::Property::MaxDate is ICal::Property {
 
 
 
-sub icalproperty_new_maxdate (icaltimetype)
+sub icalpropertyhelper_new_maxdate (icaltimetype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(icalhelper)
 { * }
 
 sub icalproperty_get_maxdate (icalproperty)
   returns icaltimetype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_maxdate (icalproperty, icaltimetype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

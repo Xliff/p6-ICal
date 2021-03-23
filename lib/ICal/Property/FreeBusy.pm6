@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::FreeBusy is ICal::Property {
 
   method new (icalperiodtype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::FreeBusy...";
     my $property = icalproperty_new_freebusy($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::FreeBusy is ICal::Property {
 sub icalproperty_new_freebusy (icalperiodtype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_freebusy (icalproperty)
   returns icalperiodtype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_freebusy (icalproperty, icalperiodtype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

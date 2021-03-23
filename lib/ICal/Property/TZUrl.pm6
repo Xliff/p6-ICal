@@ -4,14 +4,16 @@ use ICal::Raw::Types;
 
 use ICal::Property;
 
-### lib/ICal/Property/TZurl.pm6
+### lib/ICal/Property/TZUrl.pm6
 
-class ICal::Property::TZurl is ICal::Property {
+class ICal::Property::TZUrl is ICal::Property {
 
   method new (Str() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::TZUrl...";
     my $property = icalproperty_new_tzurl($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::TZurl is ICal::Property {
 sub icalproperty_new_tzurl (Str)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_tzurl (icalproperty)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_tzurl (icalproperty, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

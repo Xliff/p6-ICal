@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::PollCompletion is ICal::Property {
 
   method new (icalproperty_pollcompletion $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::PollCompletion...";
     my $property = icalproperty_new_pollcompletion($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::PollCompletion is ICal::Property {
 sub icalproperty_new_pollcompletion (icalproperty_pollcompletion)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_pollcompletion (icalproperty)
   returns icalproperty_pollcompletion
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_pollcompletion (icalproperty, icalproperty_pollcompletion)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

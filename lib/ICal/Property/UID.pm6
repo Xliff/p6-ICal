@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::UID is ICal::Property {
 
   method new (Str() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::UID...";
     my $property = icalproperty_new_uid($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::UID is ICal::Property {
 sub icalproperty_new_uid (Str)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_uid (icalproperty)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_uid (icalproperty, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

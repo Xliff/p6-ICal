@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::Attach is ICal::Property {
 
   method new (icalattach() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::Attach...";
     my $property = icalproperty_new_attach($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::Attach is ICal::Property {
 sub icalproperty_new_attach (icalattach)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_attach (icalproperty)
   returns icalattach
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_attach (icalproperty, icalattach)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

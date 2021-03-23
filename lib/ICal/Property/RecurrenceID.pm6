@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::RecurrenceID is ICal::Property {
 
   method new (icaltimetype() $var, *@params) {
-    my $property = icalproperty_new_recurrenceid($var);
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::RecurrenceID...";
+    my $property = icalpropertyhelper_new_recurrenceid($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -28,20 +30,20 @@ class ICal::Property::RecurrenceID is ICal::Property {
 
 
 
-sub icalproperty_new_recurrenceid (icaltimetype)
+sub icalpropertyhelper_new_recurrenceid (icaltimetype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(icalhelper)
 { * }
 
 sub icalproperty_get_recurrenceid (icalproperty)
   returns icaltimetype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_recurrenceid (icalproperty, icaltimetype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

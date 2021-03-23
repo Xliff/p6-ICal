@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::ExRule is ICal::Property {
 
   method new (icalrecurrencetype() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::ExRule...";
     my $property = icalproperty_new_exrule($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::ExRule is ICal::Property {
 sub icalproperty_new_exrule (icalrecurrencetype)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_exrule (icalproperty)
   returns icalrecurrencetype
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_exrule (icalproperty, icalrecurrencetype)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 

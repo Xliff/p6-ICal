@@ -9,9 +9,11 @@ use ICal::Property;
 class ICal::Property::ReplyURL is ICal::Property {
 
   method new (Str() $var, *@params) {
+    # To be removed or placed behind a sentinel...
+    say "Creating a ICal::Property::ReplyURL...";
     my $property = icalproperty_new_replyurl($var);
 
-    my $o = $property ?? self.bless( :$property) !! Nil;
+    my $o = $property ?? self.bless( :$property ) !! Nil;
     $o.add_parameters(@params) if +@params;
     $o;
   }
@@ -31,17 +33,17 @@ class ICal::Property::ReplyURL is ICal::Property {
 sub icalproperty_new_replyurl (Str)
   returns icalproperty
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_get_replyurl (icalproperty)
   returns Str
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
 sub icalproperty_set_replyurl (icalproperty, Str)
   is export
-  is native(icalendar)
+  is native(ical)
 { * }
 
