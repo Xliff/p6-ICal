@@ -47,31 +47,25 @@ class ICal::Component {
   method new_from_parts($type, *@parts) is also<new-from-parts> {
     my $c = self.new($type);
 
-    sub addapart ($_) {
-      unless $_ ~~ icalcomponent {
-        when ICal::Component        { .icalcomponent; }
-        when .^can('icalcomponent') { .icalcomponent; }
-      }
-      unless $_ ~~ icalproperty {
-        when ICal::Property         { .icalproperty; }
-        when .^can('icalproperty')  { .icalproperty; }
-      }
-    }
-
-    @parts = @parts.map({
-      LABEL: {
-        {
-          when     Array { for .List { addapart($_) } }
-          default        {             addapart($_)   }
-        }
-      }
-      die "All parameters passed to .new_crom_components must contain{
-        '' } IComponent or IProperty-compatible elements!"
-      unless $_ ~~ (icalcomponent, icalproperty).any;
+    @parts .= grep({
+      $_ ~~ (icalproperty, icalcomponent).any
+      ||
+      .^can('icalcomponent')
+      ||
+      .^can('icalproperty')
     });
+
     for @parts {
-        when icalproperty  { self.add_property($_)  }
-        when icalcomponent { self.add_component($_) }
+      my $part = $_;
+      $part = $part.icalcomponent if $part.^can('icalcomponent');
+      $part = $part.icalproperty if $part.^can('icalproperty');
+
+      die "Cannot add { .^name } to component, as it is not ICalComponent{
+           ''} or ICalProperty compatible"
+      unless $part ~~ (icalcomponent, icalproperty).any;
+
+      $c.add_property($part)  if $part ~~ icalproperty;
+      $c.add_component($part) if $part ~~ icalcomponent;
     }
 
     $c;
@@ -229,15 +223,24 @@ class ICal::Component {
     icalcomponent_new_xvote();
   }
 
+  method ICal::Raw::Definitions::icalcomponent
+    is also<icalcomponent>
+  { $!icc }
+
   method add_component (icalcomponent() $child) is also<add-component> {
     icalcomponent_add_component($!icc, $child);
   }
 
   method add_property (icalproperty() $property) is also<add-property> {
     icalcomponent_add_property($!icc, $property);
-
   }
-  method as_ical_string is also<as-ical-string> {
+
+  method as_ical_string
+    is also<
+      as-ical-string
+      Str
+    >
+  {
     icalcomponent_as_ical_string($!icc);
   }
 
