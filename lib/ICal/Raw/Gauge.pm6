@@ -12,28 +12,28 @@ unit package ICal::Raw::Gauge;
 
 sub icalgauge_compare (icalgauge $g, icalcomponent $comp)
   returns uint32
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icalgauge_dump (icalgauge $gauge)
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icalgauge_free (icalgauge $gauge)
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icalgauge_get_expand (icalgauge $gauge)
   returns uint32
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icalgauge_new_from_sql (Str $sql, uint32 $expand)
   returns icalgauge
-  is native(icalendar)
+  is native(ical)
   is export
 { * }

@@ -8,19 +8,19 @@ unit package ICal::Raw::Attach;
 
 sub icalattach_get_data (icalattach $attach)
   returns CArray[uint8]
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icalattach_get_is_url (icalattach $attach)
   returns int32
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icalattach_get_url (icalattach $attach)
   returns Str
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
@@ -30,22 +30,22 @@ sub icalattach_new_from_data (
   Pointer       $free_fn_data
 )
   returns icalattach
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icalattach_new_from_url (Str $url)
   returns icalattach
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icalattach_ref (icalattach $attach)
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icalattach_unref (icalattach $attach)
-  is native(icalendar)
+  is native(ical)
   is export
 { * }

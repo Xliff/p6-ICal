@@ -161,15 +161,15 @@ class icaltime_span is repr<CStruct> is export {
 }
 
 class icaltimetype {
-	has int          $.year        is rw;
-	has int          $.month       is rw;
-	has int          $.day         is rw;
-	has int          $.hour        is rw;
-	has int          $.minute      is rw;
-	has int          $.second      is rw;
-	has int          $.is_date     is rw;
-	has int          $.is_daylight is rw;
-	has icaltimezone $!zone;
+	has uint32        $.year        is rw;
+	has uint32        $.month       is rw;
+	has uint32        $.day         is rw;
+	has uint32        $.hour        is rw;
+	has uint32        $.minute      is rw;
+	has uint32        $.second      is rw;
+	has uint32        $.is_date     is rw;
+	has uint32        $.is_daylight is rw;
+	has icaltimezone  $!zone;
 
   method zone is rw {
     Proxy.new:
@@ -181,7 +181,7 @@ class icaltimetype {
 		# cw: An unfortunate, but unavoidable duplication of code.
 		sub icaltimezone_get_utc_timezone ()
 			returns icaltimezone
-			is native(icalendar)
+			is native(ical)
 		{ * }
 
     my $tz = icaltimetype.new;
