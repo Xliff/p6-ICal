@@ -34,6 +34,7 @@ constant ICALPARAMETER_LAST_ENUM is export = 22300;
 
 class VObject            is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalattach         is repr<CPointer> does ICal::Roles::Pointers is export { }
+class icalcalendar       is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalcluster        is repr<CPointer> does ICal::Roles::Pointers is export { }
 #class icalgauge          is repr<CPointer> does ICal::Roles::Pointers is export { }
 class pvl_list           is repr<CPointer> does ICal::Roles::Pointers is export { }
