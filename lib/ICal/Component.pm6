@@ -344,6 +344,19 @@ class ICal::Component {
     icalcomponent_get_duration($!icc);
   }
 
+  method get_components (Int() $kind, :$raw = False) {
+    state &first = self.^lookup('get_first_component');
+    state &next  = self.^lookup('get_next_component');
+
+    get_items(
+      self,
+      $kind,
+      &first,
+      &next,
+      :$raw
+    );
+  }
+
   method get_first_component (Int() $kind, :$raw = False)
     is also<get-first-component>
   {
@@ -354,6 +367,19 @@ class ICal::Component {
       ( $raw ?? $c !! ICal::Component.new($c) )
       !!
       Nil;
+  }
+
+  method get_properties (Int() $kind, :$raw = False) {
+    state &first = self.^lookup('get_first_property');
+    state &next  = self.^lookup('get_next_property');
+
+    get_items(
+      self,
+      $kind,
+      &first,
+      &next,
+      :$raw
+    );
   }
 
   method get_first_property (Int() $kind, :$raw = False)
