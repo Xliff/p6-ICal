@@ -165,3 +165,27 @@ sub subarray ($a, $o) is export {
   my $b = nativecast(Pointer[$a.of], $a);
   nativecast( CArray[$a.of], $b.add($o) );
 }
+
+method get_items (
+        $invocant,
+  Int() $kind,
+        &first,
+        &next,
+        :$raw = False
+) is export {
+  (class :: does Iterable does Iterator {
+    has $!init = False;
+
+    method iterator { self }
+
+    method pull-one {
+      if $!init {
+        my $np = $invocant.&first($kind, :$raw);
+        $np ?? $np !! IterationEnd;
+      } else {
+        return $invocant.&next($kind, :$raw);
+        $!init = True;
+      }
+    }
+  }).new
+}
