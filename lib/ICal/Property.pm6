@@ -95,6 +95,19 @@ class ICal::Property {
     icalproperty_free($!ip);
   }
 
+  method get_parameters (Int() $kind, :$raw = False) {
+    state &first = self.^lookup('get_first_parameter');
+    state &next  = self.^lookup('get_next_parameter');
+    
+    get_items(
+      self,
+      $kind,
+      &first,
+      &next,
+      :$raw
+    );
+  }
+
   method get_first_parameter (Int() $kind, :$raw = False)
     is also<get-first-parameter>
   {
