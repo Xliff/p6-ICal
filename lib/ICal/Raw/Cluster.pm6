@@ -21,7 +21,7 @@ sub icalcluster_commit (icalcluster $cluster)
 { * }
 
 sub icalcluster_count_components (icalcluster $cluster, icalcomponent_kind $kind)
-  returns gint
+  returns uint32
   is native(ical)
   is export
 { * }
@@ -56,7 +56,7 @@ sub icalcluster_get_next_component (icalcluster $cluster)
 { * }
 
 sub icalcluster_is_changed (icalcluster $cluster)
-  returns gint
+  returns uint32
   is native(ical)
   is export
 { * }
