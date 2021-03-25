@@ -23,7 +23,7 @@ class ICal::Cluster {
   }
 
   method add_component (icalcomponent $child) {
-    icalErrorNumEnum( icalcluster_add_component($!icc, $child) );
+    icalerrorenumEnum( icalcluster_add_component($!icc, $child) );
   }
 
   method commit {
@@ -102,7 +102,7 @@ class ICal::Cluster {
   }
 
   method remove_component (icalcomponent() $child) {
-    icalerrornumEnum( icalcluster_remove_component($!icc, $child) );
+    icalerrorenumEnum( icalcluster_remove_component($!icc, $child) );
   }
 
 }
