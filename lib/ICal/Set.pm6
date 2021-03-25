@@ -1,5 +1,9 @@
 use v6.c;
 
+use Method::Also;
+
+use NativeCall;
+
 use ICal::Raw::Types;
 use ICal::Raw::Set;
 
@@ -11,6 +15,7 @@ class ICal::Set {
   }
 
   method ICal::Raw::Structs::icalset
+    is also<icalset>
   { $!is }
 
   multi method new (icalset $set) {
@@ -22,31 +27,31 @@ class ICal::Set {
     $set ?? self.bless( :$set ) !! Nil;
   }
 
-  method new_dir (Str() $path) {
+  method new_dir (Str() $path) is also<new-dir> {
     my $set = icalset_new_dir($!is, $path);
 
     $set ?? self.bless( :$set ) !! Nil;
   }
 
-  method new_file (Str() $path) {
+  method new_file (Str() $path) is also<new-file> {
     my $set = icalset_new_file($!is, $path);
 
     $set ?? self.bless( :$set ) !! Nil;
   }
 
-  method new_file_reader (Str() $path) {
+  method new_file_reader (Str() $path) is also<new-file-reader> {
     my $set = icalset_new_file_reader($!is, $path);
 
     $set ?? self.bless( :$set ) !! Nil;
   }
 
-  method new_file_writer (Str() $path) {
+  method new_file_writer (Str() $path) is also<new-file-writer> {
     my $set = icalset_new_file_writer($!is, $path);
 
     $set ?? self.bless( :$set ) !! Nil;
   }
 
-  method add_component (icalcomponent() $comp) {
+  method add_component (icalcomponent() $comp) is also<add-component> {
     icalerrorenumEnum( icalset_add_component($!is, $comp) );
   }
 
@@ -54,7 +59,9 @@ class ICal::Set {
     Int()       $kind,
     icalgauge() $gauge,
     Str()       $tzid
-  ) {
+  )
+    is also<begin-component>
+  {
     my icalcomponent_kind $k = $kind;
 
     icalset_begin_component($!is, $k, $gauge, $tzid);
@@ -64,7 +71,7 @@ class ICal::Set {
     icalerrorenumEnum( icalset_commit($!is) );
   }
 
-  method count_components (Int() $kind) {
+  method count_components (Int() $kind) is also<count-components> {
     my icalcomponent_kind $k = $kind;
 
     icalset_count_components($!is, $k);
@@ -79,8 +86,10 @@ class ICal::Set {
       Nil;
   }
 
-  method fetch_match (icalcomponent() $c, :$raw = False) {
-    my $c = icalset_fetch_match($!is, $c);
+  method fetch_match (icalcomponent() $c2, :$raw = False)
+    is also<fetch-match>
+  {
+    my $c = icalset_fetch_match($!is, $c2);
 
     $c ??
       ( $raw ?? $c !! ICal::Component.new($c) )
@@ -92,7 +101,12 @@ class ICal::Set {
     icalset_free($!is);
   }
 
-  method get_current_component (:$raw = False) {
+  method get_current_component (:$raw = False)
+    is also<
+      get-current-component
+      current-component
+    >
+  {
     my $c = icalset_get_current_component($!is);
 
     $c ??
@@ -101,7 +115,31 @@ class ICal::Set {
       Nil;
   }
 
-  method get_first_component (:$raw = False) {
+  method get_components (:$raw = False)
+    is also<
+      get-components
+      components
+    >
+  {
+    my &first = self.^lookup('get_first_component');
+    my &next  = self.^lookup('get_next_component');
+
+    get_items(
+      self,
+      &first,
+      &next,
+      Int,
+      :$raw
+    );
+  }
+
+  method get_first_component (:$raw = False)
+    is also<
+      get-first-component
+      first-component
+      first_component
+    >
+  {
     my $c = icalset_get_first_component($!is);
 
     $c ??
@@ -110,7 +148,13 @@ class ICal::Set {
       Nil;
   }
 
-  method get_next_component (:$raw = False) {
+  method get_next_component (:$raw = False)
+    is also<
+      get-next-component
+      next-component
+      next_component
+    >
+  {
     my $c = icalset_get_next_component($!is);
 
     $c ??
@@ -119,7 +163,7 @@ class ICal::Set {
       Nil;
   }
 
-  method has_uid (Str $uid) {
+  method has_uid (Str() $uid) is also<has-uid> {
     icalset_has_uid($!is, $uid);
   }
 
@@ -135,7 +179,7 @@ class ICal::Set {
     icalset_path($!is);
   }
 
-  method remove_component (icalcomponent() $comp) {
+  method remove_component (icalcomponent() $comp) is also<remove-component> {
     icalerrorenumEnum( icalset_remove_component($!is, $comp) );
   }
 
@@ -153,6 +197,7 @@ class ICal::Set::Iter {
   }
 
   method ICal::Raw::Definitions::icalsetiter
+    is also<icalsetiter>
   { $!isi }
 
   method new (icalsetiter $iter) {
@@ -186,7 +231,7 @@ class ICal::Set::Iter {
       Nil
   }
 
-  method to_next (icalsetiter() $i, :$raw = False)  {
+  method to_next (icalsetiter() $i, :$raw = False)  is also<to-next> {
     my $c = icalsetiter_to_next($!isi, $i);
 
     $c ??
@@ -195,7 +240,7 @@ class ICal::Set::Iter {
       Nil
   }
 
-  method to_prior (icalsetiter() $i, :$raw = False)  {
+  method to_prior (icalsetiter() $i, :$raw = False)  is also<to-prior> {
     my $c = icalsetiter_to_prior($!isi, $i);
 
     $c ??
