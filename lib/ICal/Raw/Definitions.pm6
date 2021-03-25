@@ -6,6 +6,8 @@ use ICal::Roles::Pointers;
 
 unit package ICal::Raw::Definitions;
 
+our $DEBUG          is export;
+
 constant ical       is export = 'ical',v3;
 constant icalhelper is export = %?RESOURCES<lib/icalhelper.so>;
 
@@ -44,3 +46,12 @@ class icalcomponent      is repr<CPointer> does ICal::Roles::Pointers is export 
 class icalproperty       is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalparameter      is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalvalue          is repr<CPointer> does ICal::Roles::Pointers is export { }
+
+INIT {
+
+  if %*ENV<P6_ICAL_DEBUG> {
+    say '»————————————> setting debug';
+    $DEBUG = True;
+  }
+
+}
