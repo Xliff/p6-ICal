@@ -179,11 +179,12 @@ method get_items (
     method iterator { self }
 
     method pull-one {
+      my @params = $kind ?? $kind.Array !! ();
       if $!init {
-        my $np = $invocant.&first($kind, :$raw);
+        my $np = $invocant.&first( |@params, :$raw );
         $np ?? $np !! IterationEnd;
       } else {
-        return $invocant.&next($kind, :$raw);
+        return $invocant.&next( |@params, :$raw );
         $!init = True;
       }
     }
