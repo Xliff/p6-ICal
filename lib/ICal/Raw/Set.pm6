@@ -1,5 +1,7 @@
 use v6.c;
 
+use NativeCall;
+
 use ICal::Raw::Definitions;
 use ICal::Raw::Enums;
 use ICal::Raw::Structs;
@@ -15,7 +17,7 @@ sub icalset_add_component (icalset $set, icalcomponent $comp)
 { * }
 
 sub icalset_begin_component (
-  icalset            $set, 
+  icalset            $set,
   icalcomponent_kind $kind,
   icalgauge          $gauge,
   Str                $tzid
@@ -32,7 +34,7 @@ sub icalset_commit (icalset $set)
 { * }
 
 sub icalset_count_components (icalset $set, icalcomponent_kind $kind)
-  returns gint
+  returns uint32
   is native(ical)
   is export
 { * }
@@ -73,7 +75,7 @@ sub icalset_get_next_component (icalset $set)
 { * }
 
 sub icalset_has_uid (icalset $set, Str $uid)
-  returns gint
+  returns uint32
   is native(ical)
   is export
 { * }
