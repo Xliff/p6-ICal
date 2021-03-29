@@ -57,7 +57,12 @@ class ICal::Property {
   #   icalproperty_add_parameters($!ip, $args);
   # }
 
-  method as_ical_string is also<as-ical-string> {
+  method as_ical_string 
+    is also<
+      as-ical-string
+      Str
+    > 
+  {
     icalproperty_as_ical_string($!ip);
   }
 
@@ -95,7 +100,9 @@ class ICal::Property {
     icalproperty_free($!ip);
   }
 
-  method get_parameters (Int() $kind, :$raw = False) {
+  method get_parameters (Int() $kind = ICAL_ANY_PARAMETER, :$raw = False) 
+    is also<get-parameters>
+  {
     state &first = self.^lookup('get_first_parameter');
     state &next  = self.^lookup('get_next_parameter');
     
@@ -108,11 +115,13 @@ class ICal::Property {
     );
   }
 
-  method get_first_parameter (Int() $kind, :$raw = False)
+  method get_first_parameter (Int() $kind = ICAL_ANY_PARAMETER, :$raw = False)
     is also<get-first-parameter>
   {
     my icalparameter_kind $k = $kind;
     my                    $para = icalproperty_get_first_parameter($!ip, $kind);
+
+    say "FK: { $kind }" if $DEBUG;
 
     $para ??
       ( $raw ?? $para !! ICal::Parameter.new($para) )
@@ -120,11 +129,13 @@ class ICal::Property {
       Nil;
   }
 
-  method get_next_parameter (Int() $kind, :$raw = False)
+  method get_next_parameter (Int() $kind = ICAL_ANY_PARAMETER, :$raw = False)
     is also<get-next-parameter>
   {
     my icalparameter_kind $k = $kind;
     my                    $para = icalproperty_get_next_parameter($!ip, $kind);
+
+    say "NK: { $kind }" if $DEBUG;
 
     $para ??
       ( $raw ?? $para !! ICal::Parameter.new($para) )
@@ -144,15 +155,32 @@ class ICal::Property {
     icalproperty_get_parameter_as_string_r($!ip, $name);
   }
 
-  method get_property_name is also<get-property-name> {
+  method get_property_name 
+    is also<
+      get-property-name
+      property-name
+      property_name
+    > 
+  {
     icalproperty_get_property_name($!ip);
   }
 
-  method get_property_name_r is also<get-property-name-r> {
+  method get_property_name_r 
+    is also<
+      get-property-name-r
+      property-name-r
+      property_name_r
+    > 
+  {
     icalproperty_get_property_name_r($!ip);
   }
 
-  method get_value (:$raw = False) is also<get-value> {
+  method get_value (:$raw = False) 
+    is also<
+      get-value
+      value
+    > 
+  {
     my $v = icalproperty_get_value($!ip);
 
     $v ??
@@ -161,15 +189,33 @@ class ICal::Property {
       Nil;
   }
 
-  method get_value_as_string is also<get-value-as-string> {
+  method get_value_as_string 
+    is also<
+      get-value-as-string
+      value-as-string
+      value_as_string
+    > 
+  {
     icalproperty_get_value_as_string($!ip);
   }
 
-  method get_value_as_string_r is also<get-value-as-string-r> {
+  method get_value_as_string_r 
+    is also<
+      get-value-as-string-r
+      value-as-string-r
+      value_as_string_r
+    > 
+  {
     icalproperty_get_value_as_string_r($!ip);
   }
 
-  method get_x_name is also<get-x-name> {
+  method get_x_name 
+    is also<
+      get-x-name
+      x-name
+      x_name
+    > 
+  {
     icalproperty_get_x_name($!ip);
   }
 
