@@ -2,6 +2,8 @@ use v6.c;
 
 use NativeCall;
 
+use ICal::Raw::Definitions;
+
 unit package ICal::Raw::Subs;
 
 # Cribbed from https://github.com/CurtTilmes/perl6-dbmysql/blob/master/lib/DB/MySQL/Native.pm6
@@ -166,7 +168,7 @@ sub subarray ($a, $o) is export {
   nativecast( CArray[$a.of], $b.add($o) );
 }
 
-method get_items (
+sub get_items (
         $invocant,
   Int() $kind,
         &first,
@@ -174,18 +176,24 @@ method get_items (
         :$raw = False
 ) is export {
   (class :: does Iterable does Iterator {
-    has $!init = False;
+    has $!init;
 
     method iterator { self }
 
     method pull-one {
-      my @params = $kind ?? $kind.Array !! ();
-      if $!init {
-        my $np = $invocant.&first( |@params, :$raw );
+      state @params = $kind ?? $kind.Array !! ();
+      do {
+        my $np;
+        
+        if $!init {
+          $np = $invocant.&next( |@params, :$raw );
+          say "Next: { $np // 'NIL' }" if $DEBUG;
+        } else {
+          $np = $invocant.&first( |@params, :$raw );
+          say "First: { $np // 'NIL' }" if $DEBUG;
+          $!init = True;
+        }
         $np ?? $np !! IterationEnd;
-      } else {
-        return $invocant.&next( |@params, :$raw );
-        $!init = True;
       }
     }
   }).new
