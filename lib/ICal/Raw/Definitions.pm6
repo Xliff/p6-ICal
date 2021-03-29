@@ -16,7 +16,8 @@ constant realInt  is export = $*KERNEL.bits == 32 ?? int32  !! int64;
 
 constant char                    is export := Str;
 constant double                  is export := num64;
-constant time_t                  is export := uint64;
+constant time_t                  is export := uint64;  #= This mutates depending on OS / Arch
+constant short                   is export := uint8;
 
 constant ICAL_BY_SECOND_SIZE     is export = 62;                                 #= 0 to 60
 constant ICAL_BY_MINUTE_SIZE     is export = 61;                                 #= 0 to 59
