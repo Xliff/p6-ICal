@@ -13,6 +13,7 @@
       "ICal::Raw::Enum"                     :  "lib/ICal/Raw/Enum.pm6"                     ,
       "ICal::Raw::Error"                    :  "lib/ICal/Raw/Error.pm6"                    ,
       "ICal::Raw::Memory"                   :  "lib/ICal/Raw/Memory.pm6"                   ,
+      "ICal::Raw::Parser"                   :  "lib/ICal/Raw/Parser.pm6"                   ,
       "ICal::Raw::Recur"                    :  "lib/ICal/Raw/Recur.pm6"                    ,
       "ICal::Raw::Structs"                  :  "lib/ICal/Raw/Structs.pm6"                  ,
       "ICal::Raw::Subs"                     :  "lib/ICal/Raw/Subs.pm6"                     ,
@@ -61,6 +62,7 @@
       "ICal::Enum"                          :  "lib/ICal/Enum.pm6"                         ,
       "ICal::Error"                         :  "lib/ICal/Error.pm6"                        ,
       "ICal::Memory"                        :  "lib/ICal/Memory.pm6"                       ,
+      "ICal::Parser"                        :  "lib/ICal/Parser.pm6"                       ,
       "ICal::Raw::Array"                    :  "lib/ICal/Raw/Array.pm6"                    ,
       "ICal::Raw::Attach"                   :  "lib/ICal/Raw/Attach.pm6"                   ,
       "ICal::Raw::Calendar"                 :  "lib/ICal/Raw/Calendar.pm6"                 ,
@@ -253,6 +255,7 @@
       "ICal::Component"                     :  "lib/ICal/Component.pm6"                    ,
       "ICal::DerivedParameter"              :  "lib/ICal/DerivedParameter.pm6"             ,
       "ICal::DerivedProperty"               :  "lib/ICal/DerivedProperty.pm6"              ,
+      "ICal::MIME"                          :  "lib/ICal/MIME.pm6"                         ,
       "ICal::Timezone"                      :  "lib/ICal/Timezone.pm6"                     ,
       "ICal::Raw::Time"                     :  "lib/ICal/Raw/Time.pm6"                     
     },

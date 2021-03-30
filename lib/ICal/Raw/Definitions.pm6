@@ -18,6 +18,7 @@ constant char                    is export := Str;
 constant double                  is export := num64;
 constant time_t                  is export := uint64;  #= This mutates depending on OS / Arch
 constant short                   is export := uint8;
+constant pointer                 is export := Pointer; #= NativeCall's Pointer exposed for client code.
 
 constant ICAL_BY_SECOND_SIZE     is export = 62;                                 #= 0 to 60
 constant ICAL_BY_MINUTE_SIZE     is export = 61;                                 #= 0 to 59
@@ -44,6 +45,7 @@ class pvl_list           is repr<CPointer> does ICal::Roles::Pointers is export 
 class icalrecur_iterator is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icaltimezone       is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalcomponent      is repr<CPointer> does ICal::Roles::Pointers is export { }
+class icalparser         is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalproperty       is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalparameter      is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalvalue          is repr<CPointer> does ICal::Roles::Pointers is export { }
