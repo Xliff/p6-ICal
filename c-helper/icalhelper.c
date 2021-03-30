@@ -2,6 +2,7 @@
 #include "libical/ical.h"
 #include "libical/icalderivedproperty.h"
 #include "libical/icalderivedvalue.h"
+#include "libical/icalperiod.h"
 
 icalproperty *icalpropertyhelper_new_acknowledged(struct icaltimetype *v) {
   return icalproperty_new_acknowledged(*v);
@@ -101,5 +102,33 @@ icalvalue *icalvaluehelper_new_period(struct icalperiodtype *v) {
 
 icalvalue *icalvaluehelper_new_requeststatus(struct icalreqstattype *v) {
   return icalvalue_new_requeststatus(*v);
+}
+
+struct icalperiodtype *icalperiodtypehelper_from_string(const char *str) {
+  struct icalperiodtype r = icalperiodtype_from_string(str);
+
+  return &r;
+}
+
+const char *icalperiodtypehelper_as_ical_string(struct icalperiodtype *p) {
+  return icalperiodtype_as_ical_string(*p);
+}
+
+char *icalperiodtypehelper_as_ical_string_r(struct icalperiodtype *p) {
+  return icalperiodtype_as_ical_string_r(*p);
+}
+
+struct icalperiodtype *icalperiodtypehelper_null_period(void) {
+  struct icalperiodtype r = icalperiodtype_null_period();
+
+  return &r;
+}
+
+int icalperiodtypehelper_is_null_period(struct icalperiodtype *p) {
+  return icalperiodtype_is_null_period(*p);
+}
+
+int icalperiodtypehelper_is_valid_period(struct icalperiodtype *p) {
+  return icalperiodtype_is_valid_period(*p);
 }
 
