@@ -22,6 +22,7 @@
       "ICal::Raw::Types"                    :  "lib/ICal/Raw/Types.pm6"                    ,
       "ICal::Raw::Value"                    :  "lib/ICal/Raw/Value.pm6"                    ,
       "ICal::Roles::StaticClass"            :  "lib/ICal/Roles/StaticClass.pm6"            ,
+      "ICal::TZUtil"                        :  "lib/ICal/TZUtil.pm6"                       ,
       "ICal::Value"                         :  "lib/ICal/Value.pm6"                        ,
       "ICal::Value::Action"                 :  "lib/ICal/Value/Action.pm6"                 ,
       "ICal::Value::Attach"                 :  "lib/ICal/Value/Attach.pm6"                 ,
