@@ -279,6 +279,86 @@ sub MAIN (
       }
       TIME
 
+    @subs.push: q:to/DURATION/;
+      struct icaldurationtype *icaldurationtypehelper_from_int(int t) {
+        struct icaldurationtype r = icaldurationtype_from_int(t);
+        size_t len = sizeof(r);
+        struct icaldurationtype *ret = (struct icaldurationtype *)malloc(len);
+        memcpy(ret, &r, len);
+
+        return ret;
+      }
+
+      struct icaldurationtype *icaldurationtypehelper_from_string(
+        const char *dur
+      ) {
+        struct icaldurationtype r = icaldurationtype_from_string(dur);
+        size_t len = sizeof(r);
+        struct icaldurationtype *ret = (struct icaldurationtype *)malloc(len);
+        memcpy(ret, &r, len);
+
+        return ret;
+      }
+
+      int icaldurationtype_as_int(struct icaldurationtype duration) {
+        return icaldurationtype_as_int(duration);
+      }
+
+      char *icaldurationtypehelper_as_ical_string(struct icaldurationtype *d) {
+        return icaldurationtype_as_ical_string(*d);
+      }
+
+      char *icaldurationtypehelper_as_ical_string_r(struct icaldurationtype *d) {
+        return icaldurationtype_as_ical_string_r(*d);
+      }
+
+      struct icaldurationtype *icaldurationtypehelper_null_duration(void) {
+        struct icaldurationtype r = icaldurationtype_null_duration();
+        size_t len = sizeof(r);
+        struct icaldurationtype *ret = (struct icaldurationtype *)malloc(len);
+        memcpy(ret, &r, len);
+
+        return ret;
+      }
+
+      struct icaldurationtype *icaldurationtypehelper_bad_duration(void) {
+        struct icaldurationtype r = icaldurationtype_bad_duration();
+        size_t len = sizeof(r);
+        struct icaldurationtype *ret = (struct icaldurationtype *)malloc(len);
+        memcpy(ret, &r, len);
+
+        return ret;
+      }
+
+      int icaldurationtypehelper_is_null_duration(struct icaldurationtype *d) {
+        return icaldurationtype_is_null_duration(*d);
+      }
+
+      struct icaltimetype *icaltimehelper_add(
+        struct icaltimetype *t,
+        struct icaldurationtype *d
+      ) {
+        struct icaltimetype r = icaltime_add(*t, *d);
+        size_t len = sizeof(r);
+        struct icaltimetype *ret = (struct icaltimetype *)malloc(len);
+        memcpy(ret, &r, len);
+
+        return ret;
+      }
+
+      struct icaldurationtype *icaltimehelper_subtract(
+        struct icaltimetype *t1,
+        struct icaltimetype *t2
+      ) {
+        struct icaldurationtype r = icaltime_subtract(*t1, *t2);
+        size_t len = sizeof(r);
+        struct icaldurationtype *ret = (struct icaldurationtype *)malloc(len);
+        memcpy(ret, &r, len);
+
+        return ret;
+      }
+      DURATION
+
     "c-helper/icalhelper.c".IO.spurt: qq:to/OUT/;
       #include <stdio.h>
       #include <stdlib.h>
@@ -288,6 +368,7 @@ sub MAIN (
       #include "libical/icalderivedvalue.h"
       #include "libical/icalperiod.h"
       #include "libical/icaltime.h"
+      #include "libical/icalduration.h"
 
       { @subs.join("\n") }
       OUT
