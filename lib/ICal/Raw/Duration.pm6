@@ -2,6 +2,8 @@ use v6;
 
 use MONKEY-TYPING;
 
+use Method::Also;
+
 use ICal::Raw::Structs;
 
 use NativeCall;
@@ -19,113 +21,130 @@ augment class icaldurationtype {
   {
     my uint32 $d = $dur;
 
-    icaldurationtype_from_int($dur);
+    icaldurationtypehelper_from_int($dur);
   }
 
-  method from_string
+  method from_string (Str() $str)
     is also<
       from-string
       new_from_string
       new-from-string
     >
   {
-    icaldurationtype_from_string(self);
+    icaldurationtypehelper_from_string($str);
   }
 
-  method as_ical_string is also<Str> {
-    icaldurationtype_as_ical_string(self);
+  method bad_duration
+    is also<
+      bad-duration
+      new_bad_duration
+      new-bad-duration
+    >
+  {
+    icaldurationtypehelper_bad_duration();
   }
 
-  method as_ical_string_r {
-    icaldurationtype_as_ical_string_r(self);
+  method null_duration
+    is also<
+      null-duration
+      new_null_duration
+      new-null-duration
+    >
+  {
+    icaldurationtypehelper_null_duration();
   }
 
-  method as_int {
-    icaldurationtype_as_int(self);
+  method as_ical_string
+    is also<
+      as-ical-string
+      Str
+    >
+  {
+    icaldurationtypehelper_as_ical_string(self);
   }
 
-  method bad_duration {
-    icaldurationtype_bad_duration(self);
+  method as_ical_string_r is also<as-ical-string-r> {
+    icaldurationtypehelper_as_ical_string_r(self);
   }
 
-  method is_bad_duration {
-    so icaldurationtype_is_bad_duration(self);
+  method as_int is also<as-int> {
+    icaldurationtypehelper_as_int(self);
   }
 
-  method is_null_duration {
-    so icaldurationtype_is_null_duration(self);
+  method is_bad_duration is also<is-bad-duration> {
+    so icaldurationtypehelper_is_bad_duration(self);
   }
 
-  method null_duration {
-    icaldurationtype_null_duration(self);
+  method is_null_duration is also<is-null-duration> {
+    so icaldurationtypehelper_is_null_duration(self);
   }
 
 }
 
 ### /usr/include/libical/icalduration.h
 
-sub icaldurationtype_as_ical_string (icaldurationtype $d)
+sub icaldurationtypehelper_as_ical_string (icaldurationtype $d)
   returns Str
-  is native(ical)
+  is native(icalhelper)
   is export
 { * }
 
-sub icaldurationtype_as_ical_string_r (icaldurationtype $d)
+sub icaldurationtypehelper_as_ical_string_r (icaldurationtype $d)
   returns Str
-  is native(ical)
+  is native(icalhelper)
   is export
 { * }
 
-sub icaldurationtype_as_int (icaldurationtype $duration)
-  returns gint
-  is native(ical)
+sub icaldurationtypehelper_as_int (icaldurationtype $duration)
+  returns uint32
+  is native(icalhelper)
   is export
 { * }
 
-sub icaldurationtype_bad_duration ()
+sub icaldurationtypehelper_bad_duration ()
   returns icaldurationtype
-  is native(ical)
+  is native(icalhelper)
   is export
 { * }
 
-sub icaldurationtype_from_int (gint $t)
+sub icaldurationtypehelper_from_int (uint32 $t)
   returns icaldurationtype
-  is native(ical)
+  is native(icalhelper)
   is export
 { * }
 
-sub icaldurationtype_from_string (Str $dur)
+sub icaldurationtypehelper_from_string (Str $dur)
   returns icaldurationtype
-  is native(ical)
+  is native(icalhelper)
   is export
 { * }
 
-sub icaltime_add (icaltimetype $t, icaldurationtype $d)
+sub icaltimehelper_add (icaltimetype $t, icaldurationtype $d)
   returns icaltimetype
-  is native(ical)
+  is native(icalhelper)
   is export
 { * }
 
-sub icaltime_subtract (icaltimetype $t1, icaltimetype $t2)
+sub icaltimehelper_subtract (icaltimetype $t1, icaltimetype $t2)
   returns icaldurationtype
-  is native(ical)
+  is native(icalhelper)
   is export
 { * }
 
-sub icaldurationtype_is_bad_duration (icaldurationtype $d)
+sub icaldurationtypehelper_is_bad_duration (icaldurationtype $d)
   returns uint32
-  is native(ical)
+  is native(icalhelper)
   is export
 { * }
 
-sub icaldurationtype_is_null_duration (icaldurationtype $d)
+sub icaldurationtypehelper_is_null_duration (icaldurationtype $d)
   returns uint32
-  is native(ical)
+  is native(icalhelper)
   is export
 { * }
 
-sub icaldurationtype_null_duration ()
+sub icaldurationtypehelper_null_duration ()
   returns icaldurationtype
-  is native(ical)
+  is native(icalhelper)
   is export
 { * }
