@@ -1,5 +1,5 @@
 {
-    "depends": [ ],
+    "depends": [ "CompUnit::Util" ],
     "description": "Perl6 API Bindings for Amazon AWS EC2",
     "version": "r0.0.1",
     "meta-version": "0",
@@ -260,7 +260,7 @@
       "ICal::DerivedProperty"               :  "lib/ICal/DerivedProperty.pm6"              ,
       "ICal::MIME"                          :  "lib/ICal/MIME.pm6"                         ,
       "ICal::Timezone"                      :  "lib/ICal/Timezone.pm6"                     ,
-      "ICal::Raw::Time"                     :  "lib/ICal/Raw/Time.pm6"                     
+      "ICal::Raw::Time"                     :  "lib/ICal/Raw/Time.pm6"
     },
 
     "name": "p6-ICal",
