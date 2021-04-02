@@ -1,6 +1,6 @@
 {
     "depends": [ "CompUnit::Util" ],
-    "description": "Perl6 API Bindings for Amazon AWS EC2",
+    "description": "Perl6 API Bindings for libical",
     "version": "r0.0.1",
     "meta-version": "0",
     "license": "",
