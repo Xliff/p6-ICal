@@ -5,7 +5,7 @@ sub MAIN (
   :$value-file = '/usr/include/libical/icalderivedvalue.h',
   :$build      = False
 ) {
-  unless $build {\
+  unless $build {
     qqx{install -d c-helper};
     my rule time-subs {
       'icalproperty' '*icalproperty_new_'(\w+)'(struct icaltimetype v);'
@@ -378,5 +378,5 @@ sub MAIN (
   my $libs = qqx{pkg-config --libs libical};
 
   qqx{gcc c-helper/icalhelper.c -g -Wno-return-local-addr -fPIC -shared -o c-helper/icalhelper.so $libs};
-  qqx{cp c-helper/icalhelper.so resources/lib};
+   qx{cp c-helper/icalhelper.so resources/lib};
 }
