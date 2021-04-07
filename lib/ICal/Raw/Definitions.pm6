@@ -6,7 +6,7 @@ use ICal::Roles::Pointers;
 
 unit package ICal::Raw::Definitions;
 
-our $DEBUG          is export;
+our $ICAL-DEBUG          is export;
 
 constant ical       is export = 'ical',v3;
 constant icalhelper is export = %?RESOURCES<lib/icalhelper.so>;
@@ -54,7 +54,7 @@ INIT {
 
   if %*ENV<P6_ICAL_DEBUG> {
     say '»————————————> setting debug';
-    $DEBUG = True;
+    $ICAL-DEBUG = True;
   }
 
 }

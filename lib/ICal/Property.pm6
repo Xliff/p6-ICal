@@ -121,7 +121,7 @@ class ICal::Property {
     my icalparameter_kind $k = $kind;
     my                    $para = icalproperty_get_first_parameter($!ip, $kind);
 
-    say "FK: { $kind }" if $DEBUG;
+    say "FK: { $kind }" if $ICAL-DEBUG;
 
     $para ??
       ( $raw ?? $para !! ICal::Parameter.new($para) )
@@ -135,7 +135,7 @@ class ICal::Property {
     my icalparameter_kind $k = $kind;
     my                    $para = icalproperty_get_next_parameter($!ip, $kind);
 
-    say "NK: { $kind }" if $DEBUG;
+    say "NK: { $kind }" if $ICAL-DEBUG;
 
     $para ??
       ( $raw ?? $para !! ICal::Parameter.new($para) )

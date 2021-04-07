@@ -187,10 +187,10 @@ sub get_items (
         
         if $!init {
           $np = $invocant.&next( |@params, :$raw );
-          say "Next: { $np // 'NIL' }" if $DEBUG;
+          say "Next: { $np // 'NIL' }" if $ICAL-DEBUG;
         } else {
           $np = $invocant.&first( |@params, :$raw );
-          say "First: { $np // 'NIL' }" if $DEBUG;
+          say "First: { $np // 'NIL' }" if $ICAL-DEBUG;
           $!init = True;
         }
         $np ?? $np !! IterationEnd;

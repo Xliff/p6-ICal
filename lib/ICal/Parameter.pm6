@@ -14,7 +14,7 @@ class ICal::Parameter {
   }
 
   method new ($parameter is copy) {
-    say "P0: { $parameter.^name }" if $DEBUG;
+    say "P0: { $parameter.^name }" if $ICAL-DEBUG;
     $parameter = do given $parameter {
       when .^can('icalparameter') { .icalparameter        }
       when icalparameter          { $_                    }
@@ -24,7 +24,7 @@ class ICal::Parameter {
       default                     { die "Cannot create an ICal::Value from a { 
                                          .^name }";       }
     }    
-    say "P1: { $parameter.^name }" if $DEBUG;
+    say "P1: { $parameter.^name }" if $ICAL-DEBUG;
     
     $parameter ?? self.bless( :$parameter ) !! Nil;
   }

@@ -10,7 +10,7 @@ role ICal::Roles::StaticClass {
 
   method !staticWarning (\c) is export {
     warn "{ c.^name } is a static class and does not need to be instantiated!"
-      if $DEBUG;
+      if $ICAL-DEBUG;
 
     c;
   }
