@@ -25,16 +25,15 @@ class VObjectIterator is repr<CStruct> is export {
 	has VObject $.next  is rw;
 }
 
-class _icalarray is repr<CStruct> is export {
+class icalarray is repr<CStruct> is export {
 	has size_t          $.element_size    is rw;
 	has size_t          $.increment_size  is rw;
 	has size_t          $.num_elements    is rw;
 	has size_t          $.space_allocated is rw;
 	has CArray[Pointer] $.chunks;
 }
-constant icalarray is export := _icalarray;
 
-class _icalvcal_defaults is repr<CStruct> is export {
+class icalvcal_defaults is repr<CStruct> is export {
 	has char $.alarm_audio_url     is rw;
 	has char $.alarm_audio_fmttype is rw;
 	has char $.alarm_description   is rw;
@@ -107,7 +106,6 @@ class icalfileset_impl is repr<CStruct> is export {
 	has int                 $.changed is rw;
 	has int                 $.fd      is rw;
 }
-
 
 class icalgeotype is repr<CStruct> is export {
 	has double $.lat is rw;
