@@ -3,6 +3,7 @@ use v6;
 use NativeCall;
 
 use ICal::Raw::Definitions;
+use ICal::Raw::Structs;
 use ICal::Raw::Enums;
 
 unit package ICal::Raw::Recur;
