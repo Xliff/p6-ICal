@@ -39,16 +39,16 @@ augment class icalrecurrencetype {
     icalrecurrencetype_from_string($str);
   }
 
-  method month_is_leap (Int() $m) {
+  method month_is_leap (Int() $month) {
     my short $m = $month;
 
     icalrecurrencetype_month_is_leap($m);
   }
 
-  method month_month (Int() $m) {
+  method month_month (Int() $month) {
     my short $m = $month;
 
-    icalrecurrencetype_month_month($month);
+    icalrecurrencetype_month_month($m);
   }
 
   method rscale_is_supported (icalrecurrencetype:U: ) {
@@ -130,7 +130,7 @@ class ICal::Recur does ICal::Roles::StaticClass {
 }
 
 class ICal::Recur::Iter {
-  my icalrecur_iterator $!iri;
+  has icalrecur_iterator $!iri;
 
   submethod BUILD (:$iter) {
     $!iri = $iter;
