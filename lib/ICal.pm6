@@ -1,6 +1,6 @@
-unit package ICal:ver<0.0.1>
+unit package ICal:ver<0.0.1>;
 
-=begin pod;
+=begin pod
 
 =head1 NAME
 
@@ -9,8 +9,6 @@ ICal - blah blah blah
 =head1 SYNOPSIS
 
  use ICal
-
-=end code
 
 =head1 DESCRIPTION;
 
@@ -26,7 +24,7 @@ Copyright 2021 Xliff <clifton.wood@gmail.com>;
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.;
 
-=end pod;
+=end pod
 
 need ICal::Roles::Pointers;
 need ICal::Roles::StaticClass;
