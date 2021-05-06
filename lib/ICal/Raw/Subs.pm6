@@ -53,7 +53,7 @@ sub p ($p) is export {
 }
 
 # Moved from p6-GStreamer
-sub nocr ($s) is export {
+sub nolf ($s) is export {
   $s.subst("\n", ' ', :g);
 }
 
@@ -184,7 +184,7 @@ sub get_items (
       state @params = $kind ?? $kind.Array !! ();
       do {
         my $np;
-        
+
         if $!init {
           $np = $invocant.&next( |@params, :$raw );
           say "Next: { $np // 'NIL' }" if $ICAL-DEBUG;
