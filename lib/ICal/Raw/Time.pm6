@@ -202,21 +202,19 @@ augment class icaltime_span {
   ) {
     $s1.overlaps($s2);
   }
-  multi method span_overlaps (icaltime_span() $s2) {
+  multi method span_overlaps (icaltime_span:D: icaltime_span() $s2) {
     icaltimehelper_span_overlaps(self, $s2);
   }
 
-  multi method overlaps (
+  multi method contains (
     icaltime_span:U:
     icaltime_span() $s1,
     icaltime_span() $s2
   ) {
     $s1.contains($s2);
   }
-  multi method contains (Int() $container) {
-    my icaltime_span $c = $container;
-
-    icaltimehelper_span_contains(self, $c);
+  multi method contains (icaltime_span:D: icaltime_span() $container) {
+    icaltimehelper_span_contains(self, $container);
   }
 
 }
