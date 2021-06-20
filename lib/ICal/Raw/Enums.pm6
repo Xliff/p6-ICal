@@ -691,7 +691,7 @@ our enum icalrecurrencetype_frequencyEnum is export (
 
 constant icalrecurrencetype_skip is export := uint32;
 our enum icalrecurrencetype_skipEnum is export (
-  ICAL_SKIP_BACKWARD  => 0,
+  ICAL_SKIP_BACKWARD     => 0,
   'ICAL_SKIP_FORWARD',
   'ICAL_SKIP_OMIT',
   'ICAL_SKIP_UNDEFINED'
@@ -754,7 +754,7 @@ our enum icalrequeststatusEnum is export <
 
 constant icalrestriction_kind is export := uint32;
 our enum icalrestriction_kindEnum is export (
-  ICAL_RESTRICTION_NONE         => 0,
+  ICAL_RESTRICTION_NONE            => 0,
   'ICAL_RESTRICTION_ZERO',
   'ICAL_RESTRICTION_ONE',
   'ICAL_RESTRICTION_ZEROPLUS',
@@ -813,7 +813,7 @@ our enum icalvalue_kindEnum is export (
   ICAL_NO_VALUE             => 5031
 );
 
-constant icalrecurrence_array_max_values is export := uint32;
+constant icalrecurrence_array_max_values is export := int16;
 our enum icalrecurrence_array_max_valuesEnum is export (
   ICAL_RECURRENCE_ARRAY_MAX      => 0x7f7f,
   ICAL_RECURRENCE_ARRAY_MAX_BYTE => 0x7f
