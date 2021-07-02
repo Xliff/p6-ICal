@@ -7,6 +7,27 @@ use ICal::Raw::Enums;
 
 unit package ICal::Raw::Structs;
 
+# CArray replacement for sized classes - Ripped from p6-GLib
+class SizedCArray is CArray {
+  has        $!size;
+  has CArray $!native handles *.grep({ ( .name // '' ) ne 'elems' });
+
+  method size is rw {
+    Proxy.new:
+      FETCH => -> $     { $!size },
+      STORE => -> $, \s { $!size = s }
+  }
+
+  method elems { $!size.defined ?? $!size !! nextsame }
+
+  submethod BUILD ( :$!native, :$!size ) { }
+
+  method new ($native, $size) {
+    self.bless( :$native, :$size );
+  }
+
+}
+
 # Predeclarations
 
 class pvl_elem_t          is repr<CStruct> is export { ... }
