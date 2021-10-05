@@ -1,0 +1,142 @@
+Dependency Generation
+=====================
+real 2.88
+user 4.04
+sys 0.19
+ === Method::Also === (1/258)
+Stage start      :   0.000
+
+    precomp ../Method-Also/lib/Method/Also.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.378
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.021
+    Stage mast       :   0.028
+    Stage mbc        :   0.004
+Stage parse      :  10.210
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === NativeCall === (2/258)
+Stage start      :   0.000
+Stage parse      :   1.662
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === NativeHelpers::Blob === (3/258)
+Stage start      :   0.000
+
+    precomp ../rakudobrew/versions/moar-blead/install/share/perl6/site/sources/90F9A7BD603DC5E9F17D304F0B219E92A09DC75F
+    Stage start      :   0.001
+    
+        precomp ../rakudobrew/versions/moar-blead/install/share/perl6/site/sources/781C993E2F139E63040153B43CF8A1993DD91B43
+        Stage start      :   0.000
+        Stage parse      :   1.812
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   :   0.010
+        Stage mast       :   0.030
+        Stage mbc        :   0.003
+    Stage parse      :   3.931
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.024
+    Stage mast       :   0.036
+    Stage mbc        :   0.003
+Stage parse      :   5.558
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.009
+Stage moar       :   0.000
+ === ICal::Roles::Pointers === (4/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Roles/Pointers.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.735
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.042
+    Stage mbc        :   0.002
+Stage parse      :   3.306
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Enums === (5/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Enums.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.201
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.059
+    Stage mast       :   0.066
+    Stage mbc        :   0.026
+Stage parse      :   2.911
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.006
+Stage mast       :   0.012
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Raw::Definitions === (6/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Definitions.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.919
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.020
+    Stage mbc        :   0.003
+Stage parse      :   3.500
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.007
+Stage moar       :   0.000
+ === ICal::Raw::Enum === (7/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Enum.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.829
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.007
+Stage parse      :   3.422
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.018
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Error === (8/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Error.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.953
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.023
+    Stage mbc        :   0.013
