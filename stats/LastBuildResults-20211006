@@ -1,0 +1,79 @@
+Dependency Generation
+=====================
+real 1.94
+user 2.56
+sys 0.08
+ === Method::Also === (1/258)
+Stage start      :   0.000
+
+    precomp ../Method-Also/lib/Method/Also.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.304
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.047
+    Stage mast       :   0.023
+    Stage mbc        :   0.005
+Stage parse      :   2.401
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.000
+Stage moar       :   0.000
+ === NativeCall === (2/258)
+Stage start      :   0.000
+Stage parse      :   1.937
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.000
+Stage moar       :   0.000
+ === NativeHelpers::Blob === (3/258)
+Stage start      :   0.000
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Could not find NativeHelpers::Blob in:
+    file#/home/cbwood/Projects/Method-Also/lib
+    file#/home/cbwood/Projects/p6-ICal/lib
+    file#/home/cbwood/Projects/p6-GLib/lib
+    file#/home/cbwood/Projects/p6-ICal-GLib/lib
+    file#/home/cbwood/Projects/p6-ATK/lib
+    file#/home/cbwood/Projects/p6-JSON-GLib/lib
+    file#/home/cbwood/Projects/p6-GIR/lib
+    file#/home/cbwood/Projects/p6-SOUP/lib
+    file#/home/cbwood/Projects/p6-GSSDP/lib
+    file#/home/cbwood/Projects/p6-GUPnP/lib
+    file#/home/cbwood/Projects/p6-Pango/lib
+    file#/home/cbwood/Projects/p6-GIO/lib
+    file#/home/cbwood/Projects/p6-GDK/lib
+    file#/home/cbwood/Projects/p6-GtkPlus/lib
+    file#/home/cbwood/Projects/p6-GtkBuilder/lib
+    file#/home/cbwood/Projects/p6-WebkitGTK/lib
+    file#/home/cbwood/Projects/p6-SourceViewGTK/lib
+    file#/home/cbwood/Projects/p6-AMTK/lib
+    file#/home/cbwood/Projects/p6-TEPL/lib
+    file#/home/cbwood/Projects/p6-GooCanvas/lib
+    file#/home/cbwood/Projects/p6-Slope/lib
+    file#/home/cbwood/Projects/p6-WNCK/lib
+    file#/home/cbwood/Projects/p6-Clutter/lib
+    file#/home/cbwood/Projects/p6-GtkClutter/lib
+    file#/home/cbwood/Projects/p6-COGL/lib
+    file#/home/cbwood/Projects/p6-GStreamer/lib
+    file#/home/cbwood/Projects/p6-RSVG/lib
+    file#/home/cbwood/Projects/p6-GtkSheet/lib
+    file#/home/cbwood/Projects/p6-VTE/lib
+    file#/home/cbwood/Projects/p6-ICal/bin
+    inst#/home/cbwood/.raku
+    inst#/home/cbwood/Projects/rakudobrew/versions/moar-ba15173fd/install/share/perl6/site
+    inst#/home/cbwood/Projects/rakudobrew/versions/moar-ba15173fd/install/share/perl6/vendor
+    inst#/home/cbwood/Projects/rakudobrew/versions/moar-ba15173fd/install/share/perl6/core
+    ap#
+    nqp#
+    perl5#
+at -e:1
+ === ICal::Roles::Pointers === (4/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Roles/Pointers.pm6
+    Stage start      :   0.000
