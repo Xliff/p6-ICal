@@ -1,0 +1,4626 @@
+Dependency Generation
+=====================
+real 1.34
+user 1.85
+sys 0.04
+ === Method::Also === (1/258)
+Stage start      :   0.000
+Stage parse      :   0.867
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === NativeCall === (2/258)
+Stage start      :   0.000
+Stage parse      :   0.930
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.001
+Stage mbc        :   0.000
+Stage moar       :   0.000
+ === NativeHelpers::Blob === (3/258)
+Stage start      :   0.000
+Stage parse      :   0.962
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.000
+Stage moar       :   0.000
+ === ICal::Roles::Pointers === (4/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Roles/Pointers.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.171
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.010
+    Stage mbc        :   0.003
+Stage parse      :   2.099
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Enums === (5/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Enums.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.848
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.047
+    Stage mast       :   0.071
+    Stage mbc        :   0.023
+Stage parse      :   1.939
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.004
+Stage mast       :   0.008
+Stage mbc        :   0.003
+Stage moar       :   0.000
+ === ICal::Raw::Definitions === (6/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Definitions.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.103
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.011
+    Stage mbc        :   0.002
+Stage parse      :   2.095
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Enum === (7/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Enum.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.164
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.014
+    Stage mbc        :   0.005
+Stage parse      :   2.122
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Error === (8/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Error.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.301
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.014
+    Stage mast       :   0.018
+    Stage mbc        :   0.010
+Stage parse      :   2.296
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Memory === (9/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Memory.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.205
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.021
+    Stage mbc        :   0.004
+Stage parse      :   2.176
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Parser === (10/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Parser.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.222
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.013
+    Stage mast       :   0.020
+    Stage mbc        :   0.008
+Stage parse      :   2.226
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Structs === (11/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Structs.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.500
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.040
+    Stage mast       :   0.090
+    Stage mbc        :   0.010
+Stage parse      :   2.578
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Subs === (12/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Subs.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.257
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.026
+    Stage mast       :   0.057
+    Stage mbc        :   0.002
+Stage parse      :   2.287
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Timezone === (13/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Timezone.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.549
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.020
+    Stage mast       :   0.046
+    Stage mbc        :   0.020
+Stage parse      :   2.584
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Exports === (14/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Exports.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.970
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.004
+    Stage mast       :   0.009
+    Stage mbc        :   0.001
+Stage parse      :   1.942
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Types === (15/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Types.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.984
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.003
+    Stage mast       :   0.008
+    Stage mbc        :   0.002
+Stage parse      :   1.960
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.005
+Stage mast       :   0.010
+Stage mbc        :   0.004
+Stage moar       :   0.000
+ === ICal::Raw::Value === (16/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Value.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.291
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.022
+    Stage mbc        :   0.016
+Stage parse      :   2.252
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Roles::StaticClass === (17/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Roles/StaticClass.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.938
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.004
+    Stage mast       :   0.007
+    Stage mbc        :   0.002
+Stage parse      :   1.895
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::TZUtil === (18/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/TZUtil.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.106
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.014
+    Stage mbc        :   0.003
+Stage parse      :   2.091
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value === (19/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.041
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.016
+    Stage mast       :   0.029
+    Stage mbc        :   0.005
+Stage parse      :   2.038
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Action === (20/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Action.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.022
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   1.989
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Attach === (21/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Attach.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.050
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.016
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Binary === (22/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Binary.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.050
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.018
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Boolean === (23/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Boolean.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.067
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.025
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::BusyType === (24/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/BusyType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.045
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.031
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::CalAddress === (25/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/CalAddress.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.076
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.014
+    Stage mbc        :   0.003
+Stage parse      :   2.072
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::CarLevel === (26/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/CarLevel.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.077
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.061
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Class === (27/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Class.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.084
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.064
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Cmd === (28/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Cmd.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.065
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.021
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Date === (29/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Date.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.064
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.013
+    Stage mbc        :   0.004
+Stage parse      :   2.013
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::DateTime === (30/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/DateTime.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.075
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.027
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::DateTimeDate === (31/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/DateTimeDate.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.041
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.019
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::DateTimePeriod === (32/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/DateTimePeriod.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.027
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.004
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Duration === (33/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Duration.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.052
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.002
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Float === (34/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Float.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.013
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.015
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Geo === (35/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Geo.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.057
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.042
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Integer === (36/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Integer.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.043
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.008
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Method === (37/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Method.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.058
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.062
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Period === (38/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Period.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.072
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.067
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::PollCompletion === (39/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/PollCompletion.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.075
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.052
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::PollMode === (40/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/PollMode.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.058
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.043
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Query === (41/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Query.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.058
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.048
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::QueryLevel === (42/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/QueryLevel.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.082
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.023
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Recur === (43/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Recur.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.065
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.052
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::RequestStatus === (44/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/RequestStatus.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.074
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.013
+    Stage mbc        :   0.004
+Stage parse      :   2.051
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Status === (45/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Status.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.051
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.016
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::String === (46/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/String.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.085
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.054
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::TaskMode === (47/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/TaskMode.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.043
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.016
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Text === (48/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Text.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.038
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.051
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Transp === (49/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Transp.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.070
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.044
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Trigger === (50/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Trigger.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.085
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.060
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::URI === (51/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/URI.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.065
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.021
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::UTCOffset === (52/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/UTCOffset.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.035
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.999
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::X === (53/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/X.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.038
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.016
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::XLicClass === (54/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/XLicClass.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.055
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.009
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::DerivedValue === (55/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/DerivedValue.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.361
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.001
+    Stage mast       :   0.008
+    Stage mbc        :   0.000
+Stage parse      :   2.366
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Enum === (56/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Enum.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.987
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.012
+    Stage mast       :   0.015
+    Stage mbc        :   0.003
+Stage parse      :   1.980
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Error === (57/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Error.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.190
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.016
+    Stage mbc        :   0.006
+Stage parse      :   2.162
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Memory === (58/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Memory.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.210
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.015
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.190
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parser === (59/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parser.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.125
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.014
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.084
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Array === (60/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Array.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.194
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.029
+    Stage mbc        :   0.005
+Stage parse      :   2.173
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Attach === (61/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Attach.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.115
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.020
+    Stage mbc        :   0.003
+Stage parse      :   2.057
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Calendar === (62/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Calendar.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.176
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.006
+    Stage mast       :   0.016
+    Stage mbc        :   0.004
+Stage parse      :   2.135
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Cluster === (63/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Cluster.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.291
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.012
+    Stage mast       :   0.025
+    Stage mbc        :   0.010
+Stage parse      :   2.271
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Component === (64/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Component.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.285
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.041
+    Stage mast       :   0.112
+    Stage mbc        :   0.064
+Stage parse      :   3.479
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Duration === (65/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Duration.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.146
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.012
+    Stage mast       :   0.027
+    Stage mbc        :   0.009
+Stage parse      :   2.141
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Gauge === (66/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Gauge.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.187
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.006
+    Stage mast       :   0.017
+    Stage mbc        :   0.005
+Stage parse      :   2.182
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Parameter === (67/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Parameter.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.397
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.033
+    Stage mbc        :   0.016
+Stage parse      :   2.412
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Period === (68/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Period.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.108
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.014
+    Stage mbc        :   0.007
+Stage parse      :   2.085
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Property === (69/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.787
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.028
+    Stage mast       :   0.074
+    Stage mbc        :   0.035
+Stage parse      :   2.918
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Recur === (70/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Recur.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.369
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.027
+    Stage mbc        :   0.013
+Stage parse      :   2.362
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Set === (71/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Set.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.435
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.021
+    Stage mast       :   0.041
+    Stage mbc        :   0.018
+Stage parse      :   2.465
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Recur === (72/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Recur.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.161
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.022
+    Stage mast       :   0.030
+    Stage mbc        :   0.003
+Stage parse      :   2.142
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Set === (73/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Set.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.260
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.025
+    Stage mast       :   0.034
+    Stage mbc        :   0.004
+Stage parse      :   2.256
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Array === (74/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Array.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.135
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.053
+    Stage mast       :   0.057
+    Stage mbc        :   0.003
+Stage parse      :   2.175
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Attach === (75/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Attach.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.066
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.013
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.026
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Calendar === (76/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Calendar.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.009
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.012
+    Stage mast       :   0.040
+    Stage mbc        :   0.003
+Stage parse      :   2.000
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Cluster === (77/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Cluster.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.038
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.026
+    Stage mbc        :   0.003
+Stage parse      :   2.013
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Gauge === (78/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Gauge.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.987
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.016
+    Stage mbc        :   0.002
+Stage parse      :   1.936
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter === (79/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.147
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.023
+    Stage mast       :   0.035
+    Stage mbc        :   0.005
+Stage parse      :   2.146
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::ActionParam === (80/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ActionParam.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.046
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.006
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::CN === (81/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/CN.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.048
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.014
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::CUType === (82/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/CUType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.051
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.003
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::DelegatedFrom === (83/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/DelegatedFrom.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.036
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.002
+Stage parse      :   1.998
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::DelegatedTo === (84/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/DelegatedTo.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.047
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   2.021
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Dir === (85/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Dir.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.026
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.984
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::Display === (86/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Display.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.030
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.996
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Email === (87/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Email.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.023
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.993
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Enable === (88/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Enable.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.027
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.981
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Encoding === (89/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Encoding.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.033
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.003
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::FBType === (90/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/FBType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.066
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.002
+Stage parse      :   2.055
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::Feature === (91/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Feature.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.021
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.024
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Filename === (92/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Filename.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.022
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   1.984
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::FmtType === (93/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/FmtType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.065
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.002
+Stage parse      :   2.026
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::IANA === (94/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/IANA.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.002
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.000
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.006
+Stage moar       :   0.000
+ === ICal::Parameter::ID === (95/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.095
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.014
+    Stage mbc        :   0.003
+Stage parse      :   2.104
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::Label === (96/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Label.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.069
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.014
+    Stage mbc        :   0.003
+Stage parse      :   2.065
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Language === (97/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Language.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.041
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   2.013
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Latency === (98/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Latency.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.060
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.014
+    Stage mbc        :   0.003
+Stage parse      :   2.080
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.006
+Stage moar       :   0.000
+ === ICal::Parameter::Local === (99/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Local.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.076
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.097
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Localize === (100/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Localize.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.032
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.046
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::ManagedID === (101/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ManagedID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.072
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.014
+    Stage mbc        :   0.003
+Stage parse      :   2.051
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::Member === (102/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Member.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.050
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.999
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Modified === (103/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Modified.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.026
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.016
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Options === (104/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Options.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.014
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.971
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::PartStat === (105/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/PartStat.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.045
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.998
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::PatchAction === (106/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/PatchAction.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.082
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.033
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::PublicComment === (107/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/PublicComment.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.114
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.092
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::RSVP === (108/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/RSVP.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.086
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.041
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Range === (109/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Range.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.061
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.039
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Reason === (110/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Reason.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.067
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.033
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::RelType === (111/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/RelType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.031
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.994
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::Related === (112/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Related.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.064
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.038
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.006
+Stage moar       :   0.000
+ === ICal::Parameter::Response === (113/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Response.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.068
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.057
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Role === (114/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Role.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.043
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.021
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::ScheduleAgent === (115/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ScheduleAgent.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.043
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.016
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::ScheduleForceSend === (116/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ScheduleForceSend.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.041
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.991
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::ScheduleStatus === (117/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ScheduleStatus.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.047
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.019
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::SentBy === (118/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/SentBy.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.047
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.047
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Size === (119/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Size.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.053
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.024
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::StayInformed === (120/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/StayInformed.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.047
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.048
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::SubState === (121/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/SubState.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.044
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.018
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::TZID === (122/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/TZID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.042
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   2.020
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Value === (123/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Value.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.048
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.002
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::X === (124/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/X.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.045
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.038
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::XLicCompareType === (125/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/XLicCompareType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.042
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.000
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.005
+Stage moar       :   0.000
+ === ICal::Parameter::XLicErrorType === (126/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/XLicErrorType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.069
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.062
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Period === (127/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Period.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.045
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.012
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.037
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property === (128/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.349
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.038
+    Stage mast       :   0.066
+    Stage mbc        :   0.006
+Stage parse      :   2.438
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::AcceptResponse === (129/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/AcceptResponse.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.084
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.062
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Acknowledged === (130/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Acknowledged.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.112
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.117
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.013
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Action === (131/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Action.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.054
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.038
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::AllowConflict === (132/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/AllowConflict.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.085
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.076
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Attach === (133/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Attach.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.065
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.034
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Attendee === (134/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Attendee.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.056
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.020
+    Stage mbc        :   0.003
+Stage parse      :   2.033
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::BusyType === (135/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/BusyType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.061
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.119
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::CSID === (136/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CSID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.061
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.038
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::CalID === (137/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CalID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.063
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.059
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.012
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::CalMaster === (138/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CalMaster.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.071
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.016
+    Stage mbc        :   0.003
+Stage parse      :   2.061
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::CalScale === (139/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CalScale.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.043
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.028
+    Stage mbc        :   0.003
+Stage parse      :   2.043
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::CapVersion === (140/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CapVersion.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.044
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.027
+    Stage mbc        :   0.003
+Stage parse      :   2.067
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::CarID === (141/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CarID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.082
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.037
+    Stage mbc        :   0.003
+Stage parse      :   2.072
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::CarLevel === (142/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CarLevel.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.103
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.013
+    Stage mbc        :   0.027
+Stage parse      :   2.092
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Categories === (143/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Categories.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.042
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.028
+    Stage mbc        :   0.003
+Stage parse      :   2.037
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Class === (144/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Class.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.058
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.030
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Cmd === (145/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Cmd.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.078
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.026
+Stage parse      :   2.071
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Color === (146/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Color.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.046
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.021
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Comment === (147/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Comment.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.078
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.020
+    Stage mbc        :   0.003
+Stage parse      :   2.087
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Completed === (148/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Completed.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.054
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.028
+    Stage mbc        :   0.003
+Stage parse      :   2.039
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Components === (149/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Components.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.050
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.028
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Conference === (150/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Conference.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.071
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.027
+    Stage mbc        :   0.004
+Stage parse      :   2.098
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Contact === (151/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Contact.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.081
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.072
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Created === (152/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Created.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.054
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.031
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.012
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::DTEnd === (153/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/DTEnd.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.069
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.028
+    Stage mbc        :   0.003
+Stage parse      :   2.061
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::DTStamp === (154/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/DTStamp.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.065
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.016
+    Stage mbc        :   0.003
+Stage parse      :   2.051
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::DTStart === (155/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/DTStart.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.080
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.076
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Dat === (156/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Dat.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.062
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.021
+    Stage mbc        :   0.003
+Stage parse      :   2.051
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::DateMin === (157/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/DateMin.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.062
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.038
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Decreed === (158/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Decreed.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.107
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.020
+    Stage mbc        :   0.003
+Stage parse      :   2.103
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::DefaultCharset === (159/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/DefaultCharset.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.054
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.037
+    Stage mbc        :   0.003
+Stage parse      :   2.026
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::DefaultLocale === (160/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/DefaultLocale.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.037
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.016
+    Stage mbc        :   0.002
+Stage parse      :   2.025
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::DefaultTZID === (161/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/DefaultTZID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.058
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.027
+    Stage mbc        :   0.003
+Stage parse      :   2.056
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::DefaultVCars === (162/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/DefaultVCars.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.067
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.020
+    Stage mbc        :   0.003
+Stage parse      :   2.093
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Deny === (163/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Deny.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.055
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.020
+    Stage mbc        :   0.003
+Stage parse      :   2.053
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Description === (164/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Description.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.060
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.044
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Due === (165/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Due.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.032
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.038
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Duration === (166/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Duration.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.080
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.022
+    Stage mbc        :   0.003
+Stage parse      :   2.064
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::EstimatedDuration === (167/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/EstimatedDuration.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.086
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.022
+    Stage mbc        :   0.003
+Stage parse      :   2.119
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::ExDate === (168/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/ExDate.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.066
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.060
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::ExRule === (169/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/ExRule.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.056
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.023
+    Stage mbc        :   0.003
+Stage parse      :   2.038
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Expand === (170/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Expand.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.068
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.067
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.012
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::FreeBusy === (171/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/FreeBusy.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.055
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.023
+    Stage mbc        :   0.003
+Stage parse      :   2.029
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Geo === (172/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Geo.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.067
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.056
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Grant === (173/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Grant.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.065
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.108
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.012
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::ITipVersion === (174/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/ITipVersion.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.076
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.015
+    Stage mbc        :   0.003
+Stage parse      :   2.060
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Image === (175/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Image.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.102
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.090
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::LastModified === (176/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/LastModified.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.089
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.093
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Location === (177/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Location.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.088
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.095
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::MaxComponentSize === (178/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/MaxComponentSize.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.078
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.075
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::MaxDate === (179/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/MaxDate.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.085
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.074
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::MaxResults === (180/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/MaxResults.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.066
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.021
+    Stage mbc        :   0.004
+Stage parse      :   2.073
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::MaxResultsSize === (181/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/MaxResultsSize.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.048
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.022
+    Stage mbc        :   0.003
+Stage parse      :   2.054
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Method === (182/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Method.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.086
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   2.082
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::MinDate === (183/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/MinDate.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.106
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.012
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.065
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Multipart === (184/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Multipart.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.086
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.028
+    Stage mbc        :   0.003
+Stage parse      :   2.114
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Name === (185/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Name.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.080
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.016
+    Stage mbc        :   0.003
+Stage parse      :   2.087
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Organizer === (186/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Organizer.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.056
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.016
+    Stage mbc        :   0.002
+Stage parse      :   2.031
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Owner === (187/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Owner.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.083
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.080
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PatchDelete === (188/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PatchDelete.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.079
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.077
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PatchOrder === (189/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PatchOrder.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.117
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.119
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PatchParameter === (190/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PatchParameter.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.087
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.063
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PatchTarget === (191/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PatchTarget.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.092
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.093
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PatchVersion === (192/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PatchVersion.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.076
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.027
+    Stage mbc        :   0.003
+Stage parse      :   2.066
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PercentComplete === (193/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PercentComplete.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.091
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.021
+    Stage mbc        :   0.003
+Stage parse      :   2.081
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Permission === (194/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Permission.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.025
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.026
+    Stage mbc        :   0.003
+Stage parse      :   2.070
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PollCompletion === (195/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PollCompletion.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.101
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.081
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PollItemID === (196/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PollItemID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.059
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.021
+    Stage mbc        :   0.003
+Stage parse      :   2.037
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PollMode === (197/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PollMode.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.051
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.028
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PollProperties === (198/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PollProperties.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.067
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.047
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::PollWinner === (199/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/PollWinner.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.035
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.026
+    Stage mbc        :   0.003
+Stage parse      :   2.056
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Priority === (200/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Priority.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.077
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.090
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::ProdID === (201/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/ProdID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.091
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.087
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.012
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Query === (202/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Query.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.032
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.016
+    Stage mbc        :   0.003
+Stage parse      :   2.023
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::QueryID === (203/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/QueryID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.050
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.062
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::QueryLevel === (204/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/QueryLevel.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.060
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.017
+    Stage mbc        :   0.002
+Stage parse      :   2.108
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::QueryName === (205/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/QueryName.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.126
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.016
+    Stage mast       :   0.023
+    Stage mbc        :   0.004
+Stage parse      :   2.123
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::RDate === (206/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/RDate.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.071
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.021
+    Stage mbc        :   0.003
+Stage parse      :   2.038
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::RRule === (207/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/RRule.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.036
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.023
+    Stage mbc        :   0.003
+Stage parse      :   2.044
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::RecurAccepted === (208/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/RecurAccepted.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.049
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.020
+    Stage mbc        :   0.003
+Stage parse      :   2.056
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::RecurExpand === (209/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/RecurExpand.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.091
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.090
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::RecurLimit === (210/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/RecurLimit.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.057
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.062
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::RecurrenceID === (211/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/RecurrenceID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.085
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.076
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::RefreshInterval === (212/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/RefreshInterval.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.062
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.016
+    Stage mbc        :   0.003
+Stage parse      :   2.053
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::RelCalID === (213/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/RelCalID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.092
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.016
+    Stage mbc        :   0.002
+Stage parse      :   2.123
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::RelatedTo === (214/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/RelatedTo.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.057
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.043
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Repeat === (215/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Repeat.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.069
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.068
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::ReplyURL === (216/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/ReplyURL.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.042
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.033
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::RequestStatus === (217/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/RequestStatus.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.071
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.022
+    Stage mbc        :   0.003
+Stage parse      :   2.039
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Resources === (218/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Resources.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.066
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.026
+    Stage mbc        :   0.003
+Stage parse      :   2.067
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Response === (219/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Response.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.044
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.020
+    Stage mbc        :   0.003
+Stage parse      :   2.021
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Restriction === (220/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Restriction.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.048
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.016
+    Stage mbc        :   0.002
+Stage parse      :   2.023
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Scope === (221/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Scope.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.030
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.005
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Sequence === (222/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Sequence.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.021
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.001
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Source === (223/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Source.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.047
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.024
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Status === (224/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Status.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.039
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.027
+    Stage mbc        :   0.003
+Stage parse      :   2.041
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::StoresExpanded === (225/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/StoresExpanded.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.043
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.123
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Summary === (226/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Summary.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.057
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.016
+    Stage mbc        :   0.003
+Stage parse      :   2.043
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::TZID === (227/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/TZID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.055
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.027
+    Stage mbc        :   0.003
+Stage parse      :   2.046
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::TZIDAliasOf === (228/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/TZIDAliasOf.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.036
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.027
+    Stage mbc        :   0.003
+Stage parse      :   2.023
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::TZName === (229/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/TZName.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.039
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.014
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::TZOffsetFrom === (230/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/TZOffsetFrom.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.087
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.103
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.012
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::TZOffsetTo === (231/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/TZOffsetTo.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.060
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.081
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::TZUntil === (232/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/TZUntil.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.045
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.032
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::TZUrl === (233/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/TZUrl.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.050
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.039
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Target === (234/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Target.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.055
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.040
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::TaskMode === (235/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/TaskMode.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.027
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.031
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Transp === (236/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Transp.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.035
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.055
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Trigger === (237/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Trigger.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.070
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.045
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::UID === (238/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/UID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.055
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.069
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.014
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Url === (239/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Url.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.054
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.019
+    Stage mbc        :   0.003
+Stage parse      :   2.054
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Version === (240/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Version.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.080
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.016
+    Stage mbc        :   0.003
+Stage parse      :   2.089
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::Voter === (241/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Voter.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.060
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.062
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::X === (242/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/X.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.060
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.016
+    Stage mbc        :   0.003
+Stage parse      :   2.092
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::XLicClass === (243/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/XLicClass.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.028
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   2.030
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::XLicClusterCount === (244/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/XLicClusterCount.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.066
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.063
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::XLicError === (245/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/XLicError.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.061
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.018
+    Stage mbc        :   0.003
+Stage parse      :   2.050
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.012
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::XLicMIMECID === (246/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/XLicMIMECID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.056
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.016
+    Stage mbc        :   0.003
+Stage parse      :   2.056
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::XLicMIMECharset === (247/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/XLicMIMECharset.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.072
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.016
+    Stage mbc        :   0.003
+Stage parse      :   2.073
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::XLicMIMEContenttype === (248/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/XLicMIMEContenttype.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.068
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.084
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::XLicMIMEEncoding === (249/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/XLicMIMEEncoding.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.061
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.027
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.009
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::XLicMIMEFilename === (250/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/XLicMIMEFilename.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.058
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.062
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property::XLicMIMEOptinfo === (251/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/XLicMIMEOptinfo.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.079
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   2.068
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Component === (252/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Component.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.489
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.091
+    Stage mast       :   0.091
+    Stage mbc        :   0.011
+Stage parse      :   2.673
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.011
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::DerivedParameter === (253/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/DerivedParameter.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.554
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.002
+    Stage mast       :   0.008
+    Stage mbc        :   0.000
+Stage parse      :   2.590
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::DerivedProperty === (254/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/DerivedProperty.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.666
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.002
+    Stage mast       :   0.012
+    Stage mbc        :   0.001
+Stage parse      :   3.797
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.010
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::MIME === (255/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/MIME.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.159
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.012
+    Stage mbc        :   0.002
+Stage parse      :   2.115
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.006
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Timezone === (256/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Timezone.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.390
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.074
+    Stage mast       :   0.057
+    Stage mbc        :   0.008
+Stage parse      :   2.489
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal === (257/258)
+Stage start      :   0.000
+
+    precomp lib/ICal.pm6
+    Stage start      :   0.000
+    Stage parse      :   4.912
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.003
+    Stage mast       :   0.014
+    Stage mbc        :   0.001
+Stage parse      :   6.217
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Time === (258/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Time.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.718
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.051
+    Stage mast       :   0.069
+    Stage mbc        :   0.026
+Stage parse      :   2.867
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.006
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+real 577.76
+user 687.77
+sys 46.13
