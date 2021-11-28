@@ -1,8 +1,15 @@
 {
   "authors": [ "clifton.wood@gmail.com" ],
   "build-depends": [
+	"Config::INI",
+	"Dependency::Sort",
+	"Text::Table::Simple",
+	"File::Find"
   ],
   "depends": [
+	"Method::Also",
+	"NativeHelpers::Blob",
+	"CompUnit::Util"
   ],
   "description": "Perl6 API Bindings for libical",
   "license": "Artistic-2.0",
