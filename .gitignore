@@ -1,5 +1,4 @@
 *.pm6bak
-LastBuildResults
 LastBuildResults.*
 *.bak
 *.iml
