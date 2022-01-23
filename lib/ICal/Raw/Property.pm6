@@ -44,13 +44,13 @@ sub icalproperty_enum_belongs_to_property (icalproperty_kind $kind, int32 $e)
   is export
 { * }
 
-sub icalproperty_enum_to_string (int32 $e)
+sub icalproperty_enum_to_string (uint32 $e)
   returns Str
   is native(ical)
   is export
 { * }
 
-sub icalproperty_enum_to_string_r (int32 $e)
+sub icalproperty_enum_to_string_r (uint32 $e)
   returns Str
   is native(ical)
   is export
