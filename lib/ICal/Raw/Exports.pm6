@@ -11,8 +11,8 @@ our %exported;
 sub ical-re-export ($compunit) is export {
   return if %exported{$compunit}:exists;
 
-  re-export-everything($compunit);
   %exported{$compunit} = True;
+  re-export-everything($compunit);
 }
 
 BEGIN {
