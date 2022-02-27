@@ -1,33 +1,60 @@
 Dependency Generation
 =====================
-real 1.60
-user 1.93
-sys 0.04
+real 2.31
+user 3.01
+sys 0.10
  === Method::Also === (1/258)
 Stage start      :   0.000
-Stage parse      :   1.214
+
+    precomp ../../.rakubrew/versions/moar-blead/install/share/perl6/site/sources/B68CE9EA32B0E1E1475BB18BDCE95F709D4B9B18
+    Stage start      :   0.000
+    Stage parse      :   0.222
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.017
+    Stage mbc        :   0.003
+Stage parse      :   1.185
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
-Stage mast       :   0.004
+Stage mast       :   0.007
 Stage mbc        :   0.001
 Stage moar       :   0.000
  === NativeCall === (2/258)
 Stage start      :   0.000
-Stage parse      :   0.957
+Stage parse      :   0.916
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.001
+Stage optimize   :   0.000
 Stage mast       :   0.002
 Stage mbc        :   0.001
 Stage moar       :   0.000
  === NativeHelpers::Blob === (3/258)
 Stage start      :   0.000
-Stage parse      :   0.986
+
+    precomp ../../.rakubrew/versions/moar-blead/install/share/perl6/site/sources/90F9A7BD603DC5E9F17D304F0B219E92A09DC75F
+    Stage start      :   0.000
+    
+        precomp ../../.rakubrew/versions/moar-blead/install/share/perl6/site/sources/781C993E2F139E63040153B43CF8A1993DD91B43
+        Stage start      :   0.000
+        Stage parse      :   1.122
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   :   0.009
+        Stage mast       :   0.022
+        Stage mbc        :   0.003
+    Stage parse      :   2.419
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.021
+    Stage mast       :   0.024
+    Stage mbc        :   0.003
+Stage parse      :   3.399
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
-Stage optimize   :   0.000
-Stage mast       :   0.001
+Stage optimize   :   0.001
+Stage mast       :   0.005
 Stage mbc        :   0.001
 Stage moar       :   0.000
  === ICal::Roles::Pointers === (4/258)
@@ -35,13 +62,13 @@ Stage start      :   0.000
 
     precomp lib/ICal/Roles/Pointers.pm6
     Stage start      :   0.000
-    Stage parse      :   1.094
+    Stage parse      :   1.042
     Stage syntaxcheck:   0.000
     Stage ast        :   0.000
     Stage optimize   :   0.006
-    Stage mast       :   0.020
-    Stage mbc        :   0.005
-Stage parse      :   2.062
+    Stage mast       :   0.010
+    Stage mbc        :   0.003
+Stage parse      :   1.984
 Stage syntaxcheck:   0.000
 Stage ast        :   0.000
 Stage optimize   :   0.001
@@ -53,3 +80,3867 @@ Stage start      :   0.000
 
     precomp lib/ICal/Raw/Enums.pm6
     Stage start      :   0.000
+    Stage parse      :   0.807
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.048
+    Stage mast       :   0.059
+    Stage mbc        :   0.032
+Stage parse      :   1.869
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.004
+Stage mast       :   0.009
+Stage mbc        :   0.003
+Stage moar       :   0.000
+ === ICal::Raw::Definitions === (6/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Definitions.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.122
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.014
+    Stage mbc        :   0.003
+Stage parse      :   2.078
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Enum === (7/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Enum.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.146
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.018
+    Stage mbc        :   0.006
+Stage parse      :   2.114
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Error === (8/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Error.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.199
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.024
+    Stage mbc        :   0.012
+Stage parse      :   2.185
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Memory === (9/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Memory.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.158
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.007
+    Stage mast       :   0.011
+    Stage mbc        :   0.006
+Stage parse      :   2.122
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Parser === (10/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Parser.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.185
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.014
+    Stage mbc        :   0.010
+Stage parse      :   2.152
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Structs === (11/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Structs.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.444
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.043
+    Stage mast       :   0.082
+    Stage mbc        :   0.013
+Stage parse      :   2.449
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Subs === (12/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Subs.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.186
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.027
+    Stage mast       :   0.038
+    Stage mbc        :   0.012
+Stage parse      :   2.183
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Timezone === (13/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Timezone.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.517
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.025
+    Stage mbc        :   0.030
+Stage parse      :   2.562
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Exports === (14/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Exports.pm6
+    Stage start      :   0.000
+    
+        precomp ../../.rakubrew/versions/moar-blead/install/share/perl6/site/sources/C6D7E07EC1EA21D8ADE15195E02C90AB8695E235
+        Stage start      :   0.000
+        Stage parse      :   0.414
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   :   0.037
+        Stage mast       :   0.080
+        Stage mbc        :   0.011
+    Stage parse      :   1.541
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.003
+    Stage mast       :   0.009
+    Stage mbc        :   0.001
+Stage parse      :   2.469
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Types === (15/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Types.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.970
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.003
+    Stage mast       :   0.009
+    Stage mbc        :   0.002
+Stage parse      :   1.897
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.004
+Stage mast       :   0.008
+Stage mbc        :   0.004
+Stage moar       :   0.000
+ === ICal::Raw::Value === (16/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Value.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.248
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.015
+    Stage mbc        :   0.014
+Stage parse      :   2.199
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Roles::StaticClass === (17/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Roles/StaticClass.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.943
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.004
+    Stage mast       :   0.006
+    Stage mbc        :   0.002
+Stage parse      :   1.876
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::TZUtil === (18/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/TZUtil.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.111
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   2.055
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value === (19/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.052
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.022
+    Stage mast       :   0.038
+    Stage mbc        :   0.004
+Stage parse      :   2.099
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Action === (20/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Action.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.016
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.971
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Attach === (21/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Attach.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.976
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.927
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Binary === (22/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Binary.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.007
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.940
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Boolean === (23/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Boolean.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.010
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.007
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::BusyType === (24/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/BusyType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.031
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.970
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::CalAddress === (25/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/CalAddress.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.013
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.952
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::CarLevel === (26/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/CarLevel.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.003
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.946
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Class === (27/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Class.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.009
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.963
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Cmd === (28/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Cmd.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.954
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.928
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Date === (29/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Date.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.013
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.949
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::DateTime === (30/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/DateTime.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.035
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.008
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::DateTimeDate === (31/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/DateTimeDate.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.000
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.944
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::DateTimePeriod === (32/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/DateTimePeriod.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.009
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.949
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Duration === (33/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Duration.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.007
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   1.945
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Float === (34/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Float.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.041
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.021
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Geo === (35/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Geo.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.973
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.934
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Integer === (36/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Integer.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.020
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.943
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Method === (37/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Method.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.006
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.959
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Period === (38/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Period.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.026
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.983
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::PollCompletion === (39/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/PollCompletion.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.014
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.984
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::PollMode === (40/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/PollMode.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.007
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.942
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Query === (41/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Query.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.012
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.944
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::QueryLevel === (42/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/QueryLevel.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.022
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.973
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Recur === (43/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Recur.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.017
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.969
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::RequestStatus === (44/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/RequestStatus.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.052
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.978
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Status === (45/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Status.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.026
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.983
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::String === (46/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/String.pm6
+    Stage start      :   0.000
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Value/String.pm6 (ICal::Value::String)
+    No such private method 'SET-SELF' on Map
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Value/String.pm6 (ICal::Value::String):3
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Value/String.pm6 (ICal::Value::String)
+No such private method 'SET-SELF' on Map
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Value/String.pm6 (ICal::Value::String):3
+
+at -e:1
+ === ICal::Value::TaskMode === (47/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/TaskMode.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.019
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.990
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Text === (48/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Text.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.983
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.943
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Transp === (49/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Transp.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.998
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.949
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::Trigger === (50/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/Trigger.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.004
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.965
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::URI === (51/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/URI.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.996
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.936
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::UTCOffset === (52/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/UTCOffset.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.993
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.947
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::X === (53/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/X.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.002
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.961
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Value::XLicClass === (54/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Value/XLicClass.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.017
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.960
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::DerivedValue === (55/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/DerivedValue.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Value/String.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.031
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   :   0.008
+        Stage mast       :   0.012
+        Stage mbc        :   0.004
+    Stage parse      :   2.600
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.002
+    Stage mast       :   0.008
+    Stage mbc        :   0.001
+Stage parse      :   3.578
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Enum === (56/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Enum.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.962
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.015
+    Stage mbc        :   0.003
+Stage parse      :   1.906
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Error === (57/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Error.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.140
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.015
+    Stage mast       :   0.018
+    Stage mbc        :   0.006
+Stage parse      :   2.096
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Memory === (58/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Memory.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.094
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.017
+    Stage mbc        :   0.004
+Stage parse      :   2.058
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parser === (59/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parser.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.092
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.014
+    Stage mast       :   0.021
+    Stage mbc        :   0.003
+Stage parse      :   2.082
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Array === (60/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Array.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.160
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.024
+    Stage mbc        :   0.007
+Stage parse      :   2.110
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Attach === (61/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Attach.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.050
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.003
+    Stage mast       :   0.010
+    Stage mbc        :   0.004
+Stage parse      :   1.966
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Calendar === (62/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Calendar.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.113
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.011
+    Stage mbc        :   0.006
+Stage parse      :   2.056
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Cluster === (63/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Cluster.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.202
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.015
+    Stage mbc        :   0.013
+Stage parse      :   2.160
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Component === (64/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Component.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.181
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.033
+    Stage mast       :   0.059
+    Stage mbc        :   0.076
+Stage parse      :   3.289
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.007
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Duration === (65/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Duration.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.084
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.017
+    Stage mast       :   0.020
+    Stage mbc        :   0.008
+Stage parse      :   2.076
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Gauge === (66/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Gauge.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.093
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.013
+    Stage mbc        :   0.005
+Stage parse      :   2.025
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Parameter === (67/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Parameter.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.320
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.019
+    Stage mast       :   0.020
+    Stage mbc        :   0.019
+Stage parse      :   2.318
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Period === (68/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Period.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.093
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.005
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.039
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Property === (69/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.689
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.023
+    Stage mast       :   0.032
+    Stage mbc        :   0.042
+Stage parse      :   2.689
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Recur === (70/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Recur.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.311
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.016
+    Stage mast       :   0.020
+    Stage mbc        :   0.019
+Stage parse      :   2.279
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Raw::Set === (71/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Set.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.357
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.013
+    Stage mast       :   0.025
+    Stage mbc        :   0.023
+Stage parse      :   2.319
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Recur === (72/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Recur.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.129
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.021
+    Stage mast       :   0.051
+    Stage mbc        :   0.005
+Stage parse      :   2.138
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Set === (73/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Set.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.178
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.026
+    Stage mast       :   0.038
+    Stage mbc        :   0.006
+Stage parse      :   2.143
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Array === (74/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Array.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.118
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.020
+    Stage mast       :   0.040
+    Stage mbc        :   0.004
+Stage parse      :   2.106
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Attach === (75/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Attach.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.091
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.013
+    Stage mast       :   0.020
+    Stage mbc        :   0.003
+Stage parse      :   2.049
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Calendar === (76/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Calendar.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.982
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.014
+    Stage mast       :   0.021
+    Stage mbc        :   0.003
+Stage parse      :   1.939
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Cluster === (77/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Cluster.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.996
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.021
+    Stage mast       :   0.022
+    Stage mbc        :   0.004
+Stage parse      :   1.958
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Gauge === (78/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Gauge.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.976
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.012
+    Stage mast       :   0.015
+    Stage mbc        :   0.004
+Stage parse      :   1.927
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter === (79/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.125
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.028
+    Stage mast       :   0.034
+    Stage mbc        :   0.006
+Stage parse      :   2.152
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::ActionParam === (80/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ActionParam.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.019
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.997
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::CN === (81/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/CN.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.010
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.957
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::CUType === (82/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/CUType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.015
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.950
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::DelegatedFrom === (83/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/DelegatedFrom.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.001
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.973
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::DelegatedTo === (84/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/DelegatedTo.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.072
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   2.034
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Dir === (85/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Dir.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.025
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.006
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Display === (86/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Display.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.006
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.958
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Email === (87/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Email.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.002
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   1.957
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Enable === (88/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Enable.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.074
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.043
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Encoding === (89/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Encoding.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.035
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.977
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::FBType === (90/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/FBType.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.992
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.000
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Feature === (91/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Feature.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.027
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.997
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Filename === (92/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Filename.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.004
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.013
+    Stage mbc        :   0.003
+Stage parse      :   1.979
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::FmtType === (93/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/FmtType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.017
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   2.008
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.003
+Stage moar       :   0.000
+ === ICal::Parameter::IANA === (94/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/IANA.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.997
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.963
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::ID === (95/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.012
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   2.030
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.008
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Label === (96/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Label.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.021
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.980
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Language === (97/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Language.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.034
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.003
+Stage parse      :   1.991
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Latency === (98/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Latency.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.023
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.006
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.008
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Local === (99/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Local.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.038
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   2.000
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.004
+Stage moar       :   0.000
+ === ICal::Parameter::Localize === (100/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Localize.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.019
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   1.980
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::ManagedID === (101/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ManagedID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.017
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   1.975
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Member === (102/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Member.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.994
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.944
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Modified === (103/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Modified.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.007
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.955
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Options === (104/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Options.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.014
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.959
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::PartStat === (105/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/PartStat.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.015
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.966
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::PatchAction === (106/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/PatchAction.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.018
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.945
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::PublicComment === (107/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/PublicComment.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.016
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.966
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::RSVP === (108/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/RSVP.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.995
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   1.937
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Range === (109/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Range.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.010
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.993
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Reason === (110/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Reason.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.005
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.947
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::RelType === (111/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/RelType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.019
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.973
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Related === (112/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Related.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.003
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.013
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Response === (113/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Response.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.996
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   1.966
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Role === (114/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Role.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.012
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.982
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::ScheduleAgent === (115/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ScheduleAgent.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.027
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.011
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   2.011
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::ScheduleForceSend === (116/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ScheduleForceSend.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.018
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.960
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::ScheduleStatus === (117/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/ScheduleStatus.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.033
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   2.001
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::SentBy === (118/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/SentBy.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.041
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.009
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.994
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Size === (119/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Size.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.004
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.961
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::StayInformed === (120/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/StayInformed.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.002
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.941
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::SubState === (121/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/SubState.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.017
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   2.023
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.008
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::TZID === (122/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/TZID.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.020
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.013
+    Stage mbc        :   0.004
+Stage parse      :   2.013
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.008
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::Value === (123/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/Value.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.992
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.010
+    Stage mast       :   0.013
+    Stage mbc        :   0.006
+Stage parse      :   1.952
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::X === (124/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/X.pm6
+    Stage start      :   0.000
+    Stage parse      :   0.992
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   1.930
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::XLicCompareType === (125/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/XLicCompareType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.005
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.011
+    Stage mbc        :   0.004
+Stage parse      :   1.960
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Parameter::XLicErrorType === (126/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Parameter/XLicErrorType.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.010
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.008
+    Stage mast       :   0.012
+    Stage mbc        :   0.004
+Stage parse      :   1.992
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.002
+Stage mast       :   0.005
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Period === (127/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Period.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.013
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.012
+    Stage mast       :   0.011
+    Stage mbc        :   0.003
+Stage parse      :   1.972
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+ === ICal::Property === (128/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.191
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+Stage parse      :   1.191
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at -e:1
+ === ICal::Property::AcceptResponse === (129/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/AcceptResponse.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.240
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/AcceptResponse.pm6 (ICal::Property::AcceptResponse)
+    Stage start      :   0.000
+    Stage parse      :   1.240
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/AcceptResponse.pm6 (ICal::Property::AcceptResponse):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.240
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/AcceptResponse.pm6 (ICal::Property::AcceptResponse)
+Stage start      :   0.000
+Stage parse      :   1.240
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/AcceptResponse.pm6 (ICal::Property::AcceptResponse):5
+
+at -e:1
+ === ICal::Property::Acknowledged === (130/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Acknowledged.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.194
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Acknowledged.pm6 (ICal::Property::Acknowledged)
+    Stage start      :   0.000
+    Stage parse      :   1.194
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Acknowledged.pm6 (ICal::Property::Acknowledged):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.194
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Acknowledged.pm6 (ICal::Property::Acknowledged)
+Stage start      :   0.000
+Stage parse      :   1.194
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Acknowledged.pm6 (ICal::Property::Acknowledged):5
+
+at -e:1
+ === ICal::Property::Action === (131/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Action.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.211
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Action.pm6 (ICal::Property::Action)
+    Stage start      :   0.000
+    Stage parse      :   1.211
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Action.pm6 (ICal::Property::Action):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.211
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Action.pm6 (ICal::Property::Action)
+Stage start      :   0.000
+Stage parse      :   1.211
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Action.pm6 (ICal::Property::Action):5
+
+at -e:1
+ === ICal::Property::AllowConflict === (132/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/AllowConflict.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.209
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/AllowConflict.pm6 (ICal::Property::AllowConflict)
+    Stage start      :   0.000
+    Stage parse      :   1.209
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/AllowConflict.pm6 (ICal::Property::AllowConflict):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.209
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/AllowConflict.pm6 (ICal::Property::AllowConflict)
+Stage start      :   0.000
+Stage parse      :   1.209
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/AllowConflict.pm6 (ICal::Property::AllowConflict):5
+
+at -e:1
+ === ICal::Property::Attach === (133/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Attach.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.209
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Attach.pm6 (ICal::Property::Attach)
+    Stage start      :   0.000
+    Stage parse      :   1.209
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Attach.pm6 (ICal::Property::Attach):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.209
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Attach.pm6 (ICal::Property::Attach)
+Stage start      :   0.000
+Stage parse      :   1.209
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Attach.pm6 (ICal::Property::Attach):5
+
+at -e:1
+ === ICal::Property::Attendee === (134/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Attendee.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.177
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Attendee.pm6 (ICal::Property::Attendee)
+    Stage start      :   0.000
+    Stage parse      :   1.177
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Attendee.pm6 (ICal::Property::Attendee):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.177
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Attendee.pm6 (ICal::Property::Attendee)
+Stage start      :   0.000
+Stage parse      :   1.177
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Attendee.pm6 (ICal::Property::Attendee):5
+
+at -e:1
+ === ICal::Property::BusyType === (135/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/BusyType.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.208
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/BusyType.pm6 (ICal::Property::BusyType)
+    Stage start      :   0.000
+    Stage parse      :   1.208
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/BusyType.pm6 (ICal::Property::BusyType):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.208
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/BusyType.pm6 (ICal::Property::BusyType)
+Stage start      :   0.000
+Stage parse      :   1.208
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/BusyType.pm6 (ICal::Property::BusyType):5
+
+at -e:1
+ === ICal::Property::CSID === (136/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CSID.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.235
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CSID.pm6 (ICal::Property::CSID)
+    Stage start      :   0.000
+    Stage parse      :   1.235
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CSID.pm6 (ICal::Property::CSID):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.235
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CSID.pm6 (ICal::Property::CSID)
+Stage start      :   0.000
+Stage parse      :   1.235
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CSID.pm6 (ICal::Property::CSID):5
+
+at -e:1
+ === ICal::Property::CalID === (137/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CalID.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.261
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalID.pm6 (ICal::Property::CalID)
+    Stage start      :   0.000
+    Stage parse      :   1.261
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalID.pm6 (ICal::Property::CalID):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.261
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalID.pm6 (ICal::Property::CalID)
+Stage start      :   0.000
+Stage parse      :   1.261
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalID.pm6 (ICal::Property::CalID):5
+
+at -e:1
+ === ICal::Property::CalMaster === (138/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CalMaster.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.224
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalMaster.pm6 (ICal::Property::CalMaster)
+    Stage start      :   0.000
+    Stage parse      :   1.224
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalMaster.pm6 (ICal::Property::CalMaster):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.224
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalMaster.pm6 (ICal::Property::CalMaster)
+Stage start      :   0.000
+Stage parse      :   1.224
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalMaster.pm6 (ICal::Property::CalMaster):5
+
+at -e:1
+ === ICal::Property::CalScale === (139/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CalScale.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.223
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalScale.pm6 (ICal::Property::CalScale)
+    Stage start      :   0.000
+    Stage parse      :   1.223
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalScale.pm6 (ICal::Property::CalScale):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.223
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalScale.pm6 (ICal::Property::CalScale)
+Stage start      :   0.000
+Stage parse      :   1.223
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CalScale.pm6 (ICal::Property::CalScale):5
+
+at -e:1
+ === ICal::Property::CapVersion === (140/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CapVersion.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.214
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CapVersion.pm6 (ICal::Property::CapVersion)
+    Stage start      :   0.000
+    Stage parse      :   1.214
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CapVersion.pm6 (ICal::Property::CapVersion):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.214
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CapVersion.pm6 (ICal::Property::CapVersion)
+Stage start      :   0.000
+Stage parse      :   1.214
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CapVersion.pm6 (ICal::Property::CapVersion):5
+
+at -e:1
+ === ICal::Property::CarID === (141/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CarID.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.241
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CarID.pm6 (ICal::Property::CarID)
+    Stage start      :   0.000
+    Stage parse      :   1.241
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CarID.pm6 (ICal::Property::CarID):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.241
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CarID.pm6 (ICal::Property::CarID)
+Stage start      :   0.000
+Stage parse      :   1.241
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CarID.pm6 (ICal::Property::CarID):5
+
+at -e:1
+ === ICal::Property::CarLevel === (142/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/CarLevel.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.233
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CarLevel.pm6 (ICal::Property::CarLevel)
+    Stage start      :   0.000
+    Stage parse      :   1.233
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CarLevel.pm6 (ICal::Property::CarLevel):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.233
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CarLevel.pm6 (ICal::Property::CarLevel)
+Stage start      :   0.000
+Stage parse      :   1.233
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/CarLevel.pm6 (ICal::Property::CarLevel):5
+
+at -e:1
+ === ICal::Property::Categories === (143/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Categories.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.221
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Categories.pm6 (ICal::Property::Categories)
+    Stage start      :   0.000
+    Stage parse      :   1.221
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Categories.pm6 (ICal::Property::Categories):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.221
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Categories.pm6 (ICal::Property::Categories)
+Stage start      :   0.000
+Stage parse      :   1.221
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Categories.pm6 (ICal::Property::Categories):5
+
+at -e:1
+ === ICal::Property::Class === (144/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Class.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.198
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Class.pm6 (ICal::Property::Class)
+    Stage start      :   0.000
+    Stage parse      :   1.198
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Class.pm6 (ICal::Property::Class):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.198
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Class.pm6 (ICal::Property::Class)
+Stage start      :   0.000
+Stage parse      :   1.198
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Class.pm6 (ICal::Property::Class):5
+
+at -e:1
+ === ICal::Property::Cmd === (145/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Cmd.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.283
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Cmd.pm6 (ICal::Property::Cmd)
+    Stage start      :   0.000
+    Stage parse      :   1.283
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Cmd.pm6 (ICal::Property::Cmd):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.283
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Cmd.pm6 (ICal::Property::Cmd)
+Stage start      :   0.000
+Stage parse      :   1.283
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Cmd.pm6 (ICal::Property::Cmd):5
+
+at -e:1
+ === ICal::Property::Color === (146/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Color.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.239
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Color.pm6 (ICal::Property::Color)
+    Stage start      :   0.000
+    Stage parse      :   1.239
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Color.pm6 (ICal::Property::Color):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.239
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Color.pm6 (ICal::Property::Color)
+Stage start      :   0.000
+Stage parse      :   1.239
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Color.pm6 (ICal::Property::Color):5
+
+at -e:1
+ === ICal::Property::Comment === (147/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Comment.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.244
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Comment.pm6 (ICal::Property::Comment)
+    Stage start      :   0.000
+    Stage parse      :   1.244
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Comment.pm6 (ICal::Property::Comment):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.244
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Comment.pm6 (ICal::Property::Comment)
+Stage start      :   0.000
+Stage parse      :   1.244
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Comment.pm6 (ICal::Property::Comment):5
+
+at -e:1
+ === ICal::Property::Completed === (148/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Completed.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.235
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Completed.pm6 (ICal::Property::Completed)
+    Stage start      :   0.000
+    Stage parse      :   1.235
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Completed.pm6 (ICal::Property::Completed):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.235
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Completed.pm6 (ICal::Property::Completed)
+Stage start      :   0.000
+Stage parse      :   1.235
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Completed.pm6 (ICal::Property::Completed):5
+
+at -e:1
+ === ICal::Property::Components === (149/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Components.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.217
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Components.pm6 (ICal::Property::Components)
+    Stage start      :   0.000
+    Stage parse      :   1.217
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Components.pm6 (ICal::Property::Components):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.217
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Components.pm6 (ICal::Property::Components)
+Stage start      :   0.000
+Stage parse      :   1.217
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Components.pm6 (ICal::Property::Components):5
+
+at -e:1
+ === ICal::Property::Conference === (150/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Conference.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.189
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Conference.pm6 (ICal::Property::Conference)
+    Stage start      :   0.000
+    Stage parse      :   1.189
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Conference.pm6 (ICal::Property::Conference):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.189
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Conference.pm6 (ICal::Property::Conference)
+Stage start      :   0.000
+Stage parse      :   1.189
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Conference.pm6 (ICal::Property::Conference):5
+
+at -e:1
+ === ICal::Property::Contact === (151/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Contact.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.221
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Contact.pm6 (ICal::Property::Contact)
+    Stage start      :   0.000
+    Stage parse      :   1.221
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Contact.pm6 (ICal::Property::Contact):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.221
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Contact.pm6 (ICal::Property::Contact)
+Stage start      :   0.000
+Stage parse      :   1.221
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Contact.pm6 (ICal::Property::Contact):5
+
+at -e:1
+ === ICal::Property::Created === (152/258)
+Stage start      :   0.000
+
+    precomp lib/ICal/Property/Created.pm6
+    Stage start      :   0.000
+    
+        precomp lib/ICal/Property.pm6
+        Stage start      :   0.000
+        Stage parse      :   1.234
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   : [31m===[0mSORRY![31m===[0m
+        Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+        Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+        at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+        ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+        
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Created.pm6 (ICal::Property::Created)
+    Stage start      :   0.000
+    Stage parse      :   1.234
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+    
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Created.pm6 (ICal::Property::Created):5
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+
+    precomp lib/ICal/Property.pm6
+    Stage start      :   0.000
+    Stage parse      :   1.234
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   : [31m===[0mSORRY![31m===[0m
+    Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+    Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+    ------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+    
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Created.pm6 (ICal::Property::Created)
+Stage start      :   0.000
+Stage parse      :   1.234
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   : [31m===[0mSORRY![31m===[0m
+Calling icalproperty_enum_to_string(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):88
+------> [32m    [33m⏏[31micalproperty_enum_to_string($ee);[0m
+Calling icalproperty_enum_to_string_r(uint) will never work with declared signature (int32 $e --> Str)
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property.pm6 (ICal::Property):96
+------> [32m    [33m⏏[31micalproperty_enum_to_string_r($ee);[0m
+
+
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Property/Created.pm6 (ICal::Property::Created):5
+
+at -e:1
+ === ICal::Property::DTEnd === (153/258)
