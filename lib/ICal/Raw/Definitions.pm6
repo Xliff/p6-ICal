@@ -1,4 +1,4 @@
-use v6.c;
+use v6;
 
 use NativeCall;
 
@@ -6,14 +6,19 @@ use ICal::Roles::Pointers;
 
 unit package ICal::Raw::Definitions;
 
-constant icalendar is export = 'ical',v3;
+our $ICAL-DEBUG          is export;
+
+constant ical       is export = 'ical',v3;
+constant icalhelper is export = %?RESOURCES<lib/icalhelper.so>;
 
 constant realUInt is export = $*KERNEL.bits == 32 ?? uint32 !! uint64;
 constant realInt  is export = $*KERNEL.bits == 32 ?? int32  !! int64;
 
 constant char                    is export := Str;
 constant double                  is export := num64;
-constant time_t                  is export := uint64;
+constant time_t                  is export := uint64;  #= This mutates depending on OS / Arch
+constant short                   is export := uint8;
+constant pointer                 is export := Pointer; #= NativeCall's Pointer exposed for client code.
 
 constant ICAL_BY_SECOND_SIZE     is export = 62;                                 #= 0 to 60
 constant ICAL_BY_MINUTE_SIZE     is export = 61;                                 #= 0 to 59
@@ -32,12 +37,24 @@ constant ICALPROPERTY_LAST_ENUM  is export = 11300;
 constant ICALPARAMETER_LAST_ENUM is export = 22300;
 
 class VObject            is repr<CPointer> does ICal::Roles::Pointers is export { }
+class icalattach         is repr<CPointer> does ICal::Roles::Pointers is export { }
+class icalcalendar       is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalcluster        is repr<CPointer> does ICal::Roles::Pointers is export { }
 #class icalgauge          is repr<CPointer> does ICal::Roles::Pointers is export { }
 class pvl_list           is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalrecur_iterator is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icaltimezone       is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalcomponent      is repr<CPointer> does ICal::Roles::Pointers is export { }
+class icalparser         is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalproperty       is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalparameter      is repr<CPointer> does ICal::Roles::Pointers is export { }
 class icalvalue          is repr<CPointer> does ICal::Roles::Pointers is export { }
+
+INIT {
+
+  if %*ENV<P6_ICAL_DEBUG> {
+    say '»————————————> setting debug';
+    $ICAL-DEBUG = True;
+  }
+
+}

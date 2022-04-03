@@ -1,0 +1,127 @@
+ === ICal::Raw::Enums === 
+Stage start      :   0.000
+Stage parse      :   2.079
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.004
+Stage mast       :   0.008
+Stage mbc        :   0.004
+Stage moar       :   0.000
+
+ICal::Raw::Enums compile time: 2.61950157
+ === Method::Also === 
+Stage start      :   0.000
+Stage parse      :   2.053
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.000
+Stage moar       :   0.000
+
+Method::Also compile time: 2.65765555
+ === NativeHelpers::Blob === 
+Stage start      :   0.000
+Stage parse      :   2.199
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.000
+Stage mast       :   0.001
+Stage mbc        :   0.000
+Stage moar       :   0.000
+
+NativeHelpers::Blob compile time: 2.7880256
+ === ICal::Roles::Pointers === 
+Stage start      :   0.000
+
+    precomp lib/ICal/Roles/Pointers.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.238
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.004
+    Stage mast       :   0.020
+    Stage mbc        :   0.002
+Stage parse      :   4.268
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.003
+Stage mbc        :   0.000
+Stage moar       :   0.000
+
+ICal::Roles::Pointers compile time: 4.79725082
+ === GLib::Raw::Definitions === 
+Stage start      :   0.000
+
+    precomp ../p6-GLib/lib/GLib/Raw/Definitions.pm6
+    Stage start      :   0.000
+    
+        precomp ../p6-GLib/lib/GLib/Compat/Definitions.pm6
+        Stage start      :   0.000
+        Stage parse      :   2.326
+        Stage syntaxcheck:   0.000
+        Stage ast        :   0.000
+        Stage optimize   :   0.011
+        Stage mast       :   0.038
+        Stage mbc        :   0.004
+    Stage parse      :   5.009
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.020
+    Stage mast       :   0.036
+    Stage mbc        :   0.010
+Stage parse      :   7.110
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.004
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+GLib::Raw::Definitions compile time: 7.6453453
+ === ICal::Raw::Definitions === 
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/Definitions.pm6
+    Stage start      :   0.000
+    Stage parse      :   2.097
+    Stage syntaxcheck:   0.000
+    Stage ast        :   0.000
+    Stage optimize   :   0.003
+    Stage mast       :   0.014
+    Stage mbc        :   0.004
+Stage parse      :   4.235
+Stage syntaxcheck:   0.000
+Stage ast        :   0.000
+Stage optimize   :   0.001
+Stage mast       :   0.002
+Stage mbc        :   0.001
+Stage moar       :   0.000
+
+ICal::Raw::Definitions compile time: 4.75888333
+ === ICal::Raw::TimeSpan === 
+Stage start      :   0.000
+
+    precomp lib/ICal/Raw/TimeSpan.pm6
+    Stage start      :   0.000
+    [31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Raw/TimeSpan.pm6 (ICal::Raw::TimeSpan)
+    Invalid typename 'ICalTimeSpan' in parameter declaration.  Did you mean
+    'GTimeSpan'?
+    at /home/cbwood/Projects/p6-ICal/lib/ICal/Raw/TimeSpan.pm6 (ICal::Raw::TimeSpan):12
+    ------> [32msub i_cal_time_span_clone (ICalTimeSpan[33m⏏[31m $src)[0m
+[31m===[0mSORRY![31m===[0m Error while compiling -e
+Stage start      :   0.000
+[31m===[0mSORRY![31m===[0m Error while compiling /home/cbwood/Projects/p6-ICal/lib/ICal/Raw/TimeSpan.pm6 (ICal::Raw::TimeSpan)
+Invalid typename 'ICalTimeSpan' in parameter declaration.  Did you mean
+'GTimeSpan'?
+at /home/cbwood/Projects/p6-ICal/lib/ICal/Raw/TimeSpan.pm6 (ICal::Raw::TimeSpan):12
+------> [32msub i_cal_time_span_clone (ICalTimeSpan[33m⏏[31m $src)[0m
+
+at -e:1
+
+ICal::Raw::TimeSpan compile time: 3.51457587
+
+Errors detected!
+
+Total compile time: 21.1411174s

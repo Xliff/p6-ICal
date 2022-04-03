@@ -1,5 +1,7 @@
 use v6.c;
 
+use Method::Also;
+
 use NativeCall;  # for size_t
 
 use ICal::Raw::Types;
@@ -9,18 +11,21 @@ class ICal::Array {
   has icalarray $!ia is implementor;
 
   submethod BUILD ( :$array ) {
-    $!ia = $array;
+    self.setArray($array) if $array;
+  }
+
+  method setArray ($_) {
+    $!ia = $_;
   }
 
   method ICal::Raw::Structs::icalarray
+    is also<icalarray>
   { $!ia }
 
-  method Array {
-    $!ia.chunks[ ^$!ia.num_elements ];
-  }
-
-  method TypedArray(\T) {
-    self.Array.map({ cast(T, $_) });
+  method Array (\T = Pointer) {
+    gather for ^$!ia.num_elements {
+      take self.element_at($_, type => T);
+    }
   }
 
   multi method new (icalarray $array) {
@@ -80,11 +85,11 @@ class ICal::Array {
       Nil;
   }
 
-  method element_at (Int() $position, :$type) {
+  method element_at (Int() $position, :$type) is also<element-at> {
     my size_t $p  = $position;
     my        $pp = icalarray_element_at($!ia, $position);
 
-    return $position unless $type !=== Nil;
+    return $pp if $type === Nil || $type === Pointer;
 
     cast($type, $pp);
   }
@@ -93,7 +98,7 @@ class ICal::Array {
     icalarray_free($!ia);
   }
 
-  method remove_element_at (Int() $position) {
+  method remove_element_at (Int() $position) is also<remove-element-at> {
     my size_t $p = $position;
 
     icalarray_remove_element_at($!ia, $p);
@@ -111,9 +116,10 @@ sub returnArray ( $ica is copy, $array, $raw, $T = Str, $O?, :$array-object )
   return Nil unless $ica;
   return $ica if    $array && $raw;
 
-  $ica = $array-object.new($gl);
+  $ica = $array-object.new($ica);
   return $ica if $array;
 
-  return $ica.Array if $raw;
-  $ica.Array.map({ $O.new($_) });
+  $ica = $ica.Array($T);
+  return $ica if $raw;
+  $ica.map({ $O.new($_) });
 }

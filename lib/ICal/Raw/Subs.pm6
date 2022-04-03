@@ -2,6 +2,8 @@ use v6.c;
 
 use NativeCall;
 
+use ICal::Raw::Definitions;
+
 unit package ICal::Raw::Subs;
 
 # Cribbed from https://github.com/CurtTilmes/perl6-dbmysql/blob/master/lib/DB/MySQL/Native.pm6
@@ -51,7 +53,7 @@ sub p ($p) is export {
 }
 
 # Moved from p6-GStreamer
-sub nocr ($s) is export {
+sub nolf ($s) is export {
   $s.subst("\n", ' ', :g);
 }
 
@@ -73,6 +75,16 @@ sub separate (Str() $s, Int() $p) is export {
 
 sub ArrayToCArray(\T, @a) is export {
   my $ca =  CArray[T].new;
+  @a = @a.map({
+    my $e = $_;
+    unless $_ ~~ T {
+      die "Cannot add an element of { .^name } to CArray since it is not {
+           T.^name }-compatible!"
+      unless .can(T.^name);
+      $e = ."{ T.^name }"()
+    }
+    $e;
+  });
   $ca[$_] = @a[$_] for ^@a.elems;
   $ca;
 }
@@ -154,4 +166,35 @@ sub maybeReturnObject ($oo, $raw, \P, $C? is raw, :$ref = False) is export {
 sub subarray ($a, $o) is export {
   my $b = nativecast(Pointer[$a.of], $a);
   nativecast( CArray[$a.of], $b.add($o) );
+}
+
+sub get_items (
+        $invocant,
+  Int() $kind,
+        &first,
+        &next,
+        :$raw = False
+) is export {
+  (class :: does Iterable does Iterator {
+    has $!init;
+
+    method iterator { self }
+
+    method pull-one {
+      state @params = $kind ?? $kind.Array !! ();
+      do {
+        my $np;
+
+        if $!init {
+          $np = $invocant.&next( |@params, :$raw );
+          say "Next: { $np // 'NIL' }" if $ICAL-DEBUG;
+        } else {
+          $np = $invocant.&first( |@params, :$raw );
+          say "First: { $np // 'NIL' }" if $ICAL-DEBUG;
+          $!init = True;
+        }
+        $np ?? $np !! IterationEnd;
+      }
+    }
+  }).new
 }

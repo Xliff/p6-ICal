@@ -1,0 +1,43 @@
+use v6;
+
+unit package ValueNames;
+
+our %values is export = (
+  5000 => 'Any',
+  5001 => 'Query',
+  5002 => 'Date',
+  5003 => 'Attach',
+  5004 => 'Geo',
+  5005 => 'Status',
+  5006 => 'Transp',
+  5007 => 'String',
+  5008 => 'Text',
+  5009 => 'RequestStatus',
+  5010 => 'Cmd',
+  5011 => 'Binary',
+  5012 => 'QueryLevel',
+  5013 => 'Float',
+  5014 => 'Period',
+  5015 => 'DateTimePeriod',
+  5016 => 'CarLevel',
+  5017 => 'Integer',
+  5018 => 'URI',
+  5019 => 'Class',
+  5020 => 'Duration',
+  5021 => 'Boolean',
+  5022 => 'X',
+  5023 => 'CalAddress',
+  5024 => 'Trigger',
+  5025 => 'XLicClass',
+  5026 => 'Recur',
+  5027 => 'Action',
+  5028 => 'DateTime',
+  5029 => 'UTCOffset',
+  5030 => 'Method',
+  5031 => 'No',
+  5032 => 'BusyType',
+  5033 => 'PollMode',
+  5034 => 'PollCompletion',
+  5035 => 'TaskMode',
+  5036 => 'DateTimeDate'
+);

@@ -14,18 +14,18 @@ sub icaltimezone_array_append_from_vtimezone (
   icalarray $timezones,
   icalcomponent $child
 )
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_array_free (icalarray $timezones)
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_array_new ()
   returns icalarray
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
@@ -34,13 +34,13 @@ sub icaltimezone_convert_time (
   icaltimezone $from_zone,
   icaltimezone $to_zone
 )
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_copy (icaltimezone $originalzone)
   returns icaltimezone
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
@@ -50,7 +50,7 @@ sub icaltimezone_dump_changes (
   Pointer      $fp
 )
   returns uint32
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
@@ -59,106 +59,106 @@ sub icaltimezone_expand_vtimezone (
   uint32        $end_year,
   icalarray     $changes
 )
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_free (icaltimezone $zone, uint32 $free_struct)
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_free_builtin_timezones ()
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub free_zone_directory ()
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
-sub icaltimezone_get_builtin_timezone (Str $location)
+sub icaltimezone_get_builtin_timezone (str $location)
   returns icaltimezone
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
-sub icaltimezone_get_builtin_timezone_from_offset (uint32 $offset, Str $tzname)
+sub icaltimezone_get_builtin_timezone_from_offset (uint32 $offset, str $tzname)
   returns icaltimezone
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
-sub icaltimezone_get_builtin_timezone_from_tzid (Str $tzid)
+sub icaltimezone_get_builtin_timezone_from_tzid (str $tzid)
   returns icaltimezone
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_builtin_timezones ()
   returns icalarray
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_builtin_tzdata ()
   returns uint32
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_component (icaltimezone $zone)
   returns icalcomponent
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_display_name (icaltimezone $zone)
-  returns Str
-  is native(icalendar)
+  returns str
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_latitude (icaltimezone $zone)
   returns double
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_location (icaltimezone $zone)
-  returns Str
-  is native(icalendar)
+  returns str
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_location_from_vtimezone (icalcomponent $component)
-  returns Str
-  is native(icalendar)
+  returns str
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_longitude (icaltimezone $zone)
   returns double
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_tzid (icaltimezone $zone)
-  returns Str
-  is native(icalendar)
+  returns str
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_tznames (icaltimezone $zone)
-  returns Str
-  is native(icalendar)
+  returns str
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_tznames_from_vtimezone (icalcomponent $component)
-  returns Str
-  is native(icalendar)
+  returns str
+  is native(ical)
   is export
 { * }
 
@@ -168,7 +168,7 @@ sub icaltimezone_get_utc_offset (
   uint32       $is_daylight is rw
 )
   returns uint32
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
@@ -178,45 +178,45 @@ sub icaltimezone_get_utc_offset_of_utc_time (
   uint32       $is_daylight is rw
 )
   returns uint32
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_get_utc_timezone ()
   returns icaltimezone
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_new ()
   returns icaltimezone
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_release_zone_tab ()
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_set_builtin_tzdata (uint32 $set)
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
 sub icaltimezone_set_component (icaltimezone $zone, icalcomponent $comp)
   returns uint32
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
-sub icaltimezone_set_tzid_prefix (Str $new_prefix)
-  is native(icalendar)
+sub icaltimezone_set_tzid_prefix (str $new_prefix)
+  is native(ical)
   is export
 { * }
 
-sub set_zone_directory (Str $path)
-  is native(icalendar)
+sub set_zone_directory (str $path)
+  is native(ical)
   is export
 { * }
 
@@ -227,13 +227,13 @@ sub icaltimezone_truncate_vtimezone (
   icaltimetype  $end,
   uint32        $ms_compatible
 )
-  is native(icalendar)
+  is native(ical)
   is export
 { * }
 
-# LIBRARY INTERNAL ONLY! 
+# LIBRARY INTERNAL ONLY!
 # sub icaltimezone_tzid_prefix ()
-#   returns Str
-#   is native(icalendar)
+#   returns str
+#   is native(ical)
 #   is export
 # { * }

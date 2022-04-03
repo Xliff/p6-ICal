@@ -1,3 +1,4 @@
-prefix=ICalendar
+prefix=ICal
 modules=ICalendar::Raw::Types
 backups=backup,bitbucket,google-backup
+hfile-prefix=LIBICAL_ICAL_EXPORT
