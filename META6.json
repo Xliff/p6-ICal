@@ -17,7 +17,6 @@
   "perl": "6.d",
   "source-url": "https://github.com/Xliff/p6-ICal.git",
   "provides": {
-      "ICal::Raw::DerivedProperty"          :  "lib/ICal/Raw/DerivedProperty.pm6"          ,
       "ICal::Roles::Pointers"               :  "lib/ICal/Roles/Pointers.pm6"               ,
       "ICal::Raw::Enums"                    :  "lib/ICal/Raw/Enums.pm6"                    ,
       "ICal::Raw::Definitions"              :  "lib/ICal/Raw/Definitions.pm6"              ,
