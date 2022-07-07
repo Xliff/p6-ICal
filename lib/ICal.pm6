@@ -6,10 +6,6 @@ unit package ICal:ver<0.0.1>;
 
 ICal - blah blah blah
 
-=head1 SYNOPSIS
-
- use ICal
-
 =head1 DESCRIPTION;
 
  ICal is ...
