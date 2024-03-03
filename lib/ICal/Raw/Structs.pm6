@@ -7,26 +7,25 @@ use ICal::Raw::Enums;
 
 unit package ICal::Raw::Structs;
 
-# CArray replacement for sized classes - Ripped from p6-GLib
-class SizedCArray is CArray {
-  has        $!size;
-  has CArray $!native handles *.grep({ ( .name // '' ) ne 'elems' });
-
-  method size is rw {
-    Proxy.new:
-      FETCH => -> $     { $!size },
-      STORE => -> $, \s { $!size = s }
-  }
-
-  method elems { $!size.defined ?? $!size !! nextsame }
-
-  submethod BUILD ( :$!native, :$!size ) { }
-
-  method new ($native, $size) {
-    self.bless( :$native, :$size );
-  }
-
-}
+# class SizedCArray does Positional {
+#   has $!size;
+#   has $!native handles *.grep({ ( .name // '' ) ne 'elems' });
+#
+#   method size is rw {
+#     Proxy.new:
+#       FETCH => -> $     { $!size },
+#       STORE => -> $, \s { $!size = s }
+#   }
+#
+#   method elems { $!size.defined ?? $!size !! nextsame }
+#
+#   submethod BUILD ( :$!native, :$!size ) { }
+#
+#   method new ($native, $size) {
+#     self.bless( :$native, :$size );
+#   }
+#
+# }
 
 # Predeclarations
 
@@ -339,6 +338,11 @@ class sspm_part is repr<CStruct> is export {
 #
 # }
 
+role SizedCArray[$t] {
+  method elems { $t }
+}
+
+
 our class icalrecurrencetype is repr<CStruct> is export {
 	has icalrecurrencetype_frequency  $.freq                                is rw;
 	HAS icaltimetype                  $!until;
@@ -372,48 +376,39 @@ our class icalrecurrencetype is repr<CStruct> is export {
 	}
 
   method by_second {
-    state $cache = SizedCArray.new(@!by_second, ICAL_BY_SECOND_SIZE);
-    $cache;
+    @!by_second[^ICAL_BY_SECOND_SIZE].Array;
   }
 
   method by_minute {
-    state $cache = SizedCArray.new(@!by_minute, ICAL_BY_MINUTE_SIZE);
-    $cache;
+    @!by_minute[^ICAL_BY_MINUTE_SIZE].Array;
   }
 
   method by_hour {
-    state $cache = SizedCArray.new(@!by_hour, ICAL_BY_HOUR_SIZE);
-    $cache;
+    @!by_hour[^ICAL_BY_HOUR_SIZE].Array;
   }
 
   method by_day {
-    state $cache = SizedCArray.new(@!by_day, ICAL_BY_DAY_SIZE);
-    $cache;
+    @!by_day[^ICAL_BY_DAY_SIZE].Array;
   }
 
   method by_month_day {
-    state $cache = SizedCArray.new(@!by_month_day, ICAL_BY_MONTHDAY_SIZE);
-    $cache;
+    @!by_month_day[^ICAL_BY_MONTHDAY_SIZE].Array
   }
 
   method by_year_day {
-    state $cache = SizedCArray.new(@!by_year_day, ICAL_BY_YEARDAY_SIZE);
-    $cache;
+    @!by_year_day[^ICAL_BY_YEARDAY_SIZE].Array;
   }
 
   method by_week_no {
-    state $cache = SizedCArray.new(@!by_week_no, ICAL_BY_WEEKNO_SIZE);
-    $cache;
+    @!by_week_no[^ICAL_BY_WEEKNO_SIZE].Array;
   }
 
   method by_month {
-    state $cache = SizedCArray.new(@!by_month, ICAL_BY_MONTH_SIZE);
-    $cache;
+    @!by_month[^ICAL_BY_MONTH_SIZE].Array;
   }
 
   method by_set_pos {
-    state $cache = SizedCArray.new(@!by_set_pos, ICAL_BY_SETPOS_SIZE);
-    $cache;
+    @!by_set_pos[^ICAL_BY_SETPOS_SIZE].Array;
   }
 
 }
